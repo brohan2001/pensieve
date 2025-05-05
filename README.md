@@ -8,10 +8,6 @@ A reimplementation and extension of the Pensieve adaptive bitrate streaming syst
 2. **Buffer-Aware System**: Dynamic reward weights based on buffer state
 3. **Performance Optimization**: Improved training efficiency
 
-## Results Summary
-
-[Your results here]
-
 ## Original Paper
 
 Based on "Neural Adaptive Video Streaming with Pensieve" by Mao et al. (SIGCOMM '17).
