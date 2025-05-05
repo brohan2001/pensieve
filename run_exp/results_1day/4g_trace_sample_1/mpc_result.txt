@@ -1,0 +1,5 @@
+=== Mahimahi Result for mpc on 4g_trace_sample_1 ===
+Summary:
+Average Quality: 1291.2 kbps
+Rebuffer Time: 43.56 seconds
+Average Reward: 3.664

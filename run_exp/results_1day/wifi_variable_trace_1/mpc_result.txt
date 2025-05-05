@@ -1,0 +1,5 @@
+=== Mahimahi Result for mpc on wifi_variable_trace_1 ===
+Summary:
+Average Quality: 1422.5 kbps
+Rebuffer Time: 39.54 seconds
+Average Reward: 4.037

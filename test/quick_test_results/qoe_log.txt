@@ -1,0 +1,6 @@
+trace	avg_bitrate	total_rebuffer	avg_reward	total_reward	avg_smoothness
+bus.ljansbakken-oslo-report.2010-09-29_0852CEST.log_300.txt	1322.92	0.9	0.127	6.1	1140.43
+train.oslo-vestby-report.2011-02-11_1618CET.log_60.txt	1621.88	82.3	-7.336	-352.1	1621.28
+metro.kalbakken-jernbanetorget-report.2010-09-21_0742CEST.log_180.txt	1516.67	36.6	-2.952	-141.7	1215.96
+ferry.nesoddtangen-oslo-report.2010-09-20_1542CEST.log_0.txt	1643.75	52.4	-4.275	-205.2	1250.00
+tram.jernbanetorget-ljabru-report.2010-12-16_1100CET.log_0.txt	1517.71	232.4	-20.454	-981.8	1174.47

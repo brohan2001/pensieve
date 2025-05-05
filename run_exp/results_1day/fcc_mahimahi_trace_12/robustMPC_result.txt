@@ -1,0 +1,5 @@
+=== Mahimahi Result for robustMPC on fcc_mahimahi_trace_12 ===
+Summary:
+Average Quality: 1466.2 kbps
+Rebuffer Time: 39.56 seconds
+Average Reward: 3.843

@@ -1,0 +1,5 @@
+=== Mahimahi Result for buffer_aware on norway_car_trace_2 ===
+Summary:
+Average Quality: 1613.1 kbps
+Rebuffer Time: 24.67 seconds
+Average Reward: 8.578

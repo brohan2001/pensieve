@@ -1,0 +1,5 @@
+=== Mahimahi Result for festive on norway_ferry_trace_1 ===
+Summary:
+Average Quality: 924.3 kbps
+Rebuffer Time: 41.55 seconds
+Average Reward: 1.926

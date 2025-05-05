@@ -1,0 +1,23 @@
+[2025-05-05 02:49:43] === Starting Quick Training ===
+[2025-05-05 02:49:43] NUM_AGENTS: 8, EPOCH: 5, TRAIN_SEQ_LEN: 50
+[2025-05-05 02:49:43] Loaded 5 training traces
+[2025-05-05 02:49:43] Started agent 0
+[2025-05-05 02:49:43] Started agent 1
+[2025-05-05 02:49:43] Started agent 2
+[2025-05-05 02:49:43] Started agent 3
+[2025-05-05 02:49:43] Started agent 4
+[2025-05-05 02:49:43] Started agent 5
+[2025-05-05 02:49:43] Started agent 6
+[2025-05-05 02:49:43] Started agent 7
+[2025-05-05 02:49:56] Epoch: 1/5 | Reward: -304.618 | TD_loss: -117.602 | Entropy: 1.830 | Epoch Time: 3.1s | Total Time: 3.1s
+[2025-05-05 02:49:57] Model saved to: ./quick_results/nn_model_ep_1.ckpt
+[2025-05-05 02:49:59] Epoch: 2/5 | Reward: -283.151 | TD_loss: -83.071 | Entropy: 1.821 | Epoch Time: 1.9s | Total Time: 6.0s
+[2025-05-05 02:50:00] Model saved to: ./quick_results/nn_model_ep_2.ckpt
+[2025-05-05 02:50:02] Epoch: 3/5 | Reward: -530.855 | TD_loss: 84.138 | Entropy: 1.809 | Epoch Time: 1.7s | Total Time: 8.6s
+[2025-05-05 02:50:03] Model saved to: ./quick_results/nn_model_ep_3.ckpt
+[2025-05-05 02:50:04] Epoch: 4/5 | Reward: -395.365 | TD_loss: -139.106 | Entropy: 1.799 | Epoch Time: 1.7s | Total Time: 11.2s
+[2025-05-05 02:50:05] Model saved to: ./quick_results/nn_model_ep_4.ckpt
+[2025-05-05 02:50:07] Epoch: 5/5 | Reward: -465.873 | TD_loss: -130.125 | Entropy: 1.802 | Epoch Time: 1.7s | Total Time: 13.6s
+[2025-05-05 02:50:07] Model saved to: ./quick_results/nn_model_ep_5.ckpt
+[2025-05-05 02:50:07] Training completed! Total time: 14.3s
+[2025-05-05 02:50:08] Training completed!

@@ -1,0 +1,5 @@
+=== Mahimahi Result for mpc on fcc_mahimahi_trace_12 ===
+Summary:
+Average Quality: 1508.3 kbps
+Rebuffer Time: 37.29 seconds
+Average Reward: 4.280

@@ -1,0 +1,5 @@
+=== Mahimahi Result for buffer_aware on fcc_mahimahi_trace_12 ===
+Summary:
+Average Quality: 1536.0 kbps
+Rebuffer Time: 25.91 seconds
+Average Reward: 8.168

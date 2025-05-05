@@ -1,0 +1,5 @@
+=== Mahimahi Result for bola on wifi_variable_trace_1 ===
+Summary:
+Average Quality: 1219.4 kbps
+Rebuffer Time: 37.31 seconds
+Average Reward: 2.814

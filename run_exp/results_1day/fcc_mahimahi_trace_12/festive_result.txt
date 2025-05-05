@@ -1,0 +1,5 @@
+=== Mahimahi Result for festive on fcc_mahimahi_trace_12 ===
+Summary:
+Average Quality: 1140.9 kbps
+Rebuffer Time: 33.66 seconds
+Average Reward: 2.377

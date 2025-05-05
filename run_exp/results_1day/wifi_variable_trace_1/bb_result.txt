@@ -1,0 +1,5 @@
+=== Mahimahi Result for bb on wifi_variable_trace_1 ===
+Summary:
+Average Quality: 752.1 kbps
+Rebuffer Time: 13.56 seconds
+Average Reward: -6.193

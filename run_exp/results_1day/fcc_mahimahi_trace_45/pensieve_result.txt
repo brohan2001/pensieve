@@ -1,0 +1,5 @@
+=== Mahimahi Result for pensieve on fcc_mahimahi_trace_45 ===
+Summary:
+Average Quality: 2007.2 kbps
+Rebuffer Time: 21.17 seconds
+Average Reward: 10.036

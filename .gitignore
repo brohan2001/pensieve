@@ -1,0 +1,11 @@
+
+# Virtual environments
+pensieve-py2-env/
+pensieve-env/
+venv/
+env/
+
+# Large binaries
+*.deb
+*.so
+*.dylib

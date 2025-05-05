@@ -1,0 +1,5 @@
+=== Mahimahi Result for bola on fcc_mahimahi_trace_12 ===
+Summary:
+Average Quality: 1158.8 kbps
+Rebuffer Time: 39.26 seconds
+Average Reward: 2.674

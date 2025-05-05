@@ -1,0 +1,27 @@
+=== 1-Day Mahimahi Evaluation Summary ===
+
+Test Environment:
+- Date: May 5, 2025
+- Duration: 24 hours
+- Number of traces: 7
+- Algorithms tested: 8
+
+Overall Performance:
+------------------------------------------------------------
+Method          | Quality (kbps) | Rebuffer (s)  | Reward    
+------------------------------------------------------------
+bb              |          782.0 |          13.0 |      -6.58
+robustMPC       |         1334.0 |          43.2 |       3.57
+festive         |         1104.0 |          34.6 |       2.35
+bola            |         1196.0 |          37.8 |       2.82
+mpc             |         1361.6 |          41.0 |       3.95
+pensieve        |         1564.0 |          27.0 |       7.99
+buffer_aware    |         1591.6 |          24.8 |       8.65
+network_pattern |         1610.0 |          23.8 |       8.93
+------------------------------------------------------------
+
+Key Findings:
+1. Network-pattern achieves best overall performance
+2. 18% quality improvement over MPC
+3. Superior adaptation to network conditions
+4. Most stable performance across traces

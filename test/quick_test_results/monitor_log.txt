@@ -1,0 +1,39 @@
+[2025-05-05 03:08:52] === Starting Quick Testing ===
+[2025-05-05 03:08:52] Testing model: ./quick_results/nn_model_ep_5.ckpt
+[2025-05-05 03:08:52] Copied bus.ljansbakken-oslo-report.2010-09-29_0852CEST.log_300.txt to quick_test_traces
+[2025-05-05 03:08:52] Copied ferry.nesoddtangen-oslo-report.2010-09-20_1542CEST.log_0.txt to quick_test_traces
+[2025-05-05 03:08:52] Copied metro.kalbakken-jernbanetorget-report.2010-09-21_0742CEST.log_180.txt to quick_test_traces
+[2025-05-05 03:08:52] Copied train.oslo-vestby-report.2011-02-11_1618CET.log_60.txt to quick_test_traces
+[2025-05-05 03:08:52] Copied tram.jernbanetorget-ljabru-report.2010-12-16_1100CET.log_0.txt to quick_test_traces
+[2025-05-05 03:08:52] Loaded 5 test traces
+[2025-05-05 03:13:37] === Starting Quick Testing ===
+[2025-05-05 03:13:37] Testing model: ../sim/quick_results/nn_model_ep_5.ckpt
+[2025-05-05 03:13:37] Loaded 5 test traces
+[2025-05-05 03:13:42] Model restored.
+[2025-05-05 03:13:42] Trace 1/5: bus.ljansbakken-oslo-report.2010-09-29_0852CEST.log_300.txt
+[2025-05-05 03:13:42]   Avg Bitrate: 1322.9 kbps
+[2025-05-05 03:13:42]   Total Rebuffer: 0.9s
+[2025-05-05 03:13:42]   Avg Reward: 0.127
+[2025-05-05 03:13:42]   Time: 0.3s
+[2025-05-05 03:13:43] Trace 2/5: train.oslo-vestby-report.2011-02-11_1618CET.log_60.txt
+[2025-05-05 03:13:43]   Avg Bitrate: 1621.9 kbps
+[2025-05-05 03:13:43]   Total Rebuffer: 82.3s
+[2025-05-05 03:13:43]   Avg Reward: -7.336
+[2025-05-05 03:13:43]   Time: 0.2s
+[2025-05-05 03:13:43] Trace 3/5: metro.kalbakken-jernbanetorget-report.2010-09-21_0742CEST.log_180.txt
+[2025-05-05 03:13:43]   Avg Bitrate: 1516.7 kbps
+[2025-05-05 03:13:43]   Total Rebuffer: 36.6s
+[2025-05-05 03:13:43]   Avg Reward: -2.952
+[2025-05-05 03:13:43]   Time: 0.2s
+[2025-05-05 03:13:43] Trace 4/5: ferry.nesoddtangen-oslo-report.2010-09-20_1542CEST.log_0.txt
+[2025-05-05 03:13:43]   Avg Bitrate: 1643.8 kbps
+[2025-05-05 03:13:43]   Total Rebuffer: 52.4s
+[2025-05-05 03:13:43]   Avg Reward: -4.275
+[2025-05-05 03:13:43]   Time: 0.2s
+[2025-05-05 03:13:43] Trace 5/5: tram.jernbanetorget-ljabru-report.2010-12-16_1100CET.log_0.txt
+[2025-05-05 03:13:43]   Avg Bitrate: 1517.7 kbps
+[2025-05-05 03:13:43]   Total Rebuffer: 232.4s
+[2025-05-05 03:13:43]   Avg Reward: -20.454
+[2025-05-05 03:13:43]   Time: 0.2s
+[2025-05-05 03:13:43] Testing completed in 1.2s
+[2025-05-05 03:13:43] Summary statistics written to stats_summary.txt

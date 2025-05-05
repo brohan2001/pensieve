@@ -1,0 +1,5 @@
+=== Mahimahi Result for pensieve on wifi_variable_trace_1 ===
+Summary:
+Average Quality: 1473.4 kbps
+Rebuffer Time: 28.85 seconds
+Average Reward: 7.367

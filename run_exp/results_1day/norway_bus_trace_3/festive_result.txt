@@ -1,0 +1,5 @@
+=== Mahimahi Result for festive on norway_bus_trace_3 ===
+Summary:
+Average Quality: 1101.4 kbps
+Rebuffer Time: 34.86 seconds
+Average Reward: 2.295

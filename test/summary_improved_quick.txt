@@ -1,0 +1,4 @@
+Found 287 log files
+Average bitrate: 1081.28
+Average rebuffer: 0.14
+Average reward: 0.09

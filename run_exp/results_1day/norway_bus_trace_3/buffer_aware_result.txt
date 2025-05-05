@@ -1,0 +1,5 @@
+=== Mahimahi Result for buffer_aware on norway_bus_trace_3 ===
+Summary:
+Average Quality: 1514.6 kbps
+Rebuffer Time: 26.27 seconds
+Average Reward: 8.054

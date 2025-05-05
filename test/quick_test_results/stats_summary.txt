@@ -1,0 +1,9 @@
+=== Quick Test Summary ===
+Model: ../sim/quick_results/nn_model_ep_5.ckpt
+Total testing time: 1.2s
+Number of traces: 5
+
+=== Overall Statistics ===
+Average bitrate: 1524.58 +/- 113.53 kbps
+Average total rebuffer: 80.92 +/- 80.17s
+Average reward: -6.978 +/- 7.152

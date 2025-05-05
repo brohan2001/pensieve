@@ -1,0 +1,5 @@
+=== Mahimahi Result for network_pattern on fcc_mahimahi_trace_12 ===
+Summary:
+Average Quality: 1648.8 kbps
+Rebuffer Time: 23.35 seconds
+Average Reward: 8.950

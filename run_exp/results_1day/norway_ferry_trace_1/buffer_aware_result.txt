@@ -1,0 +1,5 @@
+=== Mahimahi Result for buffer_aware on norway_ferry_trace_1 ===
+Summary:
+Average Quality: 1229.1 kbps
+Rebuffer Time: 32.37 seconds
+Average Reward: 6.536

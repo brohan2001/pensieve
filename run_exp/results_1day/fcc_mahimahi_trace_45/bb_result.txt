@@ -1,0 +1,5 @@
+=== Mahimahi Result for bb on fcc_mahimahi_trace_45 ===
+Summary:
+Average Quality: 883.2 kbps
+Rebuffer Time: 11.55 seconds
+Average Reward: -7.273

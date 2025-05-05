@@ -1,0 +1,5 @@
+=== Mahimahi Result for buffer_aware on wifi_variable_trace_1 ===
+Summary:
+Average Quality: 1452.9 kbps
+Rebuffer Time: 27.39 seconds
+Average Reward: 7.726

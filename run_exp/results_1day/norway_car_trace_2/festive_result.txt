@@ -1,0 +1,5 @@
+=== Mahimahi Result for festive on norway_car_trace_2 ===
+Summary:
+Average Quality: 938.3 kbps
+Rebuffer Time: 40.93 seconds
+Average Reward: 1.955

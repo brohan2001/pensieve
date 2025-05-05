@@ -1,0 +1,5 @@
+=== Mahimahi Result for pensieve on norway_car_trace_2 ===
+Summary:
+Average Quality: 1680.1 kbps
+Rebuffer Time: 25.30 seconds
+Average Reward: 8.400

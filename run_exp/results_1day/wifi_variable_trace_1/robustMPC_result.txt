@@ -1,0 +1,5 @@
+=== Mahimahi Result for robustMPC on wifi_variable_trace_1 ===
+Summary:
+Average Quality: 1534.6 kbps
+Rebuffer Time: 37.79 seconds
+Average Reward: 4.022

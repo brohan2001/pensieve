@@ -1,0 +1,5 @@
+=== Mahimahi Result for bb on norway_ferry_trace_1 ===
+Summary:
+Average Quality: 660.7 kbps
+Rebuffer Time: 15.44 seconds
+Average Reward: -5.441

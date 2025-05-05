@@ -1,0 +1,5 @@
+=== Mahimahi Result for festive on wifi_variable_trace_1 ===
+Summary:
+Average Quality: 1063.3 kbps
+Rebuffer Time: 36.11 seconds
+Average Reward: 2.215

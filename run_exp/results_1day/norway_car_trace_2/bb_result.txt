@@ -1,0 +1,5 @@
+=== Mahimahi Result for bb on norway_car_trace_2 ===
+Summary:
+Average Quality: 709.1 kbps
+Rebuffer Time: 14.38 seconds
+Average Reward: -5.840

@@ -1,0 +1,15 @@
+backports.functools-lru-cache==1.6.6
+cycler==0.10.0
+kiwisolver==1.1.0
+matplotlib==2.2.5
+numpy==1.16.6
+Pillow==6.2.2
+pkg-resources==0.0.0
+pyparsing==2.4.7
+python-dateutil==2.9.0.post0
+pytz==2025.2
+selenium==2.39.0
+six==1.17.0
+subprocess32==3.5.4
+tensorflow==1.1.0
+tflearn==0.3.1

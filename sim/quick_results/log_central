@@ -1,0 +1,41 @@
+WARNING:tensorflow:Error encountered when serializing data_augmentation.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing data_preprocessing.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+INFO:root:Epoch: 1 TD_loss: -117.60154713014094 Avg_reward: -304.61837027463514 Avg_entropy: 1.8298113608455404
+WARNING:tensorflow:Error encountered when serializing data_augmentation.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing data_preprocessing.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+INFO:root:Epoch: 2 TD_loss: -83.07076563941747 Avg_reward: -283.15100428823484 Avg_entropy: 1.8214784201947933
+WARNING:tensorflow:Error encountered when serializing data_augmentation.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing data_preprocessing.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+INFO:root:Epoch: 3 TD_loss: 84.13781906629566 Avg_reward: -530.8547537837796 Avg_entropy: 1.8087267135369016
+WARNING:tensorflow:Error encountered when serializing data_augmentation.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing data_preprocessing.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+INFO:root:Epoch: 4 TD_loss: -139.10603302919665 Avg_reward: -395.3648327146523 Avg_entropy: 1.7988596070320049
+WARNING:tensorflow:Error encountered when serializing data_augmentation.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing data_preprocessing.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+INFO:root:Epoch: 5 TD_loss: -130.1248918597842 Avg_reward: -465.873442967241 Avg_entropy: 1.8022067104961643
+WARNING:tensorflow:Error encountered when serializing data_augmentation.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing data_preprocessing.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'

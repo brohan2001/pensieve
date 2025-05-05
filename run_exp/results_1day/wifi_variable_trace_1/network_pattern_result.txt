@@ -1,0 +1,5 @@
+=== Mahimahi Result for network_pattern on wifi_variable_trace_1 ===
+Summary:
+Average Quality: 1480.6 kbps
+Rebuffer Time: 26.00 seconds
+Average Reward: 8.038

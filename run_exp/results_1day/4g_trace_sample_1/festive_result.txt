@@ -1,0 +1,5 @@
+=== Mahimahi Result for festive on 4g_trace_sample_1 ===
+Summary:
+Average Quality: 931.7 kbps
+Rebuffer Time: 41.22 seconds
+Average Reward: 1.941

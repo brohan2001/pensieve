@@ -1,0 +1,6 @@
+model_checkpoint_path: "nn_model_ep_5.ckpt"
+all_model_checkpoint_paths: "nn_model_ep_1.ckpt"
+all_model_checkpoint_paths: "nn_model_ep_2.ckpt"
+all_model_checkpoint_paths: "nn_model_ep_3.ckpt"
+all_model_checkpoint_paths: "nn_model_ep_4.ckpt"
+all_model_checkpoint_paths: "nn_model_ep_5.ckpt"

@@ -1,0 +1,5 @@
+=== Mahimahi Result for robustMPC on norway_ferry_trace_1 ===
+Summary:
+Average Quality: 1010.3 kbps
+Rebuffer Time: 57.41 seconds
+Average Reward: 2.648

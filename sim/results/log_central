@@ -1,0 +1,6 @@
+WARNING:tensorflow:Error encountered when serializing data_augmentation.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing data_preprocessing.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'NoneType' object has no attribute 'name'

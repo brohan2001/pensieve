@@ -1,0 +1,5 @@
+=== Mahimahi Result for bola on norway_car_trace_2 ===
+Summary:
+Average Quality: 1200.6 kbps
+Rebuffer Time: 37.90 seconds
+Average Reward: 2.771

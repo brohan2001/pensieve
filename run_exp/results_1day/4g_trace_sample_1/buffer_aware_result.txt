@@ -1,0 +1,5 @@
+=== Mahimahi Result for buffer_aware on 4g_trace_sample_1 ===
+Summary:
+Average Quality: 1381.7 kbps
+Rebuffer Time: 28.80 seconds
+Average Reward: 7.348

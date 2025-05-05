@@ -1,0 +1,1 @@
+Epoch: 1000, Network Pattern Adaptive Reward

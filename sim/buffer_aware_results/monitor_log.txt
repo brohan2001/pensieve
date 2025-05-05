@@ -1,0 +1,1306 @@
+[2025-05-05 05:37:09] === Starting Buffer-Aware Adaptive Reward Training ===
+[2025-05-05 05:37:09] Parameters: NUM_AGENTS=16, EPOCH=2000, TRAIN_SEQ_LEN=100
+[2025-05-05 05:37:09] Using adaptive reward weights based on buffer occupancy
+[2025-05-05 05:37:09] Creating expanded training trace set...
+[2025-05-05 05:37:09] Copied trace_10322_http---edition.cnn.com.txt to trace_0.txt
+[2025-05-05 05:37:09] Copied trace_10367_http---www.facebook.com.txt to trace_1.txt
+[2025-05-05 05:37:09] Copied trace_10730_http---www.facebook.com.txt to trace_2.txt
+[2025-05-05 05:37:09] Copied trace_11332_http---www.facebook.com.txt to trace_3.txt
+[2025-05-05 05:37:09] Copied trace_13092_http---www.amazon.com.txt to trace_4.txt
+[2025-05-05 05:37:09] Copied trace_13562_http---www.facebook.com.txt to trace_5.txt
+[2025-05-05 05:37:09] Copied trace_14679_http---www.facebook.com.txt to trace_6.txt
+[2025-05-05 05:37:09] Copied trace_207336_http---www.amazon.com.txt to trace_7.txt
+[2025-05-05 05:37:09] Copied trace_213586_http---www.facebook.com.txt to trace_8.txt
+[2025-05-05 05:37:09] Copied trace_214390_http---www.amazon.com.txt to trace_9.txt
+[2025-05-05 05:37:09] Copied trace_215252_http---www.msn.com.txt to trace_10.txt
+[2025-05-05 05:37:09] Copied trace_216826_http---www.amazon.com.txt to trace_11.txt
+[2025-05-05 05:37:09] Copied trace_26689_http---www.amazon.com.txt to trace_12.txt
+[2025-05-05 05:37:09] Copied trace_28838_http---www.amazon.com.txt to trace_13.txt
+[2025-05-05 05:37:09] Copied trace_28919_http---www.google.com-mobile-.txt to trace_14.txt
+[2025-05-05 05:37:09] Copied trace_30637_http---www.amazon.com.txt to trace_15.txt
+[2025-05-05 05:37:09] Copied trace_32551_http---www.amazon.com.txt to trace_16.txt
+[2025-05-05 05:37:09] Copied trace_397686_http---www.facebook.com.txt to trace_17.txt
+[2025-05-05 05:37:09] Copied trace_5294_http---www.youtube.com.txt to trace_18.txt
+[2025-05-05 05:37:09] Copied trace_5642_http---www.youtube.com.txt to trace_19.txt
+[2025-05-05 05:37:10] Copied trace_632966_http---www.yahoo.com.txt to trace_20.txt
+[2025-05-05 05:37:10] Copied trace_663494_http---www.facebook.com.txt to trace_21.txt
+[2025-05-05 05:37:10] Copied trace_665192_http---www.facebook.com.txt to trace_22.txt
+[2025-05-05 05:37:10] Copied trace_665208_http---www.yahoo.com.txt to trace_23.txt
+[2025-05-05 05:37:10] Copied trace_6780_http---www.facebook.com.txt to trace_24.txt
+[2025-05-05 05:37:10] Copied trace_7190_http---www.yahoo.com.txt to trace_25.txt
+[2025-05-05 05:37:10] Copied trace_7256_http---www.facebook.com.txt to trace_26.txt
+[2025-05-05 05:37:10] Copied trace_7289_http---www.yahoo.com.txt to trace_27.txt
+[2025-05-05 05:37:10] Copied trace_7451_http---www.yahoo.com.txt to trace_28.txt
+[2025-05-05 05:37:10] Copied trace_7540_http---www.yahoo.com.txt to trace_29.txt
+[2025-05-05 05:37:10] Copied trace_797172_http---www.yahoo.com.txt to trace_30.txt
+[2025-05-05 05:37:10] Copied trace_797466_http---www.amazon.com.txt to trace_31.txt
+[2025-05-05 05:37:10] Copied trace_797700_http---www.yahoo.com.txt to trace_32.txt
+[2025-05-05 05:37:10] Copied trace_799296_http---www.amazon.com.txt to trace_33.txt
+[2025-05-05 05:37:10] Copied trace_799448_http---www.facebook.com.txt to trace_34.txt
+[2025-05-05 05:37:10] Copied trace_805936_http---www.youtube.com.txt to trace_35.txt
+[2025-05-05 05:37:10] Copied trace_806172_http---www.amazon.com.txt to trace_36.txt
+[2025-05-05 05:37:10] Copied trace_806330_http---www.amazon.com.txt to trace_37.txt
+[2025-05-05 05:37:10] Copied trace_8299_http---www.amazon.com.txt to trace_38.txt
+[2025-05-05 05:37:10] Copied trace_849842_http---www.facebook.com.txt to trace_39.txt
+[2025-05-05 05:37:10] Copied trace_866_http---www.amazon.com.txt to trace_40.txt
+[2025-05-05 05:37:10] Copied trace_87304_http---www.msn.com.txt to trace_41.txt
+[2025-05-05 05:37:10] Copied trace_8747_http---www.amazon.com.txt to trace_42.txt
+[2025-05-05 05:37:10] Copied trace_8996_http---www.facebook.com.txt to trace_43.txt
+[2025-05-05 05:37:10] Copied trace_901648_http---www.amazon.com.txt to trace_44.txt
+[2025-05-05 05:37:10] Copied trace_909_http---www.yahoo.com.txt to trace_45.txt
+[2025-05-05 05:37:10] Copied trace_925800_http---www.ebay.com.txt to trace_46.txt
+[2025-05-05 05:37:10] Copied trace_925806_http---www.amazon.com.txt to trace_47.txt
+[2025-05-05 05:37:10] Copied trace_925960_http---www.ebay.com.txt to trace_48.txt
+[2025-05-05 05:37:10] Copied trace_9370_http---www.youtube.com.txt to trace_49.txt
+[2025-05-05 05:37:10] Copied trace_939562_http---www.google.com-mobile-.txt to trace_50.txt
+[2025-05-05 05:37:10] Copied trace_939592_http---www.facebook.com.txt to trace_51.txt
+[2025-05-05 05:37:10] Copied trace_939618_http---www.amazon.com.txt to trace_52.txt
+[2025-05-05 05:37:10] Copied trace_940760_http---www.youtube.com.txt to trace_53.txt
+[2025-05-05 05:37:10] Copied trace_941752_http---www.facebook.com.txt to trace_54.txt
+[2025-05-05 05:37:10] Copied trace_941778_http---www.youtube.com.txt to trace_55.txt
+[2025-05-05 05:37:10] Copied trace_942092_http---www.facebook.com.txt to trace_56.txt
+[2025-05-05 05:37:10] Copied trace_942154_http---www.ebay.com.txt to trace_57.txt
+[2025-05-05 05:37:10] Copied trace_942598_http---www.youtube.com.txt to trace_58.txt
+[2025-05-05 05:37:10] Loaded 59 training traces
+[2025-05-05 05:37:10] Started agent 0
+[2025-05-05 05:37:10] Started agent 1
+[2025-05-05 05:37:10] Started agent 2
+[2025-05-05 05:37:10] Started agent 3
+[2025-05-05 05:37:10] Started agent 4
+[2025-05-05 05:37:11] Started agent 5
+[2025-05-05 05:37:11] Started agent 6
+[2025-05-05 05:37:11] Started agent 7
+[2025-05-05 05:37:11] Started agent 8
+[2025-05-05 05:37:11] Started agent 9
+[2025-05-05 05:37:11] Started agent 10
+[2025-05-05 05:37:13] Started agent 11
+[2025-05-05 05:37:13] Started agent 12
+[2025-05-05 05:37:13] Started agent 13
+[2025-05-05 05:37:14] Started agent 14
+[2025-05-05 05:37:14] Started agent 15
+[2025-05-05 05:38:26] Epoch: 1/2000 | Reward: -1577.345 | TD_loss: -664.723 | Entropy: 1.830 | Epoch Time: 17.0s | Total Time: 17.0s
+[2025-05-05 05:38:35] Epoch: 2/2000 | Reward: -2072.017 | TD_loss: -868.703 | Entropy: 1.829 | Epoch Time: 8.8s | Total Time: 25.9s
+[2025-05-05 05:38:43] Epoch: 3/2000 | Reward: -604.585 | TD_loss: -235.892 | Entropy: 1.830 | Epoch Time: 8.3s | Total Time: 34.2s
+[2025-05-05 05:40:03] === Starting Buffer-Aware Adaptive Reward Training ===
+[2025-05-05 05:40:03] Parameters: NUM_AGENTS=16, EPOCH=1000, TRAIN_SEQ_LEN=100
+[2025-05-05 05:40:03] Using adaptive reward weights based on buffer occupancy
+[2025-05-05 05:40:03] Creating expanded training trace set...
+[2025-05-05 05:40:03] Copied trace_10322_http---edition.cnn.com.txt to trace_0.txt
+[2025-05-05 05:40:03] Copied trace_10367_http---www.facebook.com.txt to trace_1.txt
+[2025-05-05 05:40:03] Copied trace_10730_http---www.facebook.com.txt to trace_2.txt
+[2025-05-05 05:40:03] Copied trace_11332_http---www.facebook.com.txt to trace_3.txt
+[2025-05-05 05:40:03] Copied trace_13092_http---www.amazon.com.txt to trace_4.txt
+[2025-05-05 05:40:03] Copied trace_13562_http---www.facebook.com.txt to trace_5.txt
+[2025-05-05 05:40:03] Copied trace_14679_http---www.facebook.com.txt to trace_6.txt
+[2025-05-05 05:40:03] Copied trace_207336_http---www.amazon.com.txt to trace_7.txt
+[2025-05-05 05:40:03] Copied trace_213586_http---www.facebook.com.txt to trace_8.txt
+[2025-05-05 05:40:03] Copied trace_214390_http---www.amazon.com.txt to trace_9.txt
+[2025-05-05 05:40:03] Copied trace_215252_http---www.msn.com.txt to trace_10.txt
+[2025-05-05 05:40:03] Copied trace_216826_http---www.amazon.com.txt to trace_11.txt
+[2025-05-05 05:40:03] Copied trace_26689_http---www.amazon.com.txt to trace_12.txt
+[2025-05-05 05:40:03] Copied trace_28838_http---www.amazon.com.txt to trace_13.txt
+[2025-05-05 05:40:03] Copied trace_28919_http---www.google.com-mobile-.txt to trace_14.txt
+[2025-05-05 05:40:03] Copied trace_30637_http---www.amazon.com.txt to trace_15.txt
+[2025-05-05 05:40:03] Copied trace_32551_http---www.amazon.com.txt to trace_16.txt
+[2025-05-05 05:40:03] Copied trace_397686_http---www.facebook.com.txt to trace_17.txt
+[2025-05-05 05:40:03] Copied trace_5294_http---www.youtube.com.txt to trace_18.txt
+[2025-05-05 05:40:03] Copied trace_5642_http---www.youtube.com.txt to trace_19.txt
+[2025-05-05 05:40:03] Copied trace_632966_http---www.yahoo.com.txt to trace_20.txt
+[2025-05-05 05:40:03] Copied trace_663494_http---www.facebook.com.txt to trace_21.txt
+[2025-05-05 05:40:03] Copied trace_665192_http---www.facebook.com.txt to trace_22.txt
+[2025-05-05 05:40:03] Copied trace_665208_http---www.yahoo.com.txt to trace_23.txt
+[2025-05-05 05:40:03] Copied trace_6780_http---www.facebook.com.txt to trace_24.txt
+[2025-05-05 05:40:03] Copied trace_7190_http---www.yahoo.com.txt to trace_25.txt
+[2025-05-05 05:40:03] Copied trace_7256_http---www.facebook.com.txt to trace_26.txt
+[2025-05-05 05:40:03] Copied trace_7289_http---www.yahoo.com.txt to trace_27.txt
+[2025-05-05 05:40:03] Copied trace_7451_http---www.yahoo.com.txt to trace_28.txt
+[2025-05-05 05:40:03] Copied trace_7540_http---www.yahoo.com.txt to trace_29.txt
+[2025-05-05 05:40:03] Copied trace_797172_http---www.yahoo.com.txt to trace_30.txt
+[2025-05-05 05:40:03] Copied trace_797466_http---www.amazon.com.txt to trace_31.txt
+[2025-05-05 05:40:03] Copied trace_797700_http---www.yahoo.com.txt to trace_32.txt
+[2025-05-05 05:40:03] Copied trace_799296_http---www.amazon.com.txt to trace_33.txt
+[2025-05-05 05:40:03] Copied trace_799448_http---www.facebook.com.txt to trace_34.txt
+[2025-05-05 05:40:03] Copied trace_805936_http---www.youtube.com.txt to trace_35.txt
+[2025-05-05 05:40:03] Copied trace_806172_http---www.amazon.com.txt to trace_36.txt
+[2025-05-05 05:40:03] Copied trace_806330_http---www.amazon.com.txt to trace_37.txt
+[2025-05-05 05:40:03] Copied trace_8299_http---www.amazon.com.txt to trace_38.txt
+[2025-05-05 05:40:03] Copied trace_849842_http---www.facebook.com.txt to trace_39.txt
+[2025-05-05 05:40:03] Copied trace_866_http---www.amazon.com.txt to trace_40.txt
+[2025-05-05 05:40:03] Copied trace_87304_http---www.msn.com.txt to trace_41.txt
+[2025-05-05 05:40:03] Copied trace_8747_http---www.amazon.com.txt to trace_42.txt
+[2025-05-05 05:40:03] Copied trace_8996_http---www.facebook.com.txt to trace_43.txt
+[2025-05-05 05:40:03] Copied trace_901648_http---www.amazon.com.txt to trace_44.txt
+[2025-05-05 05:40:03] Copied trace_909_http---www.yahoo.com.txt to trace_45.txt
+[2025-05-05 05:40:03] Copied trace_925800_http---www.ebay.com.txt to trace_46.txt
+[2025-05-05 05:40:03] Copied trace_925806_http---www.amazon.com.txt to trace_47.txt
+[2025-05-05 05:40:03] Copied trace_925960_http---www.ebay.com.txt to trace_48.txt
+[2025-05-05 05:40:03] Copied trace_9370_http---www.youtube.com.txt to trace_49.txt
+[2025-05-05 05:40:03] Copied trace_939562_http---www.google.com-mobile-.txt to trace_50.txt
+[2025-05-05 05:40:03] Copied trace_939592_http---www.facebook.com.txt to trace_51.txt
+[2025-05-05 05:40:03] Copied trace_939618_http---www.amazon.com.txt to trace_52.txt
+[2025-05-05 05:40:03] Copied trace_940760_http---www.youtube.com.txt to trace_53.txt
+[2025-05-05 05:40:03] Copied trace_941752_http---www.facebook.com.txt to trace_54.txt
+[2025-05-05 05:40:03] Copied trace_941778_http---www.youtube.com.txt to trace_55.txt
+[2025-05-05 05:40:03] Copied trace_942092_http---www.facebook.com.txt to trace_56.txt
+[2025-05-05 05:40:03] Copied trace_942154_http---www.ebay.com.txt to trace_57.txt
+[2025-05-05 05:40:03] Copied trace_942598_http---www.youtube.com.txt to trace_58.txt
+[2025-05-05 05:40:05] Loaded 59 training traces
+[2025-05-05 05:40:05] Started agent 0
+[2025-05-05 05:40:05] Started agent 1
+[2025-05-05 05:40:05] Started agent 2
+[2025-05-05 05:40:05] Started agent 3
+[2025-05-05 05:40:05] Started agent 4
+[2025-05-05 05:40:06] Started agent 5
+[2025-05-05 05:40:06] Started agent 6
+[2025-05-05 05:40:06] Started agent 7
+[2025-05-05 05:40:06] Started agent 8
+[2025-05-05 05:40:07] Started agent 9
+[2025-05-05 05:40:07] Started agent 10
+[2025-05-05 05:40:07] Started agent 11
+[2025-05-05 05:40:07] Started agent 12
+[2025-05-05 05:40:08] Started agent 13
+[2025-05-05 05:40:08] Started agent 14
+[2025-05-05 05:40:08] Started agent 15
+[2025-05-05 05:41:15] Epoch: 1/1000 | Reward: -1607.273 | TD_loss: -679.242 | Entropy: 1.830 | Epoch Time: 21.9s | Total Time: 21.9s
+[2025-05-05 05:41:24] Epoch: 2/1000 | Reward: -2119.541 | TD_loss: -893.019 | Entropy: 1.830 | Epoch Time: 9.3s | Total Time: 31.3s
+[2025-05-05 05:41:32] Epoch: 3/1000 | Reward: -610.865 | TD_loss: -238.432 | Entropy: 1.830 | Epoch Time: 8.3s | Total Time: 39.7s
+[2025-05-05 05:41:43] Epoch: 4/1000 | Reward: -1112.699 | TD_loss: -424.211 | Entropy: 1.830 | Epoch Time: 10.1s | Total Time: 49.7s
+[2025-05-05 05:41:52] Epoch: 5/1000 | Reward: -885.197 | TD_loss: -366.044 | Entropy: 1.829 | Epoch Time: 9.2s | Total Time: 59.0s
+[2025-05-05 05:42:01] Epoch: 6/1000 | Reward: -1548.781 | TD_loss: -616.603 | Entropy: 1.829 | Epoch Time: 9.1s | Total Time: 68.1s
+[2025-05-05 05:42:09] Epoch: 7/1000 | Reward: -1080.657 | TD_loss: -442.667 | Entropy: 1.829 | Epoch Time: 8.0s | Total Time: 76.1s
+[2025-05-05 05:42:16] Epoch: 8/1000 | Reward: -1072.699 | TD_loss: -405.418 | Entropy: 1.829 | Epoch Time: 7.5s | Total Time: 83.6s
+[2025-05-05 05:42:24] Epoch: 9/1000 | Reward: -539.768 | TD_loss: -154.355 | Entropy: 1.829 | Epoch Time: 8.0s | Total Time: 91.6s
+[2025-05-05 05:42:33] Epoch: 10/1000 | Reward: -1095.411 | TD_loss: -379.356 | Entropy: 1.828 | Epoch Time: 8.7s | Total Time: 100.3s
+[2025-05-05 05:42:42] Epoch: 11/1000 | Reward: -1020.665 | TD_loss: -343.637 | Entropy: 1.828 | Epoch Time: 8.9s | Total Time: 109.2s
+[2025-05-05 05:42:51] Epoch: 12/1000 | Reward: -977.282 | TD_loss: -297.777 | Entropy: 1.827 | Epoch Time: 9.1s | Total Time: 118.3s
+[2025-05-05 05:43:00] Epoch: 13/1000 | Reward: -1108.655 | TD_loss: -317.454 | Entropy: 1.827 | Epoch Time: 9.2s | Total Time: 127.5s
+[2025-05-05 05:43:10] Epoch: 14/1000 | Reward: -837.563 | TD_loss: -193.340 | Entropy: 1.826 | Epoch Time: 9.3s | Total Time: 136.9s
+[2025-05-05 05:43:19] Epoch: 15/1000 | Reward: -1093.270 | TD_loss: -242.632 | Entropy: 1.826 | Epoch Time: 9.6s | Total Time: 146.5s
+[2025-05-05 05:43:29] Epoch: 16/1000 | Reward: -870.507 | TD_loss: -106.736 | Entropy: 1.827 | Epoch Time: 9.8s | Total Time: 156.3s
+[2025-05-05 05:43:38] Epoch: 17/1000 | Reward: -1114.216 | TD_loss: -183.864 | Entropy: 1.827 | Epoch Time: 9.0s | Total Time: 165.4s
+[2025-05-05 05:43:47] Epoch: 18/1000 | Reward: -620.038 | TD_loss: 19.136 | Entropy: 1.826 | Epoch Time: 8.8s | Total Time: 174.2s
+[2025-05-05 05:43:56] Epoch: 19/1000 | Reward: -652.962 | TD_loss: -4.504 | Entropy: 1.826 | Epoch Time: 9.0s | Total Time: 183.2s
+[2025-05-05 05:44:08] Epoch: 20/1000 | Reward: -1876.998 | TD_loss: -468.454 | Entropy: 1.824 | Epoch Time: 12.0s | Total Time: 195.2s
+[2025-05-05 05:44:21] Epoch: 21/1000 | Reward: -772.245 | TD_loss: 29.276 | Entropy: 1.824 | Epoch Time: 12.6s | Total Time: 207.8s
+[2025-05-05 05:44:32] Epoch: 22/1000 | Reward: -1278.843 | TD_loss: -155.728 | Entropy: 1.823 | Epoch Time: 11.6s | Total Time: 219.5s
+[2025-05-05 05:44:41] Epoch: 23/1000 | Reward: -1097.447 | TD_loss: -98.866 | Entropy: 1.822 | Epoch Time: 8.8s | Total Time: 228.3s
+[2025-05-05 05:44:50] Epoch: 24/1000 | Reward: -1342.185 | TD_loss: -159.396 | Entropy: 1.822 | Epoch Time: 8.9s | Total Time: 237.3s
+[2025-05-05 05:45:02] Epoch: 25/1000 | Reward: -1019.759 | TD_loss: 8.821 | Entropy: 1.822 | Epoch Time: 11.7s | Total Time: 249.0s
+[2025-05-05 05:45:14] Epoch: 26/1000 | Reward: -868.092 | TD_loss: 54.136 | Entropy: 1.822 | Epoch Time: 11.7s | Total Time: 260.7s
+[2025-05-05 05:45:27] Epoch: 27/1000 | Reward: -997.989 | TD_loss: -36.104 | Entropy: 1.821 | Epoch Time: 13.7s | Total Time: 274.5s
+[2025-05-05 05:45:39] Epoch: 28/1000 | Reward: -1142.661 | TD_loss: -22.822 | Entropy: 1.819 | Epoch Time: 11.2s | Total Time: 285.7s
+[2025-05-05 05:45:51] Epoch: 29/1000 | Reward: -1367.645 | TD_loss: -104.025 | Entropy: 1.817 | Epoch Time: 12.4s | Total Time: 298.1s
+[2025-05-05 06:34:23] === Starting Buffer-Aware Adaptive Reward Training (Fixed Weights) ===
+[2025-05-05 06:34:23] Parameters: NUM_AGENTS=8, EPOCH=1000, TRAIN_SEQ_LEN=50
+[2025-05-05 06:34:23] Using conservative buffer-adaptive weights from start
+[2025-05-05 06:34:23] Creating expanded training trace set...
+[2025-05-05 06:34:23] Copied trace_10322_http---edition.cnn.com.txt to trace_0.txt
+[2025-05-05 06:34:23] Copied trace_10367_http---www.facebook.com.txt to trace_1.txt
+[2025-05-05 06:34:23] Copied trace_10730_http---www.facebook.com.txt to trace_2.txt
+[2025-05-05 06:34:23] Copied trace_11332_http---www.facebook.com.txt to trace_3.txt
+[2025-05-05 06:34:23] Copied trace_13092_http---www.amazon.com.txt to trace_4.txt
+[2025-05-05 06:34:23] Copied trace_13562_http---www.facebook.com.txt to trace_5.txt
+[2025-05-05 06:34:23] Copied trace_14679_http---www.facebook.com.txt to trace_6.txt
+[2025-05-05 06:34:23] Copied trace_207336_http---www.amazon.com.txt to trace_7.txt
+[2025-05-05 06:34:23] Copied trace_213586_http---www.facebook.com.txt to trace_8.txt
+[2025-05-05 06:34:23] Copied trace_214390_http---www.amazon.com.txt to trace_9.txt
+[2025-05-05 06:34:23] Copied trace_215252_http---www.msn.com.txt to trace_10.txt
+[2025-05-05 06:34:23] Copied trace_216826_http---www.amazon.com.txt to trace_11.txt
+[2025-05-05 06:34:23] Copied trace_26689_http---www.amazon.com.txt to trace_12.txt
+[2025-05-05 06:34:23] Copied trace_28838_http---www.amazon.com.txt to trace_13.txt
+[2025-05-05 06:34:23] Copied trace_28919_http---www.google.com-mobile-.txt to trace_14.txt
+[2025-05-05 06:34:23] Copied trace_30637_http---www.amazon.com.txt to trace_15.txt
+[2025-05-05 06:34:23] Copied trace_32551_http---www.amazon.com.txt to trace_16.txt
+[2025-05-05 06:34:23] Copied trace_397686_http---www.facebook.com.txt to trace_17.txt
+[2025-05-05 06:34:23] Copied trace_5294_http---www.youtube.com.txt to trace_18.txt
+[2025-05-05 06:34:23] Copied trace_5642_http---www.youtube.com.txt to trace_19.txt
+[2025-05-05 06:34:23] Copied trace_632966_http---www.yahoo.com.txt to trace_20.txt
+[2025-05-05 06:34:23] Copied trace_663494_http---www.facebook.com.txt to trace_21.txt
+[2025-05-05 06:34:23] Copied trace_665192_http---www.facebook.com.txt to trace_22.txt
+[2025-05-05 06:34:23] Copied trace_665208_http---www.yahoo.com.txt to trace_23.txt
+[2025-05-05 06:34:23] Copied trace_6780_http---www.facebook.com.txt to trace_24.txt
+[2025-05-05 06:34:23] Copied trace_7190_http---www.yahoo.com.txt to trace_25.txt
+[2025-05-05 06:34:23] Copied trace_7256_http---www.facebook.com.txt to trace_26.txt
+[2025-05-05 06:34:23] Copied trace_7289_http---www.yahoo.com.txt to trace_27.txt
+[2025-05-05 06:34:23] Copied trace_7451_http---www.yahoo.com.txt to trace_28.txt
+[2025-05-05 06:34:23] Copied trace_7540_http---www.yahoo.com.txt to trace_29.txt
+[2025-05-05 06:34:23] Copied trace_797172_http---www.yahoo.com.txt to trace_30.txt
+[2025-05-05 06:34:23] Copied trace_797466_http---www.amazon.com.txt to trace_31.txt
+[2025-05-05 06:34:23] Copied trace_797700_http---www.yahoo.com.txt to trace_32.txt
+[2025-05-05 06:34:23] Copied trace_799296_http---www.amazon.com.txt to trace_33.txt
+[2025-05-05 06:34:23] Copied trace_799448_http---www.facebook.com.txt to trace_34.txt
+[2025-05-05 06:34:23] Copied trace_805936_http---www.youtube.com.txt to trace_35.txt
+[2025-05-05 06:34:23] Copied trace_806172_http---www.amazon.com.txt to trace_36.txt
+[2025-05-05 06:34:23] Copied trace_806330_http---www.amazon.com.txt to trace_37.txt
+[2025-05-05 06:34:23] Copied trace_8299_http---www.amazon.com.txt to trace_38.txt
+[2025-05-05 06:34:23] Copied trace_849842_http---www.facebook.com.txt to trace_39.txt
+[2025-05-05 06:34:23] Copied trace_866_http---www.amazon.com.txt to trace_40.txt
+[2025-05-05 06:34:23] Copied trace_87304_http---www.msn.com.txt to trace_41.txt
+[2025-05-05 06:34:23] Copied trace_8747_http---www.amazon.com.txt to trace_42.txt
+[2025-05-05 06:34:23] Copied trace_8996_http---www.facebook.com.txt to trace_43.txt
+[2025-05-05 06:34:23] Copied trace_901648_http---www.amazon.com.txt to trace_44.txt
+[2025-05-05 06:34:23] Copied trace_909_http---www.yahoo.com.txt to trace_45.txt
+[2025-05-05 06:34:23] Copied trace_925800_http---www.ebay.com.txt to trace_46.txt
+[2025-05-05 06:34:23] Copied trace_925806_http---www.amazon.com.txt to trace_47.txt
+[2025-05-05 06:34:23] Copied trace_925960_http---www.ebay.com.txt to trace_48.txt
+[2025-05-05 06:34:23] Copied trace_9370_http---www.youtube.com.txt to trace_49.txt
+[2025-05-05 06:34:23] Copied trace_939562_http---www.google.com-mobile-.txt to trace_50.txt
+[2025-05-05 06:34:23] Copied trace_939592_http---www.facebook.com.txt to trace_51.txt
+[2025-05-05 06:34:23] Copied trace_939618_http---www.amazon.com.txt to trace_52.txt
+[2025-05-05 06:34:23] Copied trace_940760_http---www.youtube.com.txt to trace_53.txt
+[2025-05-05 06:34:23] Copied trace_941752_http---www.facebook.com.txt to trace_54.txt
+[2025-05-05 06:34:23] Copied trace_941778_http---www.youtube.com.txt to trace_55.txt
+[2025-05-05 06:34:23] Copied trace_942092_http---www.facebook.com.txt to trace_56.txt
+[2025-05-05 06:34:23] Copied trace_942154_http---www.ebay.com.txt to trace_57.txt
+[2025-05-05 06:34:23] Copied trace_942598_http---www.youtube.com.txt to trace_58.txt
+[2025-05-05 06:34:23] Loaded 59 training traces
+[2025-05-05 06:34:23] Started agent 0
+[2025-05-05 06:34:23] Started agent 1
+[2025-05-05 06:34:23] Started agent 2
+[2025-05-05 06:34:23] Started agent 3
+[2025-05-05 06:34:23] Started agent 4
+[2025-05-05 06:34:24] Started agent 5
+[2025-05-05 06:34:24] Started agent 6
+[2025-05-05 06:34:24] Started agent 7
+[2025-05-05 06:34:48] Epoch: 1/1000 | Reward: -2454.340 | TD_loss: -1038.428 | Entropy: 1.830 | Epoch Time: 5.8s | Total Time: 5.8s
+[2025-05-05 06:34:52] Epoch: 2/1000 | Reward: -1498.486 | TD_loss: -597.437 | Entropy: 1.827 | Epoch Time: 3.6s | Total Time: 9.5s
+[2025-05-05 06:34:56] Epoch: 3/1000 | Reward: -203.050 | TD_loss: 22.971 | Entropy: 1.826 | Epoch Time: 3.4s | Total Time: 12.9s
+[2025-05-05 06:34:59] Epoch: 4/1000 | Reward: -411.726 | TD_loss: -96.070 | Entropy: 1.825 | Epoch Time: 3.5s | Total Time: 16.3s
+[2025-05-05 06:35:02] Epoch: 5/1000 | Reward: -1262.921 | TD_loss: -437.936 | Entropy: 1.820 | Epoch Time: 3.4s | Total Time: 19.7s
+[2025-05-05 06:35:06] Epoch: 6/1000 | Reward: -1412.390 | TD_loss: -338.315 | Entropy: 1.813 | Epoch Time: 3.5s | Total Time: 23.3s
+[2025-05-05 06:35:09] Epoch: 7/1000 | Reward: -217.034 | TD_loss: 164.046 | Entropy: 1.820 | Epoch Time: 3.4s | Total Time: 26.7s
+[2025-05-05 06:35:13] Epoch: 8/1000 | Reward: -1018.208 | TD_loss: -135.466 | Entropy: 1.809 | Epoch Time: 3.3s | Total Time: 30.0s
+[2025-05-05 06:35:16] Epoch: 9/1000 | Reward: -314.228 | TD_loss: 147.558 | Entropy: 1.812 | Epoch Time: 3.5s | Total Time: 33.6s
+[2025-05-05 06:35:20] Epoch: 10/1000 | Reward: -932.395 | TD_loss: -76.589 | Entropy: 1.806 | Epoch Time: 3.5s | Total Time: 37.0s
+[2025-05-05 06:35:23] Epoch: 11/1000 | Reward: -252.643 | TD_loss: 129.258 | Entropy: 1.797 | Epoch Time: 3.5s | Total Time: 40.6s
+[2025-05-05 06:35:27] Epoch: 12/1000 | Reward: -588.890 | TD_loss: -63.944 | Entropy: 1.797 | Epoch Time: 3.6s | Total Time: 44.2s
+[2025-05-05 06:35:30] Epoch: 13/1000 | Reward: -969.781 | TD_loss: -99.877 | Entropy: 1.788 | Epoch Time: 3.5s | Total Time: 47.7s
+[2025-05-05 06:35:34] Epoch: 14/1000 | Reward: -597.643 | TD_loss: 91.998 | Entropy: 1.726 | Epoch Time: 3.4s | Total Time: 51.1s
+[2025-05-05 06:35:37] Epoch: 15/1000 | Reward: -697.537 | TD_loss: -21.357 | Entropy: 1.726 | Epoch Time: 3.4s | Total Time: 54.5s
+[2025-05-05 06:35:40] Epoch: 16/1000 | Reward: -726.544 | TD_loss: 3.733 | Entropy: 1.705 | Epoch Time: 3.3s | Total Time: 57.8s
+[2025-05-05 06:35:44] Epoch: 17/1000 | Reward: -921.799 | TD_loss: -36.165 | Entropy: 1.677 | Epoch Time: 3.5s | Total Time: 61.3s
+[2025-05-05 06:35:47] Epoch: 18/1000 | Reward: -150.918 | TD_loss: 132.023 | Entropy: 1.655 | Epoch Time: 3.4s | Total Time: 64.7s
+[2025-05-05 06:35:51] Epoch: 19/1000 | Reward: -350.162 | TD_loss: -5.299 | Entropy: 1.620 | Epoch Time: 3.3s | Total Time: 68.0s
+[2025-05-05 06:35:54] Epoch: 20/1000 | Reward: -519.678 | TD_loss: -88.854 | Entropy: 1.591 | Epoch Time: 3.4s | Total Time: 71.4s
+[2025-05-05 06:35:58] Epoch: 21/1000 | Reward: -257.781 | TD_loss: 78.938 | Entropy: 1.630 | Epoch Time: 3.6s | Total Time: 75.0s
+[2025-05-05 06:36:01] Epoch: 22/1000 | Reward: -934.684 | TD_loss: -113.547 | Entropy: 1.617 | Epoch Time: 3.5s | Total Time: 78.6s
+[2025-05-05 06:36:05] Epoch: 23/1000 | Reward: -668.120 | TD_loss: 10.625 | Entropy: 1.552 | Epoch Time: 3.4s | Total Time: 82.0s
+[2025-05-05 06:36:08] Epoch: 24/1000 | Reward: -315.292 | TD_loss: 100.358 | Entropy: 1.598 | Epoch Time: 3.3s | Total Time: 85.3s
+[2025-05-05 06:36:11] Epoch: 25/1000 | Reward: -497.116 | TD_loss: -25.962 | Entropy: 1.545 | Epoch Time: 3.4s | Total Time: 88.7s
+[2025-05-05 06:36:15] Epoch: 26/1000 | Reward: -72.134 | TD_loss: 49.028 | Entropy: 1.546 | Epoch Time: 3.6s | Total Time: 92.3s
+[2025-05-05 06:36:18] Epoch: 27/1000 | Reward: -99.234 | TD_loss: -6.722 | Entropy: 1.508 | Epoch Time: 3.4s | Total Time: 95.7s
+[2025-05-05 06:36:22] Epoch: 28/1000 | Reward: -143.168 | TD_loss: 11.358 | Entropy: 1.482 | Epoch Time: 3.5s | Total Time: 99.2s
+[2025-05-05 06:36:25] Epoch: 29/1000 | Reward: -401.322 | TD_loss: -5.249 | Entropy: 1.404 | Epoch Time: 3.1s | Total Time: 102.3s
+[2025-05-05 06:36:28] Epoch: 30/1000 | Reward: -522.608 | TD_loss: -75.447 | Entropy: 1.189 | Epoch Time: 3.3s | Total Time: 105.7s
+[2025-05-05 06:36:32] Epoch: 31/1000 | Reward: -26.403 | TD_loss: 83.319 | Entropy: 1.090 | Epoch Time: 3.3s | Total Time: 108.9s
+[2025-05-05 06:36:35] Epoch: 32/1000 | Reward: -4.311 | TD_loss: 15.332 | Entropy: 1.008 | Epoch Time: 3.7s | Total Time: 112.7s
+[2025-05-05 06:36:39] Epoch: 33/1000 | Reward: -98.578 | TD_loss: 39.667 | Entropy: 1.032 | Epoch Time: 3.5s | Total Time: 116.2s
+[2025-05-05 06:36:42] Epoch: 34/1000 | Reward: -27.480 | TD_loss: 9.837 | Entropy: 0.849 | Epoch Time: 3.2s | Total Time: 119.3s
+[2025-05-05 06:36:45] Epoch: 35/1000 | Reward: -136.153 | TD_loss: -20.287 | Entropy: 0.812 | Epoch Time: 3.4s | Total Time: 122.8s
+[2025-05-05 06:36:49] Epoch: 36/1000 | Reward: -24.699 | TD_loss: 9.957 | Entropy: 0.881 | Epoch Time: 3.5s | Total Time: 126.2s
+[2025-05-05 06:36:52] Epoch: 37/1000 | Reward: -12.049 | TD_loss: 8.978 | Entropy: 0.945 | Epoch Time: 3.5s | Total Time: 129.7s
+[2025-05-05 06:36:56] Epoch: 38/1000 | Reward: -158.995 | TD_loss: -32.866 | Entropy: 0.892 | Epoch Time: 3.5s | Total Time: 133.2s
+[2025-05-05 06:36:59] Epoch: 39/1000 | Reward: 7.983 | TD_loss: 10.330 | Entropy: 1.012 | Epoch Time: 3.4s | Total Time: 136.6s
+[2025-05-05 06:37:03] Epoch: 40/1000 | Reward: -119.201 | TD_loss: -12.375 | Entropy: 0.969 | Epoch Time: 3.4s | Total Time: 140.1s
+[2025-05-05 06:37:05] Epoch: 41/1000 | Reward: -290.412 | TD_loss: 3.804 | Entropy: 0.907 | Epoch Time: 2.5s | Total Time: 142.6s
+[2025-05-05 06:37:09] Epoch: 42/1000 | Reward: -151.213 | TD_loss: -23.629 | Entropy: 0.770 | Epoch Time: 3.4s | Total Time: 146.1s
+[2025-05-05 06:37:12] Epoch: 43/1000 | Reward: -189.120 | TD_loss: 0.966 | Entropy: 0.723 | Epoch Time: 3.7s | Total Time: 149.8s
+[2025-05-05 06:37:16] Epoch: 44/1000 | Reward: 12.949 | TD_loss: 6.586 | Entropy: 0.525 | Epoch Time: 3.7s | Total Time: 153.5s
+[2025-05-05 06:37:20] Epoch: 45/1000 | Reward: 11.833 | TD_loss: 14.527 | Entropy: 0.554 | Epoch Time: 3.5s | Total Time: 157.0s
+[2025-05-05 06:37:23] Epoch: 46/1000 | Reward: -93.845 | TD_loss: -5.705 | Entropy: 0.445 | Epoch Time: 3.7s | Total Time: 160.7s
+[2025-05-05 06:37:27] Epoch: 47/1000 | Reward: 13.360 | TD_loss: 11.222 | Entropy: 0.500 | Epoch Time: 3.5s | Total Time: 164.3s
+[2025-05-05 06:37:30] Epoch: 48/1000 | Reward: 8.432 | TD_loss: 8.418 | Entropy: 0.443 | Epoch Time: 3.5s | Total Time: 167.7s
+[2025-05-05 06:37:34] Epoch: 49/1000 | Reward: 11.285 | TD_loss: 3.330 | Entropy: 0.491 | Epoch Time: 3.4s | Total Time: 171.1s
+[2025-05-05 06:37:37] Epoch: 50/1000 | Reward: 12.918 | TD_loss: 3.280 | Entropy: 0.501 | Epoch Time: 3.5s | Total Time: 174.6s
+[2025-05-05 06:37:41] Epoch: 51/1000 | Reward: -58.236 | TD_loss: -11.613 | Entropy: 0.602 | Epoch Time: 3.6s | Total Time: 178.2s
+[2025-05-05 06:37:44] Epoch: 52/1000 | Reward: -114.457 | TD_loss: -11.365 | Entropy: 0.533 | Epoch Time: 3.3s | Total Time: 181.6s
+[2025-05-05 06:37:48] Epoch: 53/1000 | Reward: -30.627 | TD_loss: 12.404 | Entropy: 0.676 | Epoch Time: 3.4s | Total Time: 185.0s
+[2025-05-05 06:37:51] Epoch: 54/1000 | Reward: 6.538 | TD_loss: 5.077 | Entropy: 0.606 | Epoch Time: 3.4s | Total Time: 188.4s
+[2025-05-05 06:37:54] Epoch: 55/1000 | Reward: -6.884 | TD_loss: -6.084 | Entropy: 0.602 | Epoch Time: 3.4s | Total Time: 191.8s
+[2025-05-05 06:37:58] Epoch: 56/1000 | Reward: -79.371 | TD_loss: -7.800 | Entropy: 0.473 | Epoch Time: 3.8s | Total Time: 195.6s
+[2025-05-05 06:38:02] Epoch: 57/1000 | Reward: -44.003 | TD_loss: 9.017 | Entropy: 0.547 | Epoch Time: 3.4s | Total Time: 199.0s
+[2025-05-05 06:38:05] Epoch: 58/1000 | Reward: 11.393 | TD_loss: 2.936 | Entropy: 0.474 | Epoch Time: 3.7s | Total Time: 202.7s
+[2025-05-05 06:38:09] Epoch: 59/1000 | Reward: -73.649 | TD_loss: -15.947 | Entropy: 0.491 | Epoch Time: 3.5s | Total Time: 206.3s
+[2025-05-05 06:38:12] Epoch: 60/1000 | Reward: -39.395 | TD_loss: 5.343 | Entropy: 0.663 | Epoch Time: 3.4s | Total Time: 209.7s
+[2025-05-05 06:38:16] Epoch: 61/1000 | Reward: -21.483 | TD_loss: -7.717 | Entropy: 0.576 | Epoch Time: 3.3s | Total Time: 213.0s
+[2025-05-05 06:38:19] Epoch: 62/1000 | Reward: 8.084 | TD_loss: 4.692 | Entropy: 0.459 | Epoch Time: 3.6s | Total Time: 216.6s
+[2025-05-05 06:38:23] Epoch: 63/1000 | Reward: -7.499 | TD_loss: 7.327 | Entropy: 0.419 | Epoch Time: 4.0s | Total Time: 220.7s
+[2025-05-05 06:38:28] Epoch: 64/1000 | Reward: -70.791 | TD_loss: -21.781 | Entropy: 0.472 | Epoch Time: 4.8s | Total Time: 225.4s
+[2025-05-05 06:38:32] Epoch: 65/1000 | Reward: 6.815 | TD_loss: 2.592 | Entropy: 0.521 | Epoch Time: 3.4s | Total Time: 228.9s
+[2025-05-05 06:38:35] Epoch: 66/1000 | Reward: -108.637 | TD_loss: -17.216 | Entropy: 0.556 | Epoch Time: 3.4s | Total Time: 232.3s
+[2025-05-05 06:38:39] Epoch: 67/1000 | Reward: 12.789 | TD_loss: 4.238 | Entropy: 0.380 | Epoch Time: 3.6s | Total Time: 235.9s
+[2025-05-05 06:38:42] Epoch: 68/1000 | Reward: 13.436 | TD_loss: 2.305 | Entropy: 0.391 | Epoch Time: 3.4s | Total Time: 239.3s
+[2025-05-05 06:38:45] Epoch: 69/1000 | Reward: -20.049 | TD_loss: 18.714 | Entropy: 0.395 | Epoch Time: 3.4s | Total Time: 242.8s
+[2025-05-05 06:38:49] Epoch: 70/1000 | Reward: 13.794 | TD_loss: 2.251 | Entropy: 0.267 | Epoch Time: 3.6s | Total Time: 246.3s
+[2025-05-05 06:38:53] Epoch: 71/1000 | Reward: -2.626 | TD_loss: 3.859 | Entropy: 0.295 | Epoch Time: 3.6s | Total Time: 249.9s
+[2025-05-05 06:38:56] Epoch: 72/1000 | Reward: -39.606 | TD_loss: -21.235 | Entropy: 0.287 | Epoch Time: 3.6s | Total Time: 253.6s
+[2025-05-05 06:39:00] Epoch: 73/1000 | Reward: -50.687 | TD_loss: -15.269 | Entropy: 0.179 | Epoch Time: 3.6s | Total Time: 257.2s
+[2025-05-05 06:39:03] Epoch: 74/1000 | Reward: 11.235 | TD_loss: 2.409 | Entropy: 0.206 | Epoch Time: 3.4s | Total Time: 260.6s
+[2025-05-05 06:39:07] Epoch: 75/1000 | Reward: 14.387 | TD_loss: 3.720 | Entropy: 0.210 | Epoch Time: 3.4s | Total Time: 264.1s
+[2025-05-05 06:39:10] Epoch: 76/1000 | Reward: -27.626 | TD_loss: -0.762 | Entropy: 0.206 | Epoch Time: 3.4s | Total Time: 267.5s
+[2025-05-05 06:39:14] Epoch: 77/1000 | Reward: -7.472 | TD_loss: 1.263 | Entropy: 0.260 | Epoch Time: 3.4s | Total Time: 270.9s
+[2025-05-05 06:39:17] Epoch: 78/1000 | Reward: -145.305 | TD_loss: -31.287 | Entropy: 0.275 | Epoch Time: 3.5s | Total Time: 274.4s
+[2025-05-05 06:39:20] Epoch: 79/1000 | Reward: 10.210 | TD_loss: 14.596 | Entropy: 0.315 | Epoch Time: 3.5s | Total Time: 277.8s
+[2025-05-05 06:39:24] Epoch: 80/1000 | Reward: 9.917 | TD_loss: 5.862 | Entropy: 0.293 | Epoch Time: 3.4s | Total Time: 281.3s
+[2025-05-05 06:39:28] Epoch: 81/1000 | Reward: 12.051 | TD_loss: 3.242 | Entropy: 0.297 | Epoch Time: 3.6s | Total Time: 284.9s
+[2025-05-05 06:39:31] Epoch: 82/1000 | Reward: -27.489 | TD_loss: 2.991 | Entropy: 0.356 | Epoch Time: 3.5s | Total Time: 288.4s
+[2025-05-05 06:39:35] Epoch: 83/1000 | Reward: 5.256 | TD_loss: 0.218 | Entropy: 0.454 | Epoch Time: 3.5s | Total Time: 291.9s
+[2025-05-05 06:39:38] Epoch: 84/1000 | Reward: 9.055 | TD_loss: 0.031 | Entropy: 0.461 | Epoch Time: 3.3s | Total Time: 295.3s
+[2025-05-05 06:39:41] Epoch: 85/1000 | Reward: 12.861 | TD_loss: 0.733 | Entropy: 0.472 | Epoch Time: 3.4s | Total Time: 298.7s
+[2025-05-05 06:39:45] Epoch: 86/1000 | Reward: 11.490 | TD_loss: -1.069 | Entropy: 0.576 | Epoch Time: 3.4s | Total Time: 302.1s
+[2025-05-05 06:39:48] Epoch: 87/1000 | Reward: -52.994 | TD_loss: -7.463 | Entropy: 0.691 | Epoch Time: 3.6s | Total Time: 305.7s
+[2025-05-05 06:39:52] Epoch: 88/1000 | Reward: -30.901 | TD_loss: -3.209 | Entropy: 0.603 | Epoch Time: 3.4s | Total Time: 309.1s
+[2025-05-05 06:39:55] Epoch: 89/1000 | Reward: -2.356 | TD_loss: 3.679 | Entropy: 0.791 | Epoch Time: 3.5s | Total Time: 312.6s
+[2025-05-05 06:39:59] Epoch: 90/1000 | Reward: -109.474 | TD_loss: -5.742 | Entropy: 0.701 | Epoch Time: 3.3s | Total Time: 316.0s
+[2025-05-05 06:40:02] Epoch: 91/1000 | Reward: -8.737 | TD_loss: 18.065 | Entropy: 0.717 | Epoch Time: 3.5s | Total Time: 319.5s
+[2025-05-05 06:40:06] Epoch: 92/1000 | Reward: -95.768 | TD_loss: -21.159 | Entropy: 0.497 | Epoch Time: 3.4s | Total Time: 322.9s
+[2025-05-05 06:40:09] Epoch: 93/1000 | Reward: -73.473 | TD_loss: -5.314 | Entropy: 0.347 | Epoch Time: 3.4s | Total Time: 326.3s
+[2025-05-05 06:40:12] Epoch: 94/1000 | Reward: -42.985 | TD_loss: 7.192 | Entropy: 0.344 | Epoch Time: 3.5s | Total Time: 329.8s
+[2025-05-05 06:40:16] Epoch: 95/1000 | Reward: 3.613 | TD_loss: 0.700 | Entropy: 0.469 | Epoch Time: 3.3s | Total Time: 333.1s
+[2025-05-05 06:40:19] Epoch: 96/1000 | Reward: -68.537 | TD_loss: -11.283 | Entropy: 0.421 | Epoch Time: 3.5s | Total Time: 336.6s
+[2025-05-05 06:40:24] Epoch: 97/1000 | Reward: -53.483 | TD_loss: 1.914 | Entropy: 0.502 | Epoch Time: 5.1s | Total Time: 341.8s
+[2025-05-05 06:40:30] Epoch: 98/1000 | Reward: -13.666 | TD_loss: -9.701 | Entropy: 0.486 | Epoch Time: 5.3s | Total Time: 347.1s
+[2025-05-05 06:40:34] Epoch: 99/1000 | Reward: 10.645 | TD_loss: 3.856 | Entropy: 0.383 | Epoch Time: 3.8s | Total Time: 350.9s
+[2025-05-05 06:40:37] Epoch: 100/1000 | Reward: -108.164 | TD_loss: -21.168 | Entropy: 0.349 | Epoch Time: 3.4s | Total Time: 354.3s
+[2025-05-05 06:40:38] Starting testing for epoch 100...
+[2025-05-05 06:40:39] Running test simulation...
+[2025-05-05 06:40:39] Testing completed for epoch 100
+[2025-05-05 06:40:40] Model saved to: ./buffer_aware_results/nn_model_ep_100.ckpt
+[2025-05-05 06:40:44] Epoch: 101/1000 | Reward: -61.426 | TD_loss: 37.184 | Entropy: 0.262 | Epoch Time: 3.6s | Total Time: 361.4s
+[2025-05-05 06:40:48] Epoch: 102/1000 | Reward: 14.743 | TD_loss: 3.454 | Entropy: 0.157 | Epoch Time: 3.5s | Total Time: 365.0s
+[2025-05-05 06:40:51] Epoch: 103/1000 | Reward: -60.464 | TD_loss: -15.491 | Entropy: 0.144 | Epoch Time: 3.7s | Total Time: 368.7s
+[2025-05-05 06:40:55] Epoch: 104/1000 | Reward: -58.099 | TD_loss: -3.438 | Entropy: 0.215 | Epoch Time: 3.5s | Total Time: 372.2s
+[2025-05-05 06:40:58] Epoch: 105/1000 | Reward: -2.271 | TD_loss: 3.143 | Entropy: 0.331 | Epoch Time: 3.4s | Total Time: 375.7s
+[2025-05-05 06:41:02] Epoch: 106/1000 | Reward: 13.592 | TD_loss: 1.466 | Entropy: 0.308 | Epoch Time: 3.5s | Total Time: 379.2s
+[2025-05-05 06:41:05] Epoch: 107/1000 | Reward: -63.870 | TD_loss: -7.106 | Entropy: 0.292 | Epoch Time: 3.6s | Total Time: 382.7s
+[2025-05-05 06:41:09] Epoch: 108/1000 | Reward: 12.231 | TD_loss: 1.146 | Entropy: 0.547 | Epoch Time: 3.4s | Total Time: 386.1s
+[2025-05-05 06:41:12] Epoch: 109/1000 | Reward: 10.340 | TD_loss: 2.697 | Entropy: 0.535 | Epoch Time: 3.6s | Total Time: 389.8s
+[2025-05-05 06:41:16] Epoch: 110/1000 | Reward: -41.463 | TD_loss: -3.706 | Entropy: 0.450 | Epoch Time: 3.3s | Total Time: 393.1s
+[2025-05-05 06:41:19] Epoch: 111/1000 | Reward: -7.990 | TD_loss: 4.844 | Entropy: 0.425 | Epoch Time: 3.4s | Total Time: 396.5s
+[2025-05-05 06:41:22] Epoch: 112/1000 | Reward: 13.793 | TD_loss: 1.310 | Entropy: 0.358 | Epoch Time: 3.3s | Total Time: 399.8s
+[2025-05-05 06:41:26] Epoch: 113/1000 | Reward: 13.588 | TD_loss: 1.553 | Entropy: 0.385 | Epoch Time: 3.3s | Total Time: 403.2s
+[2025-05-05 06:41:29] Epoch: 114/1000 | Reward: 10.242 | TD_loss: 4.326 | Entropy: 0.369 | Epoch Time: 3.5s | Total Time: 406.6s
+[2025-05-05 06:41:33] Epoch: 115/1000 | Reward: -70.675 | TD_loss: -16.819 | Entropy: 0.290 | Epoch Time: 3.7s | Total Time: 410.3s
+[2025-05-05 06:41:37] Epoch: 116/1000 | Reward: -9.480 | TD_loss: 3.851 | Entropy: 0.415 | Epoch Time: 3.7s | Total Time: 414.1s
+[2025-05-05 06:41:40] Epoch: 117/1000 | Reward: -41.603 | TD_loss: -18.170 | Entropy: 0.646 | Epoch Time: 3.4s | Total Time: 417.5s
+[2025-05-05 06:41:44] Epoch: 118/1000 | Reward: -140.848 | TD_loss: -27.993 | Entropy: 0.925 | Epoch Time: 3.7s | Total Time: 421.2s
+[2025-05-05 06:41:47] Epoch: 119/1000 | Reward: -20.159 | TD_loss: 17.795 | Entropy: 0.830 | Epoch Time: 3.5s | Total Time: 424.7s
+[2025-05-05 06:41:51] Epoch: 120/1000 | Reward: -188.566 | TD_loss: 9.024 | Entropy: 0.717 | Epoch Time: 3.3s | Total Time: 428.1s
+[2025-05-05 06:41:54] Epoch: 121/1000 | Reward: -14.981 | TD_loss: -1.272 | Entropy: 0.451 | Epoch Time: 3.6s | Total Time: 431.7s
+[2025-05-05 06:41:58] Epoch: 122/1000 | Reward: -40.520 | TD_loss: -7.257 | Entropy: 0.473 | Epoch Time: 3.5s | Total Time: 435.2s
+[2025-05-05 06:42:01] Epoch: 123/1000 | Reward: -12.100 | TD_loss: 7.749 | Entropy: 0.412 | Epoch Time: 3.4s | Total Time: 438.6s
+[2025-05-05 06:42:05] Epoch: 124/1000 | Reward: 7.714 | TD_loss: 1.408 | Entropy: 0.372 | Epoch Time: 3.4s | Total Time: 442.0s
+[2025-05-05 06:42:08] Epoch: 125/1000 | Reward: 6.947 | TD_loss: 0.761 | Entropy: 0.439 | Epoch Time: 3.5s | Total Time: 445.6s
+[2025-05-05 06:42:12] Epoch: 126/1000 | Reward: 4.160 | TD_loss: 0.649 | Entropy: 0.466 | Epoch Time: 3.5s | Total Time: 449.0s
+[2025-05-05 06:42:15] Epoch: 127/1000 | Reward: -78.653 | TD_loss: -20.739 | Entropy: 0.452 | Epoch Time: 3.3s | Total Time: 452.4s
+[2025-05-05 06:42:19] Epoch: 128/1000 | Reward: -26.203 | TD_loss: 4.917 | Entropy: 0.331 | Epoch Time: 3.5s | Total Time: 455.9s
+[2025-05-05 06:42:22] Epoch: 129/1000 | Reward: 12.926 | TD_loss: 2.652 | Entropy: 0.432 | Epoch Time: 3.5s | Total Time: 459.3s
+[2025-05-05 06:42:26] Epoch: 130/1000 | Reward: -74.037 | TD_loss: -6.534 | Entropy: 0.417 | Epoch Time: 3.5s | Total Time: 462.9s
+[2025-05-05 06:42:29] Epoch: 131/1000 | Reward: 9.070 | TD_loss: 3.349 | Entropy: 0.438 | Epoch Time: 3.5s | Total Time: 466.4s
+[2025-05-05 06:42:33] Epoch: 132/1000 | Reward: -147.979 | TD_loss: -22.060 | Entropy: 0.389 | Epoch Time: 3.5s | Total Time: 469.9s
+[2025-05-05 06:42:36] Epoch: 133/1000 | Reward: 8.462 | TD_loss: 6.663 | Entropy: 0.541 | Epoch Time: 3.5s | Total Time: 473.5s
+[2025-05-05 06:42:40] Epoch: 134/1000 | Reward: -47.267 | TD_loss: 23.303 | Entropy: 0.636 | Epoch Time: 3.8s | Total Time: 477.3s
+[2025-05-05 06:42:43] Epoch: 135/1000 | Reward: -88.360 | TD_loss: -14.507 | Entropy: 0.590 | Epoch Time: 3.5s | Total Time: 480.8s
+[2025-05-05 06:42:47] Epoch: 136/1000 | Reward: -19.635 | TD_loss: -8.101 | Entropy: 0.537 | Epoch Time: 3.4s | Total Time: 484.2s
+[2025-05-05 06:42:50] Epoch: 137/1000 | Reward: 0.107 | TD_loss: 3.089 | Entropy: 0.528 | Epoch Time: 3.3s | Total Time: 487.5s
+[2025-05-05 06:42:54] Epoch: 138/1000 | Reward: -69.003 | TD_loss: -3.029 | Entropy: 0.497 | Epoch Time: 3.4s | Total Time: 490.9s
+[2025-05-05 06:42:57] Epoch: 139/1000 | Reward: 1.015 | TD_loss: 4.493 | Entropy: 0.605 | Epoch Time: 3.4s | Total Time: 494.3s
+[2025-05-05 06:43:00] Epoch: 140/1000 | Reward: 10.446 | TD_loss: -0.395 | Entropy: 0.632 | Epoch Time: 3.2s | Total Time: 497.5s
+[2025-05-05 06:43:03] Epoch: 141/1000 | Reward: -70.635 | TD_loss: -9.937 | Entropy: 0.590 | Epoch Time: 3.3s | Total Time: 500.8s
+[2025-05-05 06:43:07] Epoch: 142/1000 | Reward: 9.865 | TD_loss: 6.187 | Entropy: 0.765 | Epoch Time: 3.5s | Total Time: 504.4s
+[2025-05-05 06:43:11] Epoch: 143/1000 | Reward: -86.140 | TD_loss: -1.428 | Entropy: 0.611 | Epoch Time: 4.2s | Total Time: 508.6s
+[2025-05-05 06:43:15] Epoch: 144/1000 | Reward: -19.746 | TD_loss: 2.918 | Entropy: 0.786 | Epoch Time: 3.3s | Total Time: 511.9s
+[2025-05-05 06:43:18] Epoch: 145/1000 | Reward: -74.176 | TD_loss: -10.247 | Entropy: 0.629 | Epoch Time: 3.3s | Total Time: 515.2s
+[2025-05-05 06:43:21] Epoch: 146/1000 | Reward: 8.008 | TD_loss: 8.752 | Entropy: 0.658 | Epoch Time: 3.5s | Total Time: 518.7s
+[2025-05-05 06:43:25] Epoch: 147/1000 | Reward: 11.402 | TD_loss: 0.903 | Entropy: 0.702 | Epoch Time: 3.4s | Total Time: 522.1s
+[2025-05-05 06:43:28] Epoch: 148/1000 | Reward: -102.411 | TD_loss: -10.672 | Entropy: 0.603 | Epoch Time: 3.4s | Total Time: 525.5s
+[2025-05-05 06:43:32] Epoch: 149/1000 | Reward: -30.759 | TD_loss: 25.045 | Entropy: 0.493 | Epoch Time: 3.4s | Total Time: 528.9s
+[2025-05-05 06:43:35] Epoch: 150/1000 | Reward: 12.366 | TD_loss: 0.839 | Entropy: 0.509 | Epoch Time: 3.4s | Total Time: 532.3s
+[2025-05-05 06:43:38] Epoch: 151/1000 | Reward: 11.430 | TD_loss: 1.193 | Entropy: 0.518 | Epoch Time: 3.4s | Total Time: 535.7s
+[2025-05-05 06:43:42] Epoch: 152/1000 | Reward: -39.344 | TD_loss: -6.245 | Entropy: 0.589 | Epoch Time: 3.4s | Total Time: 539.1s
+[2025-05-05 06:43:45] Epoch: 153/1000 | Reward: 9.697 | TD_loss: 1.969 | Entropy: 0.686 | Epoch Time: 3.4s | Total Time: 542.5s
+[2025-05-05 06:43:49] Epoch: 154/1000 | Reward: 10.227 | TD_loss: 2.084 | Entropy: 0.795 | Epoch Time: 3.3s | Total Time: 545.9s
+[2025-05-05 06:43:52] Epoch: 155/1000 | Reward: -27.897 | TD_loss: -2.394 | Entropy: 0.654 | Epoch Time: 3.4s | Total Time: 549.3s
+[2025-05-05 06:43:55] Epoch: 156/1000 | Reward: -73.425 | TD_loss: -19.989 | Entropy: 0.442 | Epoch Time: 3.4s | Total Time: 552.7s
+[2025-05-05 06:43:59] Epoch: 157/1000 | Reward: -0.541 | TD_loss: -1.117 | Entropy: 0.369 | Epoch Time: 3.4s | Total Time: 556.0s
+[2025-05-05 06:44:02] Epoch: 158/1000 | Reward: -70.420 | TD_loss: -8.989 | Entropy: 0.401 | Epoch Time: 3.3s | Total Time: 559.4s
+[2025-05-05 06:44:05] Epoch: 159/1000 | Reward: -14.578 | TD_loss: 9.744 | Entropy: 0.576 | Epoch Time: 3.3s | Total Time: 562.6s
+[2025-05-05 06:44:09] Epoch: 160/1000 | Reward: 1.300 | TD_loss: 1.676 | Entropy: 0.651 | Epoch Time: 3.4s | Total Time: 566.1s
+[2025-05-05 06:44:12] Epoch: 161/1000 | Reward: -47.410 | TD_loss: -2.314 | Entropy: 0.585 | Epoch Time: 3.4s | Total Time: 569.5s
+[2025-05-05 06:44:15] Epoch: 162/1000 | Reward: 10.558 | TD_loss: 1.037 | Entropy: 0.552 | Epoch Time: 3.3s | Total Time: 572.8s
+[2025-05-05 06:44:19] Epoch: 163/1000 | Reward: -86.523 | TD_loss: -4.770 | Entropy: 0.490 | Epoch Time: 3.4s | Total Time: 576.2s
+[2025-05-05 06:44:22] Epoch: 164/1000 | Reward: -1.167 | TD_loss: -3.016 | Entropy: 0.427 | Epoch Time: 3.6s | Total Time: 579.8s
+[2025-05-05 06:44:26] Epoch: 165/1000 | Reward: -122.383 | TD_loss: -6.940 | Entropy: 0.333 | Epoch Time: 3.5s | Total Time: 583.3s
+[2025-05-05 06:44:29] Epoch: 166/1000 | Reward: -33.162 | TD_loss: 24.989 | Entropy: 0.378 | Epoch Time: 3.4s | Total Time: 586.7s
+[2025-05-05 06:44:33] Epoch: 167/1000 | Reward: 11.812 | TD_loss: 0.799 | Entropy: 0.464 | Epoch Time: 3.3s | Total Time: 590.0s
+[2025-05-05 06:44:36] Epoch: 168/1000 | Reward: 11.177 | TD_loss: 0.512 | Entropy: 0.543 | Epoch Time: 3.3s | Total Time: 593.3s
+[2025-05-05 06:44:39] Epoch: 169/1000 | Reward: -77.494 | TD_loss: -16.879 | Entropy: 0.511 | Epoch Time: 3.4s | Total Time: 596.7s
+[2025-05-05 06:44:43] Epoch: 170/1000 | Reward: -112.711 | TD_loss: -7.421 | Entropy: 0.633 | Epoch Time: 3.4s | Total Time: 600.1s
+[2025-05-05 06:44:46] Epoch: 171/1000 | Reward: 11.818 | TD_loss: 3.597 | Entropy: 0.535 | Epoch Time: 3.3s | Total Time: 603.4s
+[2025-05-05 06:44:49] Epoch: 172/1000 | Reward: 2.859 | TD_loss: 2.632 | Entropy: 0.560 | Epoch Time: 3.4s | Total Time: 606.8s
+[2025-05-05 06:44:53] Epoch: 173/1000 | Reward: -0.064 | TD_loss: -3.746 | Entropy: 0.640 | Epoch Time: 3.4s | Total Time: 610.2s
+[2025-05-05 06:44:56] Epoch: 174/1000 | Reward: 9.516 | TD_loss: 1.504 | Entropy: 0.804 | Epoch Time: 3.3s | Total Time: 613.6s
+[2025-05-05 06:45:00] Epoch: 175/1000 | Reward: -69.475 | TD_loss: -7.464 | Entropy: 0.897 | Epoch Time: 3.5s | Total Time: 617.0s
+[2025-05-05 06:45:03] Epoch: 176/1000 | Reward: 8.011 | TD_loss: 1.718 | Entropy: 0.853 | Epoch Time: 3.6s | Total Time: 620.6s
+[2025-05-05 06:45:07] Epoch: 177/1000 | Reward: -1.833 | TD_loss: 4.466 | Entropy: 0.795 | Epoch Time: 3.4s | Total Time: 624.0s
+[2025-05-05 06:45:10] Epoch: 178/1000 | Reward: 0.437 | TD_loss: 1.383 | Entropy: 0.928 | Epoch Time: 3.5s | Total Time: 627.5s
+[2025-05-05 06:45:14] Epoch: 179/1000 | Reward: -55.030 | TD_loss: -9.883 | Entropy: 0.935 | Epoch Time: 3.3s | Total Time: 630.9s
+[2025-05-05 06:45:17] Epoch: 180/1000 | Reward: 4.517 | TD_loss: 1.410 | Entropy: 0.916 | Epoch Time: 3.3s | Total Time: 634.2s
+[2025-05-05 06:45:20] Epoch: 181/1000 | Reward: -67.079 | TD_loss: -2.692 | Entropy: 0.876 | Epoch Time: 3.2s | Total Time: 637.5s
+[2025-05-05 06:45:24] Epoch: 182/1000 | Reward: 10.558 | TD_loss: 1.353 | Entropy: 0.917 | Epoch Time: 3.5s | Total Time: 641.0s
+[2025-05-05 06:45:27] Epoch: 183/1000 | Reward: -65.145 | TD_loss: 0.283 | Entropy: 0.846 | Epoch Time: 3.4s | Total Time: 644.5s
+[2025-05-05 06:45:31] Epoch: 184/1000 | Reward: -13.267 | TD_loss: 1.511 | Entropy: 0.774 | Epoch Time: 3.4s | Total Time: 647.9s
+[2025-05-05 06:45:34] Epoch: 185/1000 | Reward: 7.672 | TD_loss: 0.106 | Entropy: 0.976 | Epoch Time: 3.7s | Total Time: 651.6s
+[2025-05-05 06:45:38] Epoch: 186/1000 | Reward: -39.553 | TD_loss: -9.814 | Entropy: 1.042 | Epoch Time: 3.6s | Total Time: 655.2s
+[2025-05-05 06:45:42] Epoch: 187/1000 | Reward: 5.090 | TD_loss: 4.166 | Entropy: 1.256 | Epoch Time: 3.7s | Total Time: 658.9s
+[2025-05-05 06:45:45] Epoch: 188/1000 | Reward: 5.167 | TD_loss: 1.585 | Entropy: 1.235 | Epoch Time: 3.6s | Total Time: 662.6s
+[2025-05-05 06:45:49] Epoch: 189/1000 | Reward: -96.352 | TD_loss: -26.407 | Entropy: 1.011 | Epoch Time: 3.5s | Total Time: 666.1s
+[2025-05-05 06:45:52] Epoch: 190/1000 | Reward: -27.699 | TD_loss: 0.518 | Entropy: 0.836 | Epoch Time: 3.4s | Total Time: 669.5s
+[2025-05-05 06:45:56] Epoch: 191/1000 | Reward: -62.063 | TD_loss: -5.316 | Entropy: 0.807 | Epoch Time: 3.4s | Total Time: 673.0s
+[2025-05-05 06:45:59] Epoch: 192/1000 | Reward: -33.772 | TD_loss: 5.354 | Entropy: 0.731 | Epoch Time: 3.4s | Total Time: 676.4s
+[2025-05-05 06:46:03] Epoch: 193/1000 | Reward: 8.792 | TD_loss: 1.906 | Entropy: 0.972 | Epoch Time: 3.5s | Total Time: 680.0s
+[2025-05-05 06:46:06] Epoch: 194/1000 | Reward: 12.704 | TD_loss: 3.522 | Entropy: 1.030 | Epoch Time: 3.5s | Total Time: 683.5s
+[2025-05-05 06:46:10] Epoch: 195/1000 | Reward: 9.548 | TD_loss: 1.666 | Entropy: 1.048 | Epoch Time: 3.4s | Total Time: 686.9s
+[2025-05-05 06:46:13] Epoch: 196/1000 | Reward: -59.486 | TD_loss: -10.348 | Entropy: 0.893 | Epoch Time: 3.7s | Total Time: 690.6s
+[2025-05-05 06:46:16] Epoch: 197/1000 | Reward: 12.938 | TD_loss: 1.803 | Entropy: 1.108 | Epoch Time: 3.1s | Total Time: 693.7s
+[2025-05-05 06:46:21] Epoch: 198/1000 | Reward: -27.628 | TD_loss: -5.963 | Entropy: 0.814 | Epoch Time: 4.2s | Total Time: 698.0s
+[2025-05-05 06:46:25] Epoch: 199/1000 | Reward: -76.370 | TD_loss: 5.551 | Entropy: 0.827 | Epoch Time: 4.2s | Total Time: 702.2s
+[2025-05-05 06:46:29] Epoch: 200/1000 | Reward: 4.364 | TD_loss: 1.243 | Entropy: 0.923 | Epoch Time: 4.0s | Total Time: 706.2s
+[2025-05-05 06:46:31] Starting testing for epoch 200...
+[2025-05-05 06:46:31] Running test simulation...
+[2025-05-05 06:46:31] Testing completed for epoch 200
+[2025-05-05 06:46:33] Model saved to: ./buffer_aware_results/nn_model_ep_200.ckpt
+[2025-05-05 06:46:37] Epoch: 201/1000 | Reward: 9.577 | TD_loss: -0.951 | Entropy: 1.127 | Epoch Time: 3.7s | Total Time: 714.3s
+[2025-05-05 06:46:41] Epoch: 202/1000 | Reward: 14.608 | TD_loss: 2.618 | Entropy: 1.137 | Epoch Time: 3.8s | Total Time: 718.1s
+[2025-05-05 06:46:44] Epoch: 203/1000 | Reward: -39.137 | TD_loss: -14.311 | Entropy: 1.009 | Epoch Time: 3.6s | Total Time: 721.7s
+[2025-05-05 06:46:48] Epoch: 204/1000 | Reward: 4.524 | TD_loss: -3.675 | Entropy: 1.209 | Epoch Time: 3.5s | Total Time: 725.2s
+[2025-05-05 06:46:51] Epoch: 205/1000 | Reward: -55.017 | TD_loss: 1.455 | Entropy: 0.958 | Epoch Time: 3.5s | Total Time: 728.8s
+[2025-05-05 06:46:55] Epoch: 206/1000 | Reward: 12.768 | TD_loss: 2.396 | Entropy: 1.197 | Epoch Time: 3.3s | Total Time: 732.1s
+[2025-05-05 06:46:58] Epoch: 207/1000 | Reward: 19.036 | TD_loss: 2.343 | Entropy: 1.316 | Epoch Time: 3.5s | Total Time: 735.6s
+[2025-05-05 06:47:02] Epoch: 208/1000 | Reward: -66.465 | TD_loss: -1.875 | Entropy: 1.027 | Epoch Time: 3.4s | Total Time: 739.1s
+[2025-05-05 06:47:05] Epoch: 209/1000 | Reward: -8.136 | TD_loss: -1.389 | Entropy: 1.093 | Epoch Time: 3.4s | Total Time: 742.4s
+[2025-05-05 06:47:09] Epoch: 210/1000 | Reward: -64.575 | TD_loss: -0.224 | Entropy: 1.044 | Epoch Time: 3.5s | Total Time: 745.9s
+[2025-05-05 06:47:12] Epoch: 211/1000 | Reward: 12.461 | TD_loss: 2.871 | Entropy: 1.148 | Epoch Time: 3.4s | Total Time: 749.3s
+[2025-05-05 06:47:15] Epoch: 212/1000 | Reward: 9.332 | TD_loss: 5.412 | Entropy: 1.135 | Epoch Time: 3.4s | Total Time: 752.7s
+[2025-05-05 06:47:19] Epoch: 213/1000 | Reward: -139.777 | TD_loss: -20.823 | Entropy: 0.913 | Epoch Time: 3.3s | Total Time: 756.0s
+[2025-05-05 06:47:22] Epoch: 214/1000 | Reward: -30.035 | TD_loss: 15.843 | Entropy: 1.118 | Epoch Time: 3.6s | Total Time: 759.6s
+[2025-05-05 06:47:26] Epoch: 215/1000 | Reward: -95.586 | TD_loss: 5.862 | Entropy: 0.904 | Epoch Time: 3.5s | Total Time: 763.2s
+[2025-05-05 06:47:30] Epoch: 216/1000 | Reward: -56.740 | TD_loss: -2.402 | Entropy: 0.952 | Epoch Time: 4.7s | Total Time: 767.8s
+[2025-05-05 06:47:35] Epoch: 217/1000 | Reward: 16.929 | TD_loss: -0.596 | Entropy: 1.223 | Epoch Time: 4.4s | Total Time: 772.2s
+[2025-05-05 06:47:41] Epoch: 218/1000 | Reward: 10.641 | TD_loss: 0.760 | Entropy: 1.058 | Epoch Time: 6.0s | Total Time: 778.2s
+[2025-05-05 06:47:45] Epoch: 219/1000 | Reward: 16.571 | TD_loss: 3.247 | Entropy: 1.118 | Epoch Time: 4.6s | Total Time: 782.8s
+[2025-05-05 06:47:51] Epoch: 220/1000 | Reward: 17.369 | TD_loss: -0.354 | Entropy: 1.178 | Epoch Time: 5.8s | Total Time: 788.6s
+[2025-05-05 06:47:55] Epoch: 221/1000 | Reward: -12.247 | TD_loss: -6.305 | Entropy: 0.875 | Epoch Time: 3.4s | Total Time: 792.1s
+[2025-05-05 06:47:59] Epoch: 222/1000 | Reward: 16.020 | TD_loss: 2.300 | Entropy: 1.062 | Epoch Time: 3.8s | Total Time: 795.9s
+[2025-05-05 06:48:02] Epoch: 223/1000 | Reward: -54.050 | TD_loss: -12.497 | Entropy: 0.882 | Epoch Time: 3.7s | Total Time: 799.7s
+[2025-05-05 06:48:06] Epoch: 224/1000 | Reward: -1.190 | TD_loss: -1.137 | Entropy: 0.996 | Epoch Time: 3.5s | Total Time: 803.1s
+[2025-05-05 06:48:09] Epoch: 225/1000 | Reward: -18.847 | TD_loss: -10.848 | Entropy: 0.951 | Epoch Time: 3.3s | Total Time: 806.5s
+[2025-05-05 06:48:13] Epoch: 226/1000 | Reward: -5.719 | TD_loss: -4.805 | Entropy: 1.008 | Epoch Time: 3.5s | Total Time: 810.0s
+[2025-05-05 06:48:16] Epoch: 227/1000 | Reward: -149.423 | TD_loss: -30.600 | Entropy: 0.856 | Epoch Time: 3.3s | Total Time: 813.3s
+[2025-05-05 06:48:20] Epoch: 228/1000 | Reward: -98.619 | TD_loss: 6.015 | Entropy: 0.981 | Epoch Time: 3.5s | Total Time: 816.9s
+[2025-05-05 06:48:23] Epoch: 229/1000 | Reward: -7.237 | TD_loss: 6.687 | Entropy: 1.092 | Epoch Time: 3.7s | Total Time: 820.6s
+[2025-05-05 06:48:27] Epoch: 230/1000 | Reward: 15.296 | TD_loss: 5.796 | Entropy: 1.136 | Epoch Time: 3.4s | Total Time: 824.0s
+[2025-05-05 06:48:30] Epoch: 231/1000 | Reward: 20.143 | TD_loss: 3.875 | Entropy: 1.188 | Epoch Time: 3.4s | Total Time: 827.4s
+[2025-05-05 06:48:34] Epoch: 232/1000 | Reward: -13.333 | TD_loss: -11.987 | Entropy: 1.057 | Epoch Time: 3.5s | Total Time: 830.9s
+[2025-05-05 06:48:37] Epoch: 233/1000 | Reward: 19.559 | TD_loss: 5.610 | Entropy: 1.057 | Epoch Time: 3.4s | Total Time: 834.3s
+[2025-05-05 06:48:41] Epoch: 234/1000 | Reward: -32.390 | TD_loss: 2.253 | Entropy: 0.903 | Epoch Time: 3.5s | Total Time: 837.9s
+[2025-05-05 06:48:44] Epoch: 235/1000 | Reward: 18.456 | TD_loss: 2.629 | Entropy: 1.065 | Epoch Time: 3.4s | Total Time: 841.3s
+[2025-05-05 06:48:47] Epoch: 236/1000 | Reward: 16.951 | TD_loss: 0.692 | Entropy: 1.105 | Epoch Time: 3.5s | Total Time: 844.8s
+[2025-05-05 06:48:51] Epoch: 237/1000 | Reward: 9.225 | TD_loss: 1.363 | Entropy: 1.098 | Epoch Time: 3.4s | Total Time: 848.2s
+[2025-05-05 06:48:54] Epoch: 238/1000 | Reward: 17.899 | TD_loss: 1.478 | Entropy: 1.082 | Epoch Time: 3.5s | Total Time: 851.7s
+[2025-05-05 06:48:57] Epoch: 239/1000 | Reward: -72.382 | TD_loss: -20.370 | Entropy: 0.864 | Epoch Time: 2.5s | Total Time: 854.2s
+[2025-05-05 06:49:00] Epoch: 240/1000 | Reward: -130.199 | TD_loss: -0.895 | Entropy: 0.775 | Epoch Time: 3.6s | Total Time: 857.8s
+[2025-05-05 06:49:04] Epoch: 241/1000 | Reward: 15.973 | TD_loss: 16.857 | Entropy: 0.898 | Epoch Time: 3.4s | Total Time: 861.3s
+[2025-05-05 06:49:07] Epoch: 242/1000 | Reward: 14.611 | TD_loss: 3.102 | Entropy: 0.940 | Epoch Time: 3.4s | Total Time: 864.7s
+[2025-05-05 06:49:11] Epoch: 243/1000 | Reward: 13.307 | TD_loss: 4.976 | Entropy: 0.622 | Epoch Time: 3.5s | Total Time: 868.2s
+[2025-05-05 06:49:14] Epoch: 244/1000 | Reward: 18.523 | TD_loss: 0.746 | Entropy: 1.078 | Epoch Time: 3.5s | Total Time: 871.7s
+[2025-05-05 06:49:18] Epoch: 245/1000 | Reward: 7.536 | TD_loss: -0.932 | Entropy: 0.925 | Epoch Time: 3.4s | Total Time: 875.2s
+[2025-05-05 06:49:21] Epoch: 246/1000 | Reward: 16.026 | TD_loss: 0.655 | Entropy: 1.079 | Epoch Time: 3.7s | Total Time: 878.8s
+[2025-05-05 06:49:25] Epoch: 247/1000 | Reward: 18.619 | TD_loss: 2.847 | Entropy: 1.190 | Epoch Time: 3.4s | Total Time: 882.3s
+[2025-05-05 06:49:28] Epoch: 248/1000 | Reward: 7.039 | TD_loss: -0.920 | Entropy: 0.888 | Epoch Time: 3.4s | Total Time: 885.7s
+[2025-05-05 06:49:32] Epoch: 249/1000 | Reward: 18.702 | TD_loss: 3.180 | Entropy: 1.117 | Epoch Time: 3.5s | Total Time: 889.1s
+[2025-05-05 06:49:35] Epoch: 250/1000 | Reward: 22.307 | TD_loss: 3.165 | Entropy: 1.111 | Epoch Time: 3.4s | Total Time: 892.6s
+[2025-05-05 06:49:39] Epoch: 251/1000 | Reward: -77.521 | TD_loss: -25.309 | Entropy: 1.065 | Epoch Time: 3.4s | Total Time: 895.9s
+[2025-05-05 06:49:42] Epoch: 252/1000 | Reward: -13.028 | TD_loss: 0.670 | Entropy: 0.951 | Epoch Time: 3.4s | Total Time: 899.4s
+[2025-05-05 06:49:46] Epoch: 253/1000 | Reward: 24.181 | TD_loss: 2.129 | Entropy: 1.131 | Epoch Time: 3.6s | Total Time: 903.0s
+[2025-05-05 06:49:49] Epoch: 254/1000 | Reward: -21.216 | TD_loss: -8.572 | Entropy: 1.178 | Epoch Time: 3.5s | Total Time: 906.4s
+[2025-05-05 06:49:53] Epoch: 255/1000 | Reward: -20.587 | TD_loss: -7.236 | Entropy: 1.119 | Epoch Time: 3.7s | Total Time: 910.1s
+[2025-05-05 06:49:56] Epoch: 256/1000 | Reward: 15.321 | TD_loss: 11.842 | Entropy: 1.197 | Epoch Time: 3.2s | Total Time: 913.4s
+[2025-05-05 06:50:00] Epoch: 257/1000 | Reward: 17.391 | TD_loss: 1.105 | Entropy: 1.072 | Epoch Time: 3.5s | Total Time: 916.9s
+[2025-05-05 06:50:03] Epoch: 258/1000 | Reward: -44.813 | TD_loss: -12.193 | Entropy: 1.004 | Epoch Time: 3.3s | Total Time: 920.3s
+[2025-05-05 06:50:06] Epoch: 259/1000 | Reward: 8.709 | TD_loss: 1.941 | Entropy: 1.106 | Epoch Time: 3.4s | Total Time: 923.7s
+[2025-05-05 06:50:10] Epoch: 260/1000 | Reward: -89.654 | TD_loss: -5.544 | Entropy: 0.752 | Epoch Time: 3.4s | Total Time: 927.1s
+[2025-05-05 06:50:13] Epoch: 261/1000 | Reward: 20.086 | TD_loss: 2.410 | Entropy: 1.133 | Epoch Time: 3.4s | Total Time: 930.5s
+[2025-05-05 06:50:17] Epoch: 262/1000 | Reward: -50.978 | TD_loss: 9.030 | Entropy: 0.886 | Epoch Time: 3.5s | Total Time: 934.0s
+[2025-05-05 06:50:20] Epoch: 263/1000 | Reward: 19.172 | TD_loss: 4.697 | Entropy: 0.941 | Epoch Time: 3.3s | Total Time: 937.3s
+[2025-05-05 06:50:23] Epoch: 264/1000 | Reward: 31.741 | TD_loss: 1.689 | Entropy: 1.152 | Epoch Time: 3.5s | Total Time: 940.8s
+[2025-05-05 06:50:27] Epoch: 265/1000 | Reward: -70.810 | TD_loss: -15.426 | Entropy: 0.753 | Epoch Time: 3.3s | Total Time: 944.1s
+[2025-05-05 06:50:30] Epoch: 266/1000 | Reward: 16.827 | TD_loss: 10.849 | Entropy: 0.928 | Epoch Time: 3.4s | Total Time: 947.5s
+[2025-05-05 06:50:34] Epoch: 267/1000 | Reward: -133.711 | TD_loss: -7.536 | Entropy: 0.883 | Epoch Time: 3.5s | Total Time: 951.0s
+[2025-05-05 06:50:37] Epoch: 268/1000 | Reward: -6.309 | TD_loss: -2.570 | Entropy: 1.032 | Epoch Time: 3.4s | Total Time: 954.5s
+[2025-05-05 06:50:41] Epoch: 269/1000 | Reward: 1.495 | TD_loss: -3.253 | Entropy: 1.016 | Epoch Time: 3.4s | Total Time: 957.9s
+[2025-05-05 06:50:44] Epoch: 270/1000 | Reward: 5.720 | TD_loss: -4.428 | Entropy: 0.940 | Epoch Time: 3.5s | Total Time: 961.4s
+[2025-05-05 06:50:47] Epoch: 271/1000 | Reward: -40.858 | TD_loss: -9.291 | Entropy: 0.867 | Epoch Time: 3.4s | Total Time: 964.8s
+[2025-05-05 06:50:51] Epoch: 272/1000 | Reward: -40.274 | TD_loss: -8.840 | Entropy: 0.858 | Epoch Time: 3.5s | Total Time: 968.3s
+[2025-05-05 06:50:54] Epoch: 273/1000 | Reward: -88.228 | TD_loss: -2.906 | Entropy: 0.682 | Epoch Time: 3.4s | Total Time: 971.6s
+[2025-05-05 06:50:58] Epoch: 274/1000 | Reward: -2.271 | TD_loss: 3.510 | Entropy: 0.941 | Epoch Time: 3.5s | Total Time: 975.2s
+[2025-05-05 06:51:01] Epoch: 275/1000 | Reward: -20.114 | TD_loss: -1.804 | Entropy: 0.899 | Epoch Time: 3.4s | Total Time: 978.6s
+[2025-05-05 06:51:05] Epoch: 276/1000 | Reward: 24.572 | TD_loss: 12.422 | Entropy: 0.856 | Epoch Time: 3.5s | Total Time: 982.2s
+[2025-05-05 06:51:08] Epoch: 277/1000 | Reward: -95.868 | TD_loss: -17.839 | Entropy: 0.718 | Epoch Time: 3.6s | Total Time: 985.8s
+[2025-05-05 06:51:12] Epoch: 278/1000 | Reward: 16.428 | TD_loss: -1.491 | Entropy: 0.960 | Epoch Time: 3.5s | Total Time: 989.3s
+[2025-05-05 06:51:15] Epoch: 279/1000 | Reward: 25.255 | TD_loss: 6.962 | Entropy: 1.076 | Epoch Time: 3.4s | Total Time: 992.7s
+[2025-05-05 06:51:19] Epoch: 280/1000 | Reward: -55.412 | TD_loss: -0.499 | Entropy: 0.940 | Epoch Time: 3.8s | Total Time: 996.5s
+[2025-05-05 06:51:23] Epoch: 281/1000 | Reward: -29.578 | TD_loss: -17.722 | Entropy: 0.894 | Epoch Time: 3.4s | Total Time: 999.9s
+[2025-05-05 06:51:26] Epoch: 282/1000 | Reward: -52.633 | TD_loss: -2.037 | Entropy: 0.847 | Epoch Time: 3.2s | Total Time: 1003.2s
+[2025-05-05 06:51:29] Epoch: 283/1000 | Reward: -64.931 | TD_loss: 19.691 | Entropy: 0.656 | Epoch Time: 3.2s | Total Time: 1006.4s
+[2025-05-05 06:51:33] Epoch: 284/1000 | Reward: 4.933 | TD_loss: 0.272 | Entropy: 0.715 | Epoch Time: 3.4s | Total Time: 1009.9s
+[2025-05-05 06:51:36] Epoch: 285/1000 | Reward: -0.064 | TD_loss: 4.735 | Entropy: 0.709 | Epoch Time: 3.9s | Total Time: 1013.7s
+[2025-05-05 06:51:40] Epoch: 286/1000 | Reward: -65.683 | TD_loss: -11.604 | Entropy: 0.667 | Epoch Time: 3.3s | Total Time: 1017.1s
+[2025-05-05 06:51:43] Epoch: 287/1000 | Reward: -53.213 | TD_loss: 7.072 | Entropy: 0.729 | Epoch Time: 3.1s | Total Time: 1020.1s
+[2025-05-05 06:51:46] Epoch: 288/1000 | Reward: 17.208 | TD_loss: 2.253 | Entropy: 0.984 | Epoch Time: 3.6s | Total Time: 1023.8s
+[2025-05-05 06:51:50] Epoch: 289/1000 | Reward: -42.086 | TD_loss: 7.391 | Entropy: 0.815 | Epoch Time: 3.3s | Total Time: 1027.1s
+[2025-05-05 06:51:53] Epoch: 290/1000 | Reward: 28.389 | TD_loss: -0.250 | Entropy: 0.885 | Epoch Time: 3.4s | Total Time: 1030.5s
+[2025-05-05 06:51:57] Epoch: 291/1000 | Reward: 25.429 | TD_loss: -0.477 | Entropy: 0.986 | Epoch Time: 3.5s | Total Time: 1034.1s
+[2025-05-05 06:52:00] Epoch: 292/1000 | Reward: -78.558 | TD_loss: -33.859 | Entropy: 0.786 | Epoch Time: 3.5s | Total Time: 1037.5s
+[2025-05-05 06:52:04] Epoch: 293/1000 | Reward: -46.501 | TD_loss: -3.078 | Entropy: 0.834 | Epoch Time: 3.3s | Total Time: 1040.9s
+[2025-05-05 06:52:07] Epoch: 294/1000 | Reward: 26.931 | TD_loss: 4.838 | Entropy: 0.997 | Epoch Time: 3.3s | Total Time: 1044.2s
+[2025-05-05 06:52:10] Epoch: 295/1000 | Reward: 19.232 | TD_loss: 5.391 | Entropy: 1.012 | Epoch Time: 3.4s | Total Time: 1047.7s
+[2025-05-05 06:52:14] Epoch: 296/1000 | Reward: -52.120 | TD_loss: 0.061 | Entropy: 0.791 | Epoch Time: 3.7s | Total Time: 1051.4s
+[2025-05-05 06:52:17] Epoch: 297/1000 | Reward: 20.991 | TD_loss: 1.528 | Entropy: 1.118 | Epoch Time: 3.4s | Total Time: 1054.8s
+[2025-05-05 06:52:21] Epoch: 298/1000 | Reward: 12.400 | TD_loss: 11.003 | Entropy: 0.988 | Epoch Time: 3.4s | Total Time: 1058.1s
+[2025-05-05 06:52:24] Epoch: 299/1000 | Reward: -118.689 | TD_loss: -26.763 | Entropy: 0.973 | Epoch Time: 3.3s | Total Time: 1061.4s
+[2025-05-05 06:52:28] Epoch: 300/1000 | Reward: -51.416 | TD_loss: 15.705 | Entropy: 1.171 | Epoch Time: 3.5s | Total Time: 1064.9s
+[2025-05-05 06:52:29] Starting testing for epoch 300...
+[2025-05-05 06:52:29] Running test simulation...
+[2025-05-05 06:52:29] Testing completed for epoch 300
+[2025-05-05 06:52:30] Model saved to: ./buffer_aware_results/nn_model_ep_300.ckpt
+[2025-05-05 06:52:34] Epoch: 301/1000 | Reward: -109.647 | TD_loss: -14.602 | Entropy: 0.976 | Epoch Time: 3.6s | Total Time: 1071.3s
+[2025-05-05 06:52:37] Epoch: 302/1000 | Reward: -134.621 | TD_loss: 1.855 | Entropy: 0.928 | Epoch Time: 3.4s | Total Time: 1074.8s
+[2025-05-05 06:52:41] Epoch: 303/1000 | Reward: 16.946 | TD_loss: 7.792 | Entropy: 1.055 | Epoch Time: 3.5s | Total Time: 1078.3s
+[2025-05-05 06:52:44] Epoch: 304/1000 | Reward: 26.094 | TD_loss: 3.495 | Entropy: 1.097 | Epoch Time: 3.3s | Total Time: 1081.7s
+[2025-05-05 06:52:48] Epoch: 305/1000 | Reward: -33.209 | TD_loss: -7.433 | Entropy: 0.990 | Epoch Time: 3.5s | Total Time: 1085.2s
+[2025-05-05 06:52:51] Epoch: 306/1000 | Reward: 25.378 | TD_loss: 2.165 | Entropy: 1.193 | Epoch Time: 3.5s | Total Time: 1088.8s
+[2025-05-05 06:52:55] Epoch: 307/1000 | Reward: 26.870 | TD_loss: 1.849 | Entropy: 1.171 | Epoch Time: 3.5s | Total Time: 1092.3s
+[2025-05-05 06:52:59] Epoch: 308/1000 | Reward: -52.381 | TD_loss: -10.612 | Entropy: 0.957 | Epoch Time: 3.6s | Total Time: 1095.9s
+[2025-05-05 06:53:03] Epoch: 309/1000 | Reward: -174.010 | TD_loss: -0.607 | Entropy: 0.680 | Epoch Time: 4.0s | Total Time: 1099.9s
+[2025-05-05 06:53:06] Epoch: 310/1000 | Reward: 27.892 | TD_loss: 3.700 | Entropy: 1.258 | Epoch Time: 3.8s | Total Time: 1103.6s
+[2025-05-05 06:53:10] Epoch: 311/1000 | Reward: -81.506 | TD_loss: 0.812 | Entropy: 0.864 | Epoch Time: 4.1s | Total Time: 1107.8s
+[2025-05-05 06:53:14] Epoch: 312/1000 | Reward: 24.241 | TD_loss: 4.074 | Entropy: 1.073 | Epoch Time: 3.5s | Total Time: 1111.3s
+[2025-05-05 06:53:17] Epoch: 313/1000 | Reward: 19.699 | TD_loss: 0.135 | Entropy: 1.075 | Epoch Time: 3.3s | Total Time: 1114.7s
+[2025-05-05 06:53:21] Epoch: 314/1000 | Reward: 30.202 | TD_loss: 4.029 | Entropy: 1.088 | Epoch Time: 3.5s | Total Time: 1118.2s
+[2025-05-05 06:53:24] Epoch: 315/1000 | Reward: -12.868 | TD_loss: -0.917 | Entropy: 1.081 | Epoch Time: 3.3s | Total Time: 1121.5s
+[2025-05-05 06:53:27] Epoch: 316/1000 | Reward: -50.644 | TD_loss: -6.584 | Entropy: 0.994 | Epoch Time: 3.1s | Total Time: 1124.6s
+[2025-05-05 06:53:31] Epoch: 317/1000 | Reward: -130.311 | TD_loss: -19.341 | Entropy: 0.921 | Epoch Time: 3.2s | Total Time: 1127.9s
+[2025-05-05 06:53:34] Epoch: 318/1000 | Reward: -10.235 | TD_loss: -3.113 | Entropy: 0.920 | Epoch Time: 3.4s | Total Time: 1131.3s
+[2025-05-05 06:53:37] Epoch: 319/1000 | Reward: 4.068 | TD_loss: -2.143 | Entropy: 1.063 | Epoch Time: 3.2s | Total Time: 1134.5s
+[2025-05-05 06:53:41] Epoch: 320/1000 | Reward: 23.702 | TD_loss: 4.000 | Entropy: 1.165 | Epoch Time: 3.5s | Total Time: 1137.9s
+[2025-05-05 06:53:44] Epoch: 321/1000 | Reward: -56.811 | TD_loss: -15.349 | Entropy: 1.036 | Epoch Time: 3.5s | Total Time: 1141.4s
+[2025-05-05 06:53:48] Epoch: 322/1000 | Reward: -2.217 | TD_loss: 0.828 | Entropy: 1.118 | Epoch Time: 3.6s | Total Time: 1145.0s
+[2025-05-05 06:53:51] Epoch: 323/1000 | Reward: -59.690 | TD_loss: -1.905 | Entropy: 0.953 | Epoch Time: 3.5s | Total Time: 1148.5s
+[2025-05-05 06:53:55] Epoch: 324/1000 | Reward: -141.612 | TD_loss: 6.857 | Entropy: 0.859 | Epoch Time: 3.5s | Total Time: 1152.0s
+[2025-05-05 06:53:58] Epoch: 325/1000 | Reward: -95.598 | TD_loss: -15.021 | Entropy: 1.079 | Epoch Time: 3.1s | Total Time: 1155.2s
+[2025-05-05 06:54:01] Epoch: 326/1000 | Reward: 25.747 | TD_loss: 4.963 | Entropy: 1.124 | Epoch Time: 3.5s | Total Time: 1158.7s
+[2025-05-05 06:54:05] Epoch: 327/1000 | Reward: -136.039 | TD_loss: 3.442 | Entropy: 0.849 | Epoch Time: 3.5s | Total Time: 1162.2s
+[2025-05-05 06:54:08] Epoch: 328/1000 | Reward: 15.375 | TD_loss: 9.318 | Entropy: 1.071 | Epoch Time: 3.6s | Total Time: 1165.8s
+[2025-05-05 06:54:12] Epoch: 329/1000 | Reward: -23.202 | TD_loss: -13.096 | Entropy: 1.097 | Epoch Time: 3.5s | Total Time: 1169.3s
+[2025-05-05 06:54:16] Epoch: 330/1000 | Reward: 18.232 | TD_loss: -0.261 | Entropy: 1.193 | Epoch Time: 3.7s | Total Time: 1173.0s
+[2025-05-05 06:54:19] Epoch: 331/1000 | Reward: -59.663 | TD_loss: -11.133 | Entropy: 1.064 | Epoch Time: 3.5s | Total Time: 1176.5s
+[2025-05-05 06:54:23] Epoch: 332/1000 | Reward: -93.345 | TD_loss: -2.731 | Entropy: 1.099 | Epoch Time: 3.5s | Total Time: 1180.1s
+[2025-05-05 06:54:26] Epoch: 333/1000 | Reward: -143.620 | TD_loss: -5.176 | Entropy: 1.022 | Epoch Time: 3.3s | Total Time: 1183.4s
+[2025-05-05 06:54:29] Epoch: 334/1000 | Reward: 12.180 | TD_loss: 4.263 | Entropy: 1.152 | Epoch Time: 3.4s | Total Time: 1186.8s
+[2025-05-05 06:54:33] Epoch: 335/1000 | Reward: -255.547 | TD_loss: -43.806 | Entropy: 0.918 | Epoch Time: 3.3s | Total Time: 1190.1s
+[2025-05-05 06:54:36] Epoch: 336/1000 | Reward: -123.430 | TD_loss: 32.677 | Entropy: 0.977 | Epoch Time: 2.9s | Total Time: 1193.0s
+[2025-05-05 06:54:39] Epoch: 337/1000 | Reward: -354.869 | TD_loss: -43.326 | Entropy: 0.931 | Epoch Time: 3.5s | Total Time: 1196.5s
+[2025-05-05 06:54:43] Epoch: 338/1000 | Reward: -1.839 | TD_loss: 22.913 | Entropy: 1.118 | Epoch Time: 3.5s | Total Time: 1200.0s
+[2025-05-05 06:54:45] Epoch: 339/1000 | Reward: -28.138 | TD_loss: -9.209 | Entropy: 1.064 | Epoch Time: 2.6s | Total Time: 1202.6s
+[2025-05-05 06:54:49] Epoch: 340/1000 | Reward: 9.784 | TD_loss: -0.729 | Entropy: 1.119 | Epoch Time: 3.4s | Total Time: 1206.0s
+[2025-05-05 06:54:53] Epoch: 341/1000 | Reward: -72.339 | TD_loss: -20.002 | Entropy: 1.023 | Epoch Time: 3.9s | Total Time: 1210.0s
+[2025-05-05 06:54:56] Epoch: 342/1000 | Reward: -201.744 | TD_loss: 5.809 | Entropy: 0.866 | Epoch Time: 3.4s | Total Time: 1213.4s
+[2025-05-05 06:54:59] Epoch: 343/1000 | Reward: 20.830 | TD_loss: 8.484 | Entropy: 1.101 | Epoch Time: 3.3s | Total Time: 1216.7s
+[2025-05-05 06:55:03] Epoch: 344/1000 | Reward: -114.794 | TD_loss: -7.695 | Entropy: 0.845 | Epoch Time: 3.5s | Total Time: 1220.2s
+[2025-05-05 06:55:06] Epoch: 345/1000 | Reward: -63.563 | TD_loss: -4.534 | Entropy: 0.967 | Epoch Time: 3.3s | Total Time: 1223.5s
+[2025-05-05 06:55:10] Epoch: 346/1000 | Reward: 2.881 | TD_loss: 12.100 | Entropy: 0.976 | Epoch Time: 3.6s | Total Time: 1227.1s
+[2025-05-05 06:55:13] Epoch: 347/1000 | Reward: -34.229 | TD_loss: -11.121 | Entropy: 0.962 | Epoch Time: 3.6s | Total Time: 1230.6s
+[2025-05-05 06:55:18] Epoch: 348/1000 | Reward: 17.583 | TD_loss: 7.261 | Entropy: 1.011 | Epoch Time: 4.5s | Total Time: 1235.1s
+[2025-05-05 06:55:21] Epoch: 349/1000 | Reward: 10.945 | TD_loss: 2.227 | Entropy: 1.097 | Epoch Time: 3.6s | Total Time: 1238.7s
+[2025-05-05 06:55:25] Epoch: 350/1000 | Reward: 19.802 | TD_loss: 2.162 | Entropy: 1.083 | Epoch Time: 3.6s | Total Time: 1242.3s
+[2025-05-05 06:55:28] Epoch: 351/1000 | Reward: 26.503 | TD_loss: 0.138 | Entropy: 1.204 | Epoch Time: 3.5s | Total Time: 1245.8s
+[2025-05-05 06:55:32] Epoch: 352/1000 | Reward: 14.919 | TD_loss: 2.098 | Entropy: 1.110 | Epoch Time: 3.6s | Total Time: 1249.4s
+[2025-05-05 06:55:35] Epoch: 353/1000 | Reward: 22.179 | TD_loss: 1.897 | Entropy: 1.051 | Epoch Time: 3.4s | Total Time: 1252.8s
+[2025-05-05 06:55:39] Epoch: 354/1000 | Reward: 23.978 | TD_loss: 0.528 | Entropy: 1.130 | Epoch Time: 3.4s | Total Time: 1256.2s
+[2025-05-05 06:55:42] Epoch: 355/1000 | Reward: 6.608 | TD_loss: 3.463 | Entropy: 1.066 | Epoch Time: 3.5s | Total Time: 1259.7s
+[2025-05-05 06:55:46] Epoch: 356/1000 | Reward: 16.924 | TD_loss: -3.554 | Entropy: 0.966 | Epoch Time: 3.3s | Total Time: 1263.0s
+[2025-05-05 06:55:49] Epoch: 357/1000 | Reward: 17.687 | TD_loss: -0.634 | Entropy: 1.185 | Epoch Time: 3.4s | Total Time: 1266.4s
+[2025-05-05 06:55:52] Epoch: 358/1000 | Reward: -79.155 | TD_loss: -29.750 | Entropy: 1.114 | Epoch Time: 3.3s | Total Time: 1269.7s
+[2025-05-05 06:55:56] Epoch: 359/1000 | Reward: -60.449 | TD_loss: -22.023 | Entropy: 1.064 | Epoch Time: 3.5s | Total Time: 1273.2s
+[2025-05-05 06:55:59] Epoch: 360/1000 | Reward: 19.614 | TD_loss: 4.789 | Entropy: 1.071 | Epoch Time: 3.6s | Total Time: 1276.8s
+[2025-05-05 06:56:03] Epoch: 361/1000 | Reward: 18.141 | TD_loss: 2.316 | Entropy: 1.007 | Epoch Time: 3.7s | Total Time: 1280.5s
+[2025-05-05 06:56:07] Epoch: 362/1000 | Reward: -69.758 | TD_loss: -13.583 | Entropy: 0.871 | Epoch Time: 3.6s | Total Time: 1284.1s
+[2025-05-05 06:56:10] Epoch: 363/1000 | Reward: 6.452 | TD_loss: 9.879 | Entropy: 1.117 | Epoch Time: 3.6s | Total Time: 1287.7s
+[2025-05-05 06:56:14] Epoch: 364/1000 | Reward: 28.520 | TD_loss: 1.946 | Entropy: 1.227 | Epoch Time: 3.4s | Total Time: 1291.1s
+[2025-05-05 06:56:17] Epoch: 365/1000 | Reward: -20.787 | TD_loss: -5.716 | Entropy: 1.003 | Epoch Time: 3.6s | Total Time: 1294.7s
+[2025-05-05 06:56:22] Epoch: 366/1000 | Reward: 19.954 | TD_loss: 6.523 | Entropy: 1.061 | Epoch Time: 4.2s | Total Time: 1298.9s
+[2025-05-05 06:56:25] Epoch: 367/1000 | Reward: 29.098 | TD_loss: 1.991 | Entropy: 1.200 | Epoch Time: 3.7s | Total Time: 1302.6s
+[2025-05-05 06:56:29] Epoch: 368/1000 | Reward: 24.299 | TD_loss: 0.742 | Entropy: 1.228 | Epoch Time: 3.3s | Total Time: 1306.0s
+[2025-05-05 06:56:32] Epoch: 369/1000 | Reward: -40.813 | TD_loss: -8.625 | Entropy: 1.088 | Epoch Time: 3.3s | Total Time: 1309.3s
+[2025-05-05 06:56:35] Epoch: 370/1000 | Reward: -70.937 | TD_loss: 12.580 | Entropy: 1.129 | Epoch Time: 3.2s | Total Time: 1312.5s
+[2025-05-05 06:56:38] Epoch: 371/1000 | Reward: -51.655 | TD_loss: -11.478 | Entropy: 1.050 | Epoch Time: 3.1s | Total Time: 1315.6s
+[2025-05-05 06:56:42] Epoch: 372/1000 | Reward: 16.668 | TD_loss: 6.422 | Entropy: 1.117 | Epoch Time: 3.4s | Total Time: 1319.0s
+[2025-05-05 06:56:45] Epoch: 373/1000 | Reward: 8.638 | TD_loss: 4.599 | Entropy: 1.047 | Epoch Time: 3.4s | Total Time: 1322.4s
+[2025-05-05 06:56:48] Epoch: 374/1000 | Reward: 34.798 | TD_loss: 1.648 | Entropy: 1.128 | Epoch Time: 3.4s | Total Time: 1325.8s
+[2025-05-05 06:56:52] Epoch: 375/1000 | Reward: -58.805 | TD_loss: -0.649 | Entropy: 1.039 | Epoch Time: 3.7s | Total Time: 1329.5s
+[2025-05-05 06:56:56] Epoch: 376/1000 | Reward: -31.412 | TD_loss: -17.538 | Entropy: 0.994 | Epoch Time: 3.4s | Total Time: 1332.9s
+[2025-05-05 06:56:59] Epoch: 377/1000 | Reward: -50.516 | TD_loss: -3.322 | Entropy: 0.999 | Epoch Time: 3.4s | Total Time: 1336.3s
+[2025-05-05 06:57:03] Epoch: 378/1000 | Reward: 22.626 | TD_loss: 9.480 | Entropy: 0.978 | Epoch Time: 3.6s | Total Time: 1339.9s
+[2025-05-05 06:57:06] Epoch: 379/1000 | Reward: -108.265 | TD_loss: 6.566 | Entropy: 0.880 | Epoch Time: 3.5s | Total Time: 1343.4s
+[2025-05-05 06:57:09] Epoch: 380/1000 | Reward: 16.692 | TD_loss: -0.385 | Entropy: 1.057 | Epoch Time: 3.4s | Total Time: 1346.8s
+[2025-05-05 06:57:13] Epoch: 381/1000 | Reward: 7.690 | TD_loss: -6.948 | Entropy: 0.993 | Epoch Time: 3.5s | Total Time: 1350.3s
+[2025-05-05 06:57:16] Epoch: 382/1000 | Reward: 28.472 | TD_loss: 0.474 | Entropy: 1.064 | Epoch Time: 3.4s | Total Time: 1353.8s
+[2025-05-05 06:57:20] Epoch: 383/1000 | Reward: -48.561 | TD_loss: -11.255 | Entropy: 0.940 | Epoch Time: 3.4s | Total Time: 1357.1s
+[2025-05-05 06:57:23] Epoch: 384/1000 | Reward: 14.067 | TD_loss: 3.294 | Entropy: 0.899 | Epoch Time: 3.4s | Total Time: 1360.5s
+[2025-05-05 06:57:27] Epoch: 385/1000 | Reward: -108.842 | TD_loss: -1.023 | Entropy: 0.659 | Epoch Time: 3.6s | Total Time: 1364.1s
+[2025-05-05 06:57:30] Epoch: 386/1000 | Reward: 2.108 | TD_loss: 7.863 | Entropy: 0.862 | Epoch Time: 3.4s | Total Time: 1367.5s
+[2025-05-05 06:57:34] Epoch: 387/1000 | Reward: -1.466 | TD_loss: -1.112 | Entropy: 0.732 | Epoch Time: 3.5s | Total Time: 1371.0s
+[2025-05-05 06:57:37] Epoch: 388/1000 | Reward: -76.859 | TD_loss: -3.056 | Entropy: 0.805 | Epoch Time: 3.4s | Total Time: 1374.5s
+[2025-05-05 06:57:41] Epoch: 389/1000 | Reward: -35.206 | TD_loss: 1.078 | Entropy: 0.978 | Epoch Time: 3.4s | Total Time: 1377.9s
+[2025-05-05 06:57:44] Epoch: 390/1000 | Reward: -81.506 | TD_loss: 14.634 | Entropy: 0.779 | Epoch Time: 3.6s | Total Time: 1381.5s
+[2025-05-05 06:57:48] Epoch: 391/1000 | Reward: 0.496 | TD_loss: -6.923 | Entropy: 0.716 | Epoch Time: 3.4s | Total Time: 1384.9s
+[2025-05-05 06:57:52] Epoch: 392/1000 | Reward: 26.010 | TD_loss: -1.536 | Entropy: 0.896 | Epoch Time: 3.9s | Total Time: 1388.9s
+[2025-05-05 06:57:56] Epoch: 393/1000 | Reward: 36.923 | TD_loss: 3.738 | Entropy: 0.973 | Epoch Time: 4.2s | Total Time: 1393.1s
+[2025-05-05 06:58:00] Epoch: 394/1000 | Reward: -45.441 | TD_loss: -9.806 | Entropy: 0.683 | Epoch Time: 4.1s | Total Time: 1397.2s
+[2025-05-05 06:58:04] Epoch: 395/1000 | Reward: -20.406 | TD_loss: -13.602 | Entropy: 0.773 | Epoch Time: 4.6s | Total Time: 1401.7s
+[2025-05-05 06:58:08] Epoch: 396/1000 | Reward: 20.092 | TD_loss: 1.763 | Entropy: 0.825 | Epoch Time: 3.5s | Total Time: 1405.3s
+[2025-05-05 06:58:12] Epoch: 397/1000 | Reward: -14.813 | TD_loss: -1.678 | Entropy: 0.655 | Epoch Time: 4.0s | Total Time: 1409.2s
+[2025-05-05 06:58:15] Epoch: 398/1000 | Reward: 7.444 | TD_loss: -1.343 | Entropy: 0.743 | Epoch Time: 3.5s | Total Time: 1412.7s
+[2025-05-05 06:58:19] Epoch: 399/1000 | Reward: 23.684 | TD_loss: 2.870 | Entropy: 0.908 | Epoch Time: 3.5s | Total Time: 1416.3s
+[2025-05-05 06:58:22] Epoch: 400/1000 | Reward: -27.154 | TD_loss: -8.500 | Entropy: 0.798 | Epoch Time: 3.5s | Total Time: 1419.8s
+[2025-05-05 06:58:24] Starting testing for epoch 400...
+[2025-05-05 06:58:24] Running test simulation...
+[2025-05-05 06:58:24] Testing completed for epoch 400
+[2025-05-05 06:58:25] Model saved to: ./buffer_aware_results/nn_model_ep_400.ckpt
+[2025-05-05 06:58:29] Epoch: 401/1000 | Reward: 28.044 | TD_loss: 7.015 | Entropy: 0.968 | Epoch Time: 3.6s | Total Time: 1426.3s
+[2025-05-05 06:58:32] Epoch: 402/1000 | Reward: 23.708 | TD_loss: 3.629 | Entropy: 0.872 | Epoch Time: 3.5s | Total Time: 1429.8s
+[2025-05-05 06:58:36] Epoch: 403/1000 | Reward: 25.632 | TD_loss: 1.131 | Entropy: 0.969 | Epoch Time: 3.5s | Total Time: 1433.4s
+[2025-05-05 06:58:39] Epoch: 404/1000 | Reward: 24.426 | TD_loss: 0.472 | Entropy: 1.018 | Epoch Time: 3.4s | Total Time: 1436.8s
+[2025-05-05 06:58:43] Epoch: 405/1000 | Reward: 13.121 | TD_loss: 1.476 | Entropy: 0.760 | Epoch Time: 3.4s | Total Time: 1440.2s
+[2025-05-05 06:58:46] Epoch: 406/1000 | Reward: 21.082 | TD_loss: 2.983 | Entropy: 0.759 | Epoch Time: 3.5s | Total Time: 1443.7s
+[2025-05-05 06:58:49] Epoch: 407/1000 | Reward: 5.523 | TD_loss: -5.549 | Entropy: 0.859 | Epoch Time: 3.1s | Total Time: 1446.8s
+[2025-05-05 06:58:53] Epoch: 408/1000 | Reward: 25.034 | TD_loss: 4.179 | Entropy: 0.962 | Epoch Time: 3.7s | Total Time: 1450.6s
+[2025-05-05 06:58:56] Epoch: 409/1000 | Reward: 0.851 | TD_loss: -5.951 | Entropy: 0.775 | Epoch Time: 3.1s | Total Time: 1453.7s
+[2025-05-05 06:59:00] Epoch: 410/1000 | Reward: 6.399 | TD_loss: -4.079 | Entropy: 1.052 | Epoch Time: 3.6s | Total Time: 1457.3s
+[2025-05-05 06:59:03] Epoch: 411/1000 | Reward: -59.880 | TD_loss: -19.408 | Entropy: 0.815 | Epoch Time: 3.5s | Total Time: 1460.8s
+[2025-05-05 06:59:07] Epoch: 412/1000 | Reward: -65.895 | TD_loss: -0.931 | Entropy: 0.890 | Epoch Time: 3.5s | Total Time: 1464.3s
+[2025-05-05 06:59:10] Epoch: 413/1000 | Reward: -45.649 | TD_loss: 6.208 | Entropy: 0.966 | Epoch Time: 3.5s | Total Time: 1467.8s
+[2025-05-05 06:59:14] Epoch: 414/1000 | Reward: 24.926 | TD_loss: 1.845 | Entropy: 1.130 | Epoch Time: 3.6s | Total Time: 1471.3s
+[2025-05-05 06:59:17] Epoch: 415/1000 | Reward: 25.045 | TD_loss: 6.115 | Entropy: 1.018 | Epoch Time: 3.3s | Total Time: 1474.6s
+[2025-05-05 06:59:21] Epoch: 416/1000 | Reward: 22.529 | TD_loss: -1.729 | Entropy: 0.982 | Epoch Time: 3.5s | Total Time: 1478.1s
+[2025-05-05 06:59:24] Epoch: 417/1000 | Reward: -0.290 | TD_loss: 0.848 | Entropy: 0.856 | Epoch Time: 3.4s | Total Time: 1481.6s
+[2025-05-05 06:59:28] Epoch: 418/1000 | Reward: -22.094 | TD_loss: -16.758 | Entropy: 0.910 | Epoch Time: 3.5s | Total Time: 1485.1s
+[2025-05-05 06:59:31] Epoch: 419/1000 | Reward: -40.257 | TD_loss: -7.532 | Entropy: 0.890 | Epoch Time: 3.6s | Total Time: 1488.6s
+[2025-05-05 06:59:35] Epoch: 420/1000 | Reward: -88.795 | TD_loss: -10.981 | Entropy: 0.729 | Epoch Time: 3.3s | Total Time: 1491.9s
+[2025-05-05 06:59:38] Epoch: 421/1000 | Reward: -47.259 | TD_loss: 8.804 | Entropy: 0.815 | Epoch Time: 3.4s | Total Time: 1495.3s
+[2025-05-05 06:59:42] Epoch: 422/1000 | Reward: -39.567 | TD_loss: 0.302 | Entropy: 0.862 | Epoch Time: 3.7s | Total Time: 1499.0s
+[2025-05-05 06:59:45] Epoch: 423/1000 | Reward: 8.021 | TD_loss: 2.421 | Entropy: 0.965 | Epoch Time: 3.5s | Total Time: 1502.5s
+[2025-05-05 06:59:49] Epoch: 424/1000 | Reward: 19.413 | TD_loss: 6.496 | Entropy: 0.878 | Epoch Time: 3.4s | Total Time: 1505.9s
+[2025-05-05 06:59:52] Epoch: 425/1000 | Reward: 26.831 | TD_loss: 1.258 | Entropy: 1.002 | Epoch Time: 3.4s | Total Time: 1509.4s
+[2025-05-05 06:59:55] Epoch: 426/1000 | Reward: 18.049 | TD_loss: 3.875 | Entropy: 0.813 | Epoch Time: 3.4s | Total Time: 1512.8s
+[2025-05-05 06:59:59] Epoch: 427/1000 | Reward: 12.925 | TD_loss: -0.892 | Entropy: 0.863 | Epoch Time: 3.3s | Total Time: 1516.1s
+[2025-05-05 07:00:02] Epoch: 428/1000 | Reward: -61.096 | TD_loss: -33.759 | Entropy: 0.811 | Epoch Time: 3.4s | Total Time: 1519.5s
+[2025-05-05 07:00:06] Epoch: 429/1000 | Reward: 30.129 | TD_loss: 5.577 | Entropy: 1.081 | Epoch Time: 3.4s | Total Time: 1523.0s
+[2025-05-05 07:00:09] Epoch: 430/1000 | Reward: 3.167 | TD_loss: 7.358 | Entropy: 0.857 | Epoch Time: 3.4s | Total Time: 1526.4s
+[2025-05-05 07:00:13] Epoch: 431/1000 | Reward: 30.492 | TD_loss: 1.991 | Entropy: 0.997 | Epoch Time: 3.5s | Total Time: 1529.9s
+[2025-05-05 07:00:16] Epoch: 432/1000 | Reward: 29.014 | TD_loss: -0.470 | Entropy: 1.125 | Epoch Time: 3.5s | Total Time: 1533.4s
+[2025-05-05 07:00:20] Epoch: 433/1000 | Reward: -48.331 | TD_loss: -13.419 | Entropy: 0.970 | Epoch Time: 3.5s | Total Time: 1536.9s
+[2025-05-05 07:00:23] Epoch: 434/1000 | Reward: 36.817 | TD_loss: 4.807 | Entropy: 1.091 | Epoch Time: 3.4s | Total Time: 1540.3s
+[2025-05-05 07:00:27] Epoch: 435/1000 | Reward: -55.839 | TD_loss: -7.342 | Entropy: 0.746 | Epoch Time: 3.6s | Total Time: 1543.9s
+[2025-05-05 07:00:30] Epoch: 436/1000 | Reward: 16.934 | TD_loss: 4.766 | Entropy: 0.890 | Epoch Time: 3.5s | Total Time: 1547.3s
+[2025-05-05 07:00:34] Epoch: 437/1000 | Reward: 26.510 | TD_loss: 2.057 | Entropy: 1.140 | Epoch Time: 3.6s | Total Time: 1550.9s
+[2025-05-05 07:00:37] Epoch: 438/1000 | Reward: -17.076 | TD_loss: -13.815 | Entropy: 1.058 | Epoch Time: 3.4s | Total Time: 1554.3s
+[2025-05-05 07:00:39] Epoch: 439/1000 | Reward: 15.077 | TD_loss: 6.047 | Entropy: 0.940 | Epoch Time: 2.4s | Total Time: 1556.8s
+[2025-05-05 07:00:43] Epoch: 440/1000 | Reward: -54.746 | TD_loss: 2.213 | Entropy: 0.859 | Epoch Time: 3.4s | Total Time: 1560.2s
+[2025-05-05 07:00:46] Epoch: 441/1000 | Reward: -96.609 | TD_loss: -9.336 | Entropy: 0.747 | Epoch Time: 3.5s | Total Time: 1563.7s
+[2025-05-05 07:00:50] Epoch: 442/1000 | Reward: -54.967 | TD_loss: -22.196 | Entropy: 0.785 | Epoch Time: 3.5s | Total Time: 1567.3s
+[2025-05-05 07:00:55] Epoch: 443/1000 | Reward: -48.649 | TD_loss: -14.768 | Entropy: 0.878 | Epoch Time: 4.6s | Total Time: 1571.9s
+[2025-05-05 07:00:59] Epoch: 444/1000 | Reward: 27.161 | TD_loss: 5.686 | Entropy: 0.950 | Epoch Time: 4.8s | Total Time: 1576.7s
+[2025-05-05 07:01:04] Epoch: 445/1000 | Reward: 21.583 | TD_loss: 5.729 | Entropy: 0.914 | Epoch Time: 4.4s | Total Time: 1581.1s
+[2025-05-05 07:01:08] Epoch: 446/1000 | Reward: 10.511 | TD_loss: 3.112 | Entropy: 0.834 | Epoch Time: 4.1s | Total Time: 1585.2s
+[2025-05-05 07:01:11] Epoch: 447/1000 | Reward: -53.789 | TD_loss: -11.133 | Entropy: 0.813 | Epoch Time: 3.3s | Total Time: 1588.5s
+[2025-05-05 07:01:15] Epoch: 448/1000 | Reward: 23.222 | TD_loss: 2.039 | Entropy: 1.114 | Epoch Time: 3.4s | Total Time: 1591.9s
+[2025-05-05 07:01:18] Epoch: 449/1000 | Reward: -24.748 | TD_loss: 9.400 | Entropy: 0.939 | Epoch Time: 3.3s | Total Time: 1595.3s
+[2025-05-05 07:01:21] Epoch: 450/1000 | Reward: 24.329 | TD_loss: 2.664 | Entropy: 0.908 | Epoch Time: 3.5s | Total Time: 1598.8s
+[2025-05-05 07:01:25] Epoch: 451/1000 | Reward: 6.666 | TD_loss: -3.049 | Entropy: 1.028 | Epoch Time: 3.6s | Total Time: 1602.4s
+[2025-05-05 07:01:28] Epoch: 452/1000 | Reward: 21.315 | TD_loss: -1.521 | Entropy: 1.112 | Epoch Time: 3.4s | Total Time: 1605.8s
+[2025-05-05 07:01:32] Epoch: 453/1000 | Reward: -48.253 | TD_loss: -23.061 | Entropy: 0.771 | Epoch Time: 3.5s | Total Time: 1609.3s
+[2025-05-05 07:01:36] Epoch: 454/1000 | Reward: 34.386 | TD_loss: 6.975 | Entropy: 1.050 | Epoch Time: 3.6s | Total Time: 1613.0s
+[2025-05-05 07:01:39] Epoch: 455/1000 | Reward: 2.816 | TD_loss: 9.113 | Entropy: 0.860 | Epoch Time: 3.5s | Total Time: 1616.4s
+[2025-05-05 07:01:42] Epoch: 456/1000 | Reward: -3.490 | TD_loss: -1.620 | Entropy: 0.861 | Epoch Time: 3.4s | Total Time: 1619.8s
+[2025-05-05 07:01:46] Epoch: 457/1000 | Reward: 10.075 | TD_loss: 2.992 | Entropy: 0.918 | Epoch Time: 3.5s | Total Time: 1623.3s
+[2025-05-05 07:01:49] Epoch: 458/1000 | Reward: 32.375 | TD_loss: 3.061 | Entropy: 0.955 | Epoch Time: 3.2s | Total Time: 1626.5s
+[2025-05-05 07:01:53] Epoch: 459/1000 | Reward: 36.605 | TD_loss: 2.297 | Entropy: 0.976 | Epoch Time: 3.5s | Total Time: 1630.1s
+[2025-05-05 07:01:56] Epoch: 460/1000 | Reward: 22.797 | TD_loss: -2.522 | Entropy: 0.848 | Epoch Time: 3.3s | Total Time: 1633.4s
+[2025-05-05 07:01:59] Epoch: 461/1000 | Reward: -47.175 | TD_loss: -18.779 | Entropy: 0.752 | Epoch Time: 3.4s | Total Time: 1636.8s
+[2025-05-05 07:02:03] Epoch: 462/1000 | Reward: -32.282 | TD_loss: -5.300 | Entropy: 0.771 | Epoch Time: 3.5s | Total Time: 1640.2s
+[2025-05-05 07:02:06] Epoch: 463/1000 | Reward: -7.561 | TD_loss: -9.406 | Entropy: 0.840 | Epoch Time: 3.5s | Total Time: 1643.7s
+[2025-05-05 07:02:10] Epoch: 464/1000 | Reward: 22.775 | TD_loss: 5.006 | Entropy: 0.895 | Epoch Time: 3.4s | Total Time: 1647.1s
+[2025-05-05 07:02:13] Epoch: 465/1000 | Reward: -26.164 | TD_loss: -0.581 | Entropy: 0.918 | Epoch Time: 3.5s | Total Time: 1650.6s
+[2025-05-05 07:02:17] Epoch: 466/1000 | Reward: 22.200 | TD_loss: 3.896 | Entropy: 1.152 | Epoch Time: 3.5s | Total Time: 1654.2s
+[2025-05-05 07:02:20] Epoch: 467/1000 | Reward: 20.784 | TD_loss: -0.665 | Entropy: 0.989 | Epoch Time: 3.7s | Total Time: 1657.8s
+[2025-05-05 07:02:24] Epoch: 468/1000 | Reward: -11.032 | TD_loss: -3.311 | Entropy: 0.918 | Epoch Time: 3.5s | Total Time: 1661.3s
+[2025-05-05 07:02:27] Epoch: 469/1000 | Reward: -23.091 | TD_loss: 7.138 | Entropy: 0.677 | Epoch Time: 3.5s | Total Time: 1664.8s
+[2025-05-05 07:02:31] Epoch: 470/1000 | Reward: 29.013 | TD_loss: 1.385 | Entropy: 0.939 | Epoch Time: 3.6s | Total Time: 1668.4s
+[2025-05-05 07:02:35] Epoch: 471/1000 | Reward: -36.043 | TD_loss: -17.358 | Entropy: 0.969 | Epoch Time: 3.5s | Total Time: 1671.9s
+[2025-05-05 07:02:38] Epoch: 472/1000 | Reward: -91.847 | TD_loss: -8.330 | Entropy: 0.732 | Epoch Time: 3.5s | Total Time: 1675.4s
+[2025-05-05 07:02:41] Epoch: 473/1000 | Reward: -57.960 | TD_loss: 8.652 | Entropy: 0.922 | Epoch Time: 3.4s | Total Time: 1678.8s
+[2025-05-05 07:02:45] Epoch: 474/1000 | Reward: -22.964 | TD_loss: -4.556 | Entropy: 0.784 | Epoch Time: 3.4s | Total Time: 1682.3s
+[2025-05-05 07:02:48] Epoch: 475/1000 | Reward: 32.178 | TD_loss: 3.348 | Entropy: 1.093 | Epoch Time: 3.4s | Total Time: 1685.7s
+[2025-05-05 07:02:52] Epoch: 476/1000 | Reward: 25.311 | TD_loss: 3.902 | Entropy: 0.980 | Epoch Time: 3.4s | Total Time: 1689.1s
+[2025-05-05 07:02:55] Epoch: 477/1000 | Reward: 37.067 | TD_loss: -1.792 | Entropy: 1.045 | Epoch Time: 3.5s | Total Time: 1692.7s
+[2025-05-05 07:02:59] Epoch: 478/1000 | Reward: 25.638 | TD_loss: -1.774 | Entropy: 1.039 | Epoch Time: 3.5s | Total Time: 1696.1s
+[2025-05-05 07:03:02] Epoch: 479/1000 | Reward: 31.946 | TD_loss: 2.306 | Entropy: 1.080 | Epoch Time: 3.5s | Total Time: 1699.7s
+[2025-05-05 07:03:06] Epoch: 480/1000 | Reward: 3.254 | TD_loss: 3.614 | Entropy: 0.862 | Epoch Time: 3.4s | Total Time: 1703.1s
+[2025-05-05 07:03:09] Epoch: 481/1000 | Reward: -81.620 | TD_loss: -22.751 | Entropy: 0.614 | Epoch Time: 3.4s | Total Time: 1706.5s
+[2025-05-05 07:03:13] Epoch: 482/1000 | Reward: 15.219 | TD_loss: 3.000 | Entropy: 0.895 | Epoch Time: 3.5s | Total Time: 1710.0s
+[2025-05-05 07:03:16] Epoch: 483/1000 | Reward: -68.838 | TD_loss: 0.017 | Entropy: 0.867 | Epoch Time: 3.4s | Total Time: 1713.4s
+[2025-05-05 07:03:20] Epoch: 484/1000 | Reward: 8.351 | TD_loss: 3.285 | Entropy: 0.884 | Epoch Time: 3.5s | Total Time: 1716.9s
+[2025-05-05 07:03:23] Epoch: 485/1000 | Reward: -58.978 | TD_loss: -11.304 | Entropy: 0.829 | Epoch Time: 3.6s | Total Time: 1720.5s
+[2025-05-05 07:03:27] Epoch: 486/1000 | Reward: 9.077 | TD_loss: 2.400 | Entropy: 0.825 | Epoch Time: 3.4s | Total Time: 1723.9s
+[2025-05-05 07:03:30] Epoch: 487/1000 | Reward: -51.323 | TD_loss: 0.671 | Entropy: 0.826 | Epoch Time: 3.4s | Total Time: 1727.3s
+[2025-05-05 07:03:33] Epoch: 488/1000 | Reward: 27.292 | TD_loss: 6.729 | Entropy: 0.982 | Epoch Time: 3.5s | Total Time: 1730.8s
+[2025-05-05 07:03:37] Epoch: 489/1000 | Reward: 16.453 | TD_loss: 1.126 | Entropy: 0.835 | Epoch Time: 3.4s | Total Time: 1734.2s
+[2025-05-05 07:03:40] Epoch: 490/1000 | Reward: -3.617 | TD_loss: 2.224 | Entropy: 0.694 | Epoch Time: 3.4s | Total Time: 1737.6s
+[2025-05-05 07:03:44] Epoch: 491/1000 | Reward: -11.500 | TD_loss: -14.195 | Entropy: 0.819 | Epoch Time: 3.6s | Total Time: 1741.1s
+[2025-05-05 07:03:47] Epoch: 492/1000 | Reward: -122.498 | TD_loss: -6.622 | Entropy: 0.751 | Epoch Time: 3.5s | Total Time: 1744.7s
+[2025-05-05 07:03:51] Epoch: 493/1000 | Reward: 9.673 | TD_loss: 19.077 | Entropy: 0.862 | Epoch Time: 3.8s | Total Time: 1748.5s
+[2025-05-05 07:03:55] Epoch: 494/1000 | Reward: -60.792 | TD_loss: 11.213 | Entropy: 0.797 | Epoch Time: 4.3s | Total Time: 1752.8s
+[2025-05-05 07:04:00] Epoch: 495/1000 | Reward: 14.649 | TD_loss: -3.061 | Entropy: 0.793 | Epoch Time: 4.3s | Total Time: 1757.1s
+[2025-05-05 07:04:04] Epoch: 496/1000 | Reward: 11.840 | TD_loss: -11.200 | Entropy: 0.868 | Epoch Time: 4.4s | Total Time: 1761.5s
+[2025-05-05 07:04:08] Epoch: 497/1000 | Reward: -74.992 | TD_loss: -18.279 | Entropy: 0.709 | Epoch Time: 4.0s | Total Time: 1765.5s
+[2025-05-05 07:04:12] Epoch: 498/1000 | Reward: 33.222 | TD_loss: 7.442 | Entropy: 1.010 | Epoch Time: 3.4s | Total Time: 1768.9s
+[2025-05-05 07:04:15] Epoch: 499/1000 | Reward: -59.773 | TD_loss: 5.843 | Entropy: 0.768 | Epoch Time: 3.4s | Total Time: 1772.3s
+[2025-05-05 07:04:18] Epoch: 500/1000 | Reward: -12.450 | TD_loss: -17.648 | Entropy: 0.876 | Epoch Time: 3.4s | Total Time: 1775.7s
+[2025-05-05 07:04:20] Starting testing for epoch 500...
+[2025-05-05 07:04:20] Running test simulation...
+[2025-05-05 07:04:20] Testing completed for epoch 500
+[2025-05-05 07:04:21] Model saved to: ./buffer_aware_results/nn_model_ep_500.ckpt
+[2025-05-05 07:04:25] Epoch: 501/1000 | Reward: 19.437 | TD_loss: 3.610 | Entropy: 0.890 | Epoch Time: 3.5s | Total Time: 1782.4s
+[2025-05-05 07:04:28] Epoch: 502/1000 | Reward: 32.952 | TD_loss: 2.744 | Entropy: 1.144 | Epoch Time: 3.4s | Total Time: 1785.8s
+[2025-05-05 07:04:32] Epoch: 503/1000 | Reward: -67.873 | TD_loss: -11.410 | Entropy: 0.665 | Epoch Time: 3.6s | Total Time: 1789.4s
+[2025-05-05 07:04:35] Epoch: 504/1000 | Reward: 23.672 | TD_loss: 8.797 | Entropy: 0.917 | Epoch Time: 3.3s | Total Time: 1792.7s
+[2025-05-05 07:04:39] Epoch: 505/1000 | Reward: 26.336 | TD_loss: 4.114 | Entropy: 1.052 | Epoch Time: 3.3s | Total Time: 1796.0s
+[2025-05-05 07:04:42] Epoch: 506/1000 | Reward: 25.190 | TD_loss: -2.142 | Entropy: 1.090 | Epoch Time: 3.4s | Total Time: 1799.4s
+[2025-05-05 07:04:46] Epoch: 507/1000 | Reward: 27.410 | TD_loss: 4.902 | Entropy: 1.008 | Epoch Time: 3.5s | Total Time: 1802.9s
+[2025-05-05 07:04:49] Epoch: 508/1000 | Reward: 10.935 | TD_loss: -3.811 | Entropy: 0.970 | Epoch Time: 3.4s | Total Time: 1806.2s
+[2025-05-05 07:04:52] Epoch: 509/1000 | Reward: 4.282 | TD_loss: -3.661 | Entropy: 0.963 | Epoch Time: 3.4s | Total Time: 1809.7s
+[2025-05-05 07:04:56] Epoch: 510/1000 | Reward: 25.510 | TD_loss: 4.503 | Entropy: 1.135 | Epoch Time: 3.2s | Total Time: 1812.9s
+[2025-05-05 07:04:59] Epoch: 511/1000 | Reward: -1.308 | TD_loss: -2.887 | Entropy: 0.892 | Epoch Time: 3.5s | Total Time: 1816.4s
+[2025-05-05 07:05:03] Epoch: 512/1000 | Reward: -117.093 | TD_loss: 8.531 | Entropy: 0.676 | Epoch Time: 3.7s | Total Time: 1820.1s
+[2025-05-05 07:05:06] Epoch: 513/1000 | Reward: 17.490 | TD_loss: -5.997 | Entropy: 1.034 | Epoch Time: 3.5s | Total Time: 1823.6s
+[2025-05-05 07:05:10] Epoch: 514/1000 | Reward: 4.888 | TD_loss: -5.716 | Entropy: 0.963 | Epoch Time: 3.4s | Total Time: 1827.0s
+[2025-05-05 07:05:13] Epoch: 515/1000 | Reward: 11.212 | TD_loss: -5.618 | Entropy: 1.021 | Epoch Time: 3.5s | Total Time: 1830.6s
+[2025-05-05 07:05:17] Epoch: 516/1000 | Reward: -110.326 | TD_loss: -21.341 | Entropy: 0.711 | Epoch Time: 3.3s | Total Time: 1833.9s
+[2025-05-05 07:05:20] Epoch: 517/1000 | Reward: 14.749 | TD_loss: 6.268 | Entropy: 0.925 | Epoch Time: 3.0s | Total Time: 1836.9s
+[2025-05-05 07:05:23] Epoch: 518/1000 | Reward: 24.304 | TD_loss: 4.348 | Entropy: 1.034 | Epoch Time: 3.7s | Total Time: 1840.6s
+[2025-05-05 07:05:27] Epoch: 519/1000 | Reward: 23.799 | TD_loss: 3.808 | Entropy: 1.056 | Epoch Time: 3.2s | Total Time: 1843.9s
+[2025-05-05 07:05:30] Epoch: 520/1000 | Reward: -52.769 | TD_loss: -12.032 | Entropy: 1.016 | Epoch Time: 3.3s | Total Time: 1847.1s
+[2025-05-05 07:05:33] Epoch: 521/1000 | Reward: 20.051 | TD_loss: 2.878 | Entropy: 1.010 | Epoch Time: 3.3s | Total Time: 1850.5s
+[2025-05-05 07:05:37] Epoch: 522/1000 | Reward: -47.984 | TD_loss: 6.968 | Entropy: 0.859 | Epoch Time: 3.5s | Total Time: 1854.0s
+[2025-05-05 07:05:40] Epoch: 523/1000 | Reward: -10.493 | TD_loss: 4.141 | Entropy: 0.925 | Epoch Time: 3.3s | Total Time: 1857.3s
+[2025-05-05 07:05:43] Epoch: 524/1000 | Reward: 23.611 | TD_loss: -4.689 | Entropy: 1.169 | Epoch Time: 3.5s | Total Time: 1860.8s
+[2025-05-05 07:05:47] Epoch: 525/1000 | Reward: -39.609 | TD_loss: -13.240 | Entropy: 1.049 | Epoch Time: 3.4s | Total Time: 1864.2s
+[2025-05-05 07:05:50] Epoch: 526/1000 | Reward: 36.658 | TD_loss: 9.150 | Entropy: 1.213 | Epoch Time: 3.5s | Total Time: 1867.7s
+[2025-05-05 07:05:54] Epoch: 527/1000 | Reward: 23.101 | TD_loss: 2.772 | Entropy: 1.043 | Epoch Time: 3.4s | Total Time: 1871.1s
+[2025-05-05 07:05:57] Epoch: 528/1000 | Reward: 21.541 | TD_loss: 3.481 | Entropy: 0.955 | Epoch Time: 3.5s | Total Time: 1874.7s
+[2025-05-05 07:06:01] Epoch: 529/1000 | Reward: 22.695 | TD_loss: -2.532 | Entropy: 1.100 | Epoch Time: 3.6s | Total Time: 1878.3s
+[2025-05-05 07:06:04] Epoch: 530/1000 | Reward: -54.135 | TD_loss: -15.219 | Entropy: 1.041 | Epoch Time: 3.3s | Total Time: 1881.6s
+[2025-05-05 07:06:08] Epoch: 531/1000 | Reward: 32.117 | TD_loss: 7.314 | Entropy: 1.157 | Epoch Time: 3.5s | Total Time: 1885.1s
+[2025-05-05 07:06:11] Epoch: 532/1000 | Reward: 29.706 | TD_loss: 2.219 | Entropy: 1.114 | Epoch Time: 3.6s | Total Time: 1888.7s
+[2025-05-05 07:06:15] Epoch: 533/1000 | Reward: -40.164 | TD_loss: -3.307 | Entropy: 0.788 | Epoch Time: 3.3s | Total Time: 1892.1s
+[2025-05-05 07:06:18] Epoch: 534/1000 | Reward: 19.734 | TD_loss: 4.859 | Entropy: 0.937 | Epoch Time: 3.5s | Total Time: 1895.6s
+[2025-05-05 07:06:22] Epoch: 535/1000 | Reward: 8.900 | TD_loss: -17.631 | Entropy: 1.266 | Epoch Time: 3.7s | Total Time: 1899.3s
+[2025-05-05 07:06:25] Epoch: 536/1000 | Reward: 26.311 | TD_loss: 0.003 | Entropy: 1.068 | Epoch Time: 3.5s | Total Time: 1902.8s
+[2025-05-05 07:06:29] Epoch: 537/1000 | Reward: -50.926 | TD_loss: -8.574 | Entropy: 0.886 | Epoch Time: 3.2s | Total Time: 1906.0s
+[2025-05-05 07:06:32] Epoch: 538/1000 | Reward: 25.359 | TD_loss: 10.105 | Entropy: 1.149 | Epoch Time: 3.1s | Total Time: 1909.1s
+[2025-05-05 07:06:34] Epoch: 539/1000 | Reward: -78.878 | TD_loss: -9.247 | Entropy: 1.023 | Epoch Time: 2.4s | Total Time: 1911.5s
+[2025-05-05 07:06:36] Epoch: 540/1000 | Reward: -43.230 | TD_loss: 12.154 | Entropy: 1.032 | Epoch Time: 2.0s | Total Time: 1913.5s
+[2025-05-05 07:06:38] Epoch: 541/1000 | Reward: 29.836 | TD_loss: 1.486 | Entropy: 1.114 | Epoch Time: 1.9s | Total Time: 1915.4s
+[2025-05-05 07:06:40] Epoch: 542/1000 | Reward: 15.163 | TD_loss: 0.570 | Entropy: 0.978 | Epoch Time: 1.9s | Total Time: 1917.3s
+[2025-05-05 07:06:42] Epoch: 543/1000 | Reward: 31.505 | TD_loss: 4.806 | Entropy: 1.173 | Epoch Time: 1.9s | Total Time: 1919.2s
+[2025-05-05 07:06:44] Epoch: 544/1000 | Reward: 28.326 | TD_loss: -3.176 | Entropy: 1.192 | Epoch Time: 2.0s | Total Time: 1921.2s
+[2025-05-05 07:06:46] Epoch: 545/1000 | Reward: -43.122 | TD_loss: -10.273 | Entropy: 1.136 | Epoch Time: 2.0s | Total Time: 1923.3s
+[2025-05-05 07:06:48] Epoch: 546/1000 | Reward: -28.445 | TD_loss: -13.210 | Entropy: 1.130 | Epoch Time: 2.0s | Total Time: 1925.2s
+[2025-05-05 07:06:50] Epoch: 547/1000 | Reward: -109.146 | TD_loss: 16.609 | Entropy: 0.964 | Epoch Time: 2.0s | Total Time: 1927.2s
+[2025-05-05 07:06:52] Epoch: 548/1000 | Reward: 19.170 | TD_loss: 3.424 | Entropy: 1.156 | Epoch Time: 2.5s | Total Time: 1929.7s
+[2025-05-05 07:06:55] Epoch: 549/1000 | Reward: 25.348 | TD_loss: 0.166 | Entropy: 1.151 | Epoch Time: 2.3s | Total Time: 1932.0s
+[2025-05-05 07:06:57] Epoch: 550/1000 | Reward: 12.564 | TD_loss: -4.058 | Entropy: 1.081 | Epoch Time: 2.3s | Total Time: 1934.3s
+[2025-05-05 07:06:59] Epoch: 551/1000 | Reward: -110.714 | TD_loss: -28.688 | Entropy: 0.795 | Epoch Time: 2.2s | Total Time: 1936.6s
+[2025-05-05 07:07:02] Epoch: 552/1000 | Reward: 28.505 | TD_loss: 6.761 | Entropy: 1.158 | Epoch Time: 2.4s | Total Time: 1939.0s
+[2025-05-05 07:07:04] Epoch: 553/1000 | Reward: -32.563 | TD_loss: 2.753 | Entropy: 0.999 | Epoch Time: 2.3s | Total Time: 1941.3s
+[2025-05-05 07:07:06] Epoch: 554/1000 | Reward: 27.440 | TD_loss: 6.319 | Entropy: 1.187 | Epoch Time: 1.9s | Total Time: 1943.2s
+[2025-05-05 07:07:08] Epoch: 555/1000 | Reward: -27.598 | TD_loss: -10.567 | Entropy: 1.126 | Epoch Time: 1.9s | Total Time: 1945.2s
+[2025-05-05 07:07:10] Epoch: 556/1000 | Reward: -61.608 | TD_loss: -18.081 | Entropy: 0.890 | Epoch Time: 2.0s | Total Time: 1947.1s
+[2025-05-05 07:07:12] Epoch: 557/1000 | Reward: 16.481 | TD_loss: 2.134 | Entropy: 1.138 | Epoch Time: 1.9s | Total Time: 1949.0s
+[2025-05-05 07:07:14] Epoch: 558/1000 | Reward: 4.611 | TD_loss: 5.597 | Entropy: 1.048 | Epoch Time: 1.9s | Total Time: 1950.9s
+[2025-05-05 07:07:15] Epoch: 559/1000 | Reward: 4.311 | TD_loss: 1.146 | Entropy: 0.746 | Epoch Time: 1.9s | Total Time: 1952.8s
+[2025-05-05 07:07:17] Epoch: 560/1000 | Reward: 36.044 | TD_loss: 3.272 | Entropy: 1.271 | Epoch Time: 1.9s | Total Time: 1954.7s
+[2025-05-05 07:07:19] Epoch: 561/1000 | Reward: -53.426 | TD_loss: -10.599 | Entropy: 0.945 | Epoch Time: 1.9s | Total Time: 1956.6s
+[2025-05-05 07:07:21] Epoch: 562/1000 | Reward: 19.644 | TD_loss: 4.504 | Entropy: 1.050 | Epoch Time: 2.0s | Total Time: 1958.7s
+[2025-05-05 07:07:23] Epoch: 563/1000 | Reward: 26.062 | TD_loss: -0.585 | Entropy: 1.051 | Epoch Time: 2.0s | Total Time: 1960.6s
+[2025-05-05 07:07:25] Epoch: 564/1000 | Reward: 34.881 | TD_loss: 1.866 | Entropy: 1.219 | Epoch Time: 2.0s | Total Time: 1962.6s
+[2025-05-05 07:07:27] Epoch: 565/1000 | Reward: 27.751 | TD_loss: 1.253 | Entropy: 1.066 | Epoch Time: 1.9s | Total Time: 1964.5s
+[2025-05-05 07:07:29] Epoch: 566/1000 | Reward: 16.931 | TD_loss: -0.587 | Entropy: 1.016 | Epoch Time: 1.9s | Total Time: 1966.5s
+[2025-05-05 07:07:31] Epoch: 567/1000 | Reward: 10.254 | TD_loss: -5.725 | Entropy: 1.006 | Epoch Time: 1.9s | Total Time: 1968.4s
+[2025-05-05 07:07:33] Epoch: 568/1000 | Reward: -5.526 | TD_loss: -2.114 | Entropy: 1.133 | Epoch Time: 1.9s | Total Time: 1970.3s
+[2025-05-05 07:07:35] Epoch: 569/1000 | Reward: 28.277 | TD_loss: -0.536 | Entropy: 1.128 | Epoch Time: 2.0s | Total Time: 1972.3s
+[2025-05-05 07:07:37] Epoch: 570/1000 | Reward: -54.962 | TD_loss: -16.099 | Entropy: 1.013 | Epoch Time: 1.9s | Total Time: 1974.2s
+[2025-05-05 07:07:39] Epoch: 571/1000 | Reward: -70.908 | TD_loss: -4.422 | Entropy: 0.983 | Epoch Time: 1.9s | Total Time: 1976.1s
+[2025-05-05 07:07:41] Epoch: 572/1000 | Reward: 25.176 | TD_loss: 5.852 | Entropy: 0.967 | Epoch Time: 1.9s | Total Time: 1978.1s
+[2025-05-05 07:07:43] Epoch: 573/1000 | Reward: 34.596 | TD_loss: 0.118 | Entropy: 1.124 | Epoch Time: 2.0s | Total Time: 1980.0s
+[2025-05-05 07:07:45] Epoch: 574/1000 | Reward: 35.133 | TD_loss: -0.452 | Entropy: 1.142 | Epoch Time: 1.9s | Total Time: 1981.9s
+[2025-05-05 07:07:47] Epoch: 575/1000 | Reward: 21.186 | TD_loss: -0.353 | Entropy: 0.977 | Epoch Time: 2.0s | Total Time: 1983.9s
+[2025-05-05 07:07:48] Epoch: 576/1000 | Reward: -41.836 | TD_loss: 8.227 | Entropy: 0.847 | Epoch Time: 1.9s | Total Time: 1985.8s
+[2025-05-05 07:07:50] Epoch: 577/1000 | Reward: -36.073 | TD_loss: -14.622 | Entropy: 0.888 | Epoch Time: 1.9s | Total Time: 1987.7s
+[2025-05-05 07:07:52] Epoch: 578/1000 | Reward: 18.837 | TD_loss: 0.689 | Entropy: 1.034 | Epoch Time: 1.9s | Total Time: 1989.7s
+[2025-05-05 07:07:54] Epoch: 579/1000 | Reward: -81.073 | TD_loss: 9.214 | Entropy: 0.821 | Epoch Time: 2.0s | Total Time: 1991.6s
+[2025-05-05 07:07:56] Epoch: 580/1000 | Reward: 19.169 | TD_loss: -5.954 | Entropy: 0.857 | Epoch Time: 1.9s | Total Time: 1993.5s
+[2025-05-05 07:07:58] Epoch: 581/1000 | Reward: 28.434 | TD_loss: 2.967 | Entropy: 0.895 | Epoch Time: 1.9s | Total Time: 1995.4s
+[2025-05-05 07:08:00] Epoch: 582/1000 | Reward: 24.896 | TD_loss: 1.561 | Entropy: 0.919 | Epoch Time: 2.0s | Total Time: 1997.4s
+[2025-05-05 07:08:02] Epoch: 583/1000 | Reward: 21.482 | TD_loss: 0.818 | Entropy: 1.049 | Epoch Time: 1.9s | Total Time: 1999.3s
+[2025-05-05 07:08:04] Epoch: 584/1000 | Reward: 32.683 | TD_loss: -2.370 | Entropy: 1.020 | Epoch Time: 1.9s | Total Time: 2001.2s
+[2025-05-05 07:08:06] Epoch: 585/1000 | Reward: -95.279 | TD_loss: -23.045 | Entropy: 0.626 | Epoch Time: 2.0s | Total Time: 2003.2s
+[2025-05-05 07:08:08] Epoch: 586/1000 | Reward: -48.058 | TD_loss: 17.129 | Entropy: 0.935 | Epoch Time: 2.0s | Total Time: 2005.2s
+[2025-05-05 07:08:10] Epoch: 587/1000 | Reward: 25.966 | TD_loss: 8.174 | Entropy: 0.920 | Epoch Time: 1.9s | Total Time: 2007.0s
+[2025-05-05 07:08:12] Epoch: 588/1000 | Reward: -52.028 | TD_loss: -1.585 | Entropy: 0.845 | Epoch Time: 1.9s | Total Time: 2008.9s
+[2025-05-05 07:08:13] Epoch: 589/1000 | Reward: 27.906 | TD_loss: 2.971 | Entropy: 1.060 | Epoch Time: 1.9s | Total Time: 2010.8s
+[2025-05-05 07:08:15] Epoch: 590/1000 | Reward: 13.660 | TD_loss: -1.557 | Entropy: 0.728 | Epoch Time: 2.0s | Total Time: 2012.8s
+[2025-05-05 07:08:17] Epoch: 591/1000 | Reward: -48.201 | TD_loss: -2.775 | Entropy: 0.565 | Epoch Time: 1.9s | Total Time: 2014.7s
+[2025-05-05 07:08:19] Epoch: 592/1000 | Reward: 26.188 | TD_loss: 4.983 | Entropy: 0.760 | Epoch Time: 1.9s | Total Time: 2016.6s
+[2025-05-05 07:08:21] Epoch: 593/1000 | Reward: -62.148 | TD_loss: 5.789 | Entropy: 0.705 | Epoch Time: 1.9s | Total Time: 2018.6s
+[2025-05-05 07:08:23] Epoch: 594/1000 | Reward: -28.283 | TD_loss: -12.246 | Entropy: 0.886 | Epoch Time: 1.9s | Total Time: 2020.5s
+[2025-05-05 07:08:25] Epoch: 595/1000 | Reward: -48.725 | TD_loss: 9.496 | Entropy: 0.702 | Epoch Time: 1.9s | Total Time: 2022.4s
+[2025-05-05 07:08:27] Epoch: 596/1000 | Reward: 37.055 | TD_loss: 0.865 | Entropy: 0.719 | Epoch Time: 1.9s | Total Time: 2024.3s
+[2025-05-05 07:08:29] Epoch: 597/1000 | Reward: 26.753 | TD_loss: -3.672 | Entropy: 0.918 | Epoch Time: 1.8s | Total Time: 2026.1s
+[2025-05-05 07:08:31] Epoch: 598/1000 | Reward: 31.605 | TD_loss: -0.287 | Entropy: 1.026 | Epoch Time: 1.9s | Total Time: 2028.0s
+[2025-05-05 07:08:33] Epoch: 599/1000 | Reward: -54.998 | TD_loss: -19.152 | Entropy: 0.806 | Epoch Time: 2.0s | Total Time: 2030.0s
+[2025-05-05 07:08:35] Epoch: 600/1000 | Reward: 40.315 | TD_loss: 11.772 | Entropy: 0.797 | Epoch Time: 1.9s | Total Time: 2031.9s
+[2025-05-05 07:08:35] Starting testing for epoch 600...
+[2025-05-05 07:08:35] Running test simulation...
+[2025-05-05 07:08:35] Testing completed for epoch 600
+[2025-05-05 07:08:37] Model saved to: ./buffer_aware_results/nn_model_ep_600.ckpt
+[2025-05-05 07:08:39] Epoch: 601/1000 | Reward: 29.824 | TD_loss: 4.713 | Entropy: 0.848 | Epoch Time: 2.0s | Total Time: 2036.0s
+[2025-05-05 07:08:41] Epoch: 602/1000 | Reward: 37.230 | TD_loss: 5.560 | Entropy: 0.601 | Epoch Time: 2.0s | Total Time: 2038.0s
+[2025-05-05 07:08:43] Epoch: 603/1000 | Reward: 36.315 | TD_loss: -1.094 | Entropy: 0.841 | Epoch Time: 1.9s | Total Time: 2039.9s
+[2025-05-05 07:08:45] Epoch: 604/1000 | Reward: 26.969 | TD_loss: 1.404 | Entropy: 0.870 | Epoch Time: 1.9s | Total Time: 2041.9s
+[2025-05-05 07:08:46] Epoch: 605/1000 | Reward: 20.986 | TD_loss: -4.076 | Entropy: 0.826 | Epoch Time: 1.9s | Total Time: 2043.8s
+[2025-05-05 07:08:48] Epoch: 606/1000 | Reward: 21.588 | TD_loss: 2.552 | Entropy: 0.977 | Epoch Time: 2.0s | Total Time: 2045.7s
+[2025-05-05 07:08:50] Epoch: 607/1000 | Reward: 14.710 | TD_loss: -3.055 | Entropy: 0.734 | Epoch Time: 1.9s | Total Time: 2047.6s
+[2025-05-05 07:08:52] Epoch: 608/1000 | Reward: -77.396 | TD_loss: -4.773 | Entropy: 0.704 | Epoch Time: 1.9s | Total Time: 2049.5s
+[2025-05-05 07:08:54] Epoch: 609/1000 | Reward: 33.378 | TD_loss: 7.377 | Entropy: 0.838 | Epoch Time: 2.0s | Total Time: 2051.5s
+[2025-05-05 07:08:56] Epoch: 610/1000 | Reward: 33.857 | TD_loss: -4.736 | Entropy: 0.842 | Epoch Time: 1.9s | Total Time: 2053.4s
+[2025-05-05 07:08:58] Epoch: 611/1000 | Reward: 20.902 | TD_loss: 5.618 | Entropy: 0.830 | Epoch Time: 1.9s | Total Time: 2055.3s
+[2025-05-05 07:09:00] Epoch: 612/1000 | Reward: -39.387 | TD_loss: -0.625 | Entropy: 0.772 | Epoch Time: 1.9s | Total Time: 2057.3s
+[2025-05-05 07:09:02] Epoch: 613/1000 | Reward: -83.772 | TD_loss: -10.952 | Entropy: 0.621 | Epoch Time: 1.9s | Total Time: 2059.2s
+[2025-05-05 07:09:04] Epoch: 614/1000 | Reward: 23.298 | TD_loss: 6.005 | Entropy: 0.942 | Epoch Time: 2.0s | Total Time: 2061.2s
+[2025-05-05 07:09:06] Epoch: 615/1000 | Reward: -41.799 | TD_loss: 5.320 | Entropy: 0.785 | Epoch Time: 1.9s | Total Time: 2063.1s
+[2025-05-05 07:09:08] Epoch: 616/1000 | Reward: 18.806 | TD_loss: -5.049 | Entropy: 0.874 | Epoch Time: 1.9s | Total Time: 2065.0s
+[2025-05-05 07:09:09] Epoch: 617/1000 | Reward: 9.188 | TD_loss: 4.170 | Entropy: 0.656 | Epoch Time: 1.9s | Total Time: 2066.8s
+[2025-05-05 07:09:11] Epoch: 618/1000 | Reward: -46.906 | TD_loss: -3.861 | Entropy: 0.634 | Epoch Time: 1.9s | Total Time: 2068.7s
+[2025-05-05 07:09:13] Epoch: 619/1000 | Reward: 45.830 | TD_loss: 3.202 | Entropy: 0.694 | Epoch Time: 1.9s | Total Time: 2070.6s
+[2025-05-05 07:09:15] Epoch: 620/1000 | Reward: 40.527 | TD_loss: -0.388 | Entropy: 0.870 | Epoch Time: 1.9s | Total Time: 2072.5s
+[2025-05-05 07:09:17] Epoch: 621/1000 | Reward: 11.467 | TD_loss: 2.251 | Entropy: 0.822 | Epoch Time: 1.9s | Total Time: 2074.4s
+[2025-05-05 07:09:19] Epoch: 622/1000 | Reward: 40.726 | TD_loss: -1.439 | Entropy: 0.786 | Epoch Time: 1.9s | Total Time: 2076.3s
+[2025-05-05 07:09:21] Epoch: 623/1000 | Reward: 36.552 | TD_loss: 1.219 | Entropy: 0.846 | Epoch Time: 2.0s | Total Time: 2078.3s
+[2025-05-05 07:09:23] Epoch: 624/1000 | Reward: -89.374 | TD_loss: -23.196 | Entropy: 0.629 | Epoch Time: 1.9s | Total Time: 2080.2s
+[2025-05-05 07:09:25] Epoch: 625/1000 | Reward: -8.479 | TD_loss: -0.568 | Entropy: 0.654 | Epoch Time: 1.9s | Total Time: 2082.1s
+[2025-05-05 07:09:27] Epoch: 626/1000 | Reward: 38.251 | TD_loss: 4.402 | Entropy: 0.733 | Epoch Time: 1.9s | Total Time: 2084.0s
+[2025-05-05 07:09:28] Epoch: 627/1000 | Reward: -6.297 | TD_loss: 2.719 | Entropy: 0.822 | Epoch Time: 1.8s | Total Time: 2085.8s
+[2025-05-05 07:09:30] Epoch: 628/1000 | Reward: 34.146 | TD_loss: -1.239 | Entropy: 0.822 | Epoch Time: 2.0s | Total Time: 2087.8s
+[2025-05-05 07:09:32] Epoch: 629/1000 | Reward: 0.388 | TD_loss: -5.149 | Entropy: 0.826 | Epoch Time: 1.9s | Total Time: 2089.7s
+[2025-05-05 07:09:34] Epoch: 630/1000 | Reward: 19.253 | TD_loss: -0.417 | Entropy: 0.915 | Epoch Time: 2.0s | Total Time: 2091.7s
+[2025-05-05 07:09:36] Epoch: 631/1000 | Reward: 37.796 | TD_loss: 3.660 | Entropy: 0.921 | Epoch Time: 2.0s | Total Time: 2093.7s
+[2025-05-05 07:09:38] Epoch: 632/1000 | Reward: 32.742 | TD_loss: -2.586 | Entropy: 0.859 | Epoch Time: 1.9s | Total Time: 2095.7s
+[2025-05-05 07:09:40] Epoch: 633/1000 | Reward: -115.420 | TD_loss: -19.844 | Entropy: 0.647 | Epoch Time: 2.0s | Total Time: 2097.7s
+[2025-05-05 07:09:42] Epoch: 634/1000 | Reward: 20.824 | TD_loss: 10.699 | Entropy: 0.918 | Epoch Time: 2.0s | Total Time: 2099.6s
+[2025-05-05 07:09:44] Epoch: 635/1000 | Reward: 43.905 | TD_loss: 9.392 | Entropy: 0.778 | Epoch Time: 2.0s | Total Time: 2101.6s
+[2025-05-05 07:09:46] Epoch: 636/1000 | Reward: 34.942 | TD_loss: -0.404 | Entropy: 0.943 | Epoch Time: 1.9s | Total Time: 2103.5s
+[2025-05-05 07:09:48] Epoch: 637/1000 | Reward: 34.773 | TD_loss: 0.692 | Entropy: 1.050 | Epoch Time: 1.9s | Total Time: 2105.5s
+[2025-05-05 07:09:50] Epoch: 638/1000 | Reward: -64.147 | TD_loss: -0.957 | Entropy: 0.721 | Epoch Time: 2.1s | Total Time: 2107.5s
+[2025-05-05 07:09:53] Epoch: 639/1000 | Reward: -31.739 | TD_loss: -17.099 | Entropy: 0.773 | Epoch Time: 2.3s | Total Time: 2109.9s
+[2025-05-05 07:09:55] Epoch: 640/1000 | Reward: 23.293 | TD_loss: 2.750 | Entropy: 0.972 | Epoch Time: 2.3s | Total Time: 2112.1s
+[2025-05-05 07:09:57] Epoch: 641/1000 | Reward: 41.476 | TD_loss: 4.221 | Entropy: 0.820 | Epoch Time: 2.3s | Total Time: 2114.4s
+[2025-05-05 07:09:59] Epoch: 642/1000 | Reward: 22.831 | TD_loss: 1.017 | Entropy: 0.768 | Epoch Time: 2.3s | Total Time: 2116.7s
+[2025-05-05 07:10:02] Epoch: 643/1000 | Reward: 31.593 | TD_loss: 0.794 | Entropy: 0.883 | Epoch Time: 2.3s | Total Time: 2119.1s
+[2025-05-05 07:10:04] Epoch: 644/1000 | Reward: 5.183 | TD_loss: -1.762 | Entropy: 0.839 | Epoch Time: 2.4s | Total Time: 2121.5s
+[2025-05-05 07:10:06] Epoch: 645/1000 | Reward: -94.380 | TD_loss: -28.299 | Entropy: 0.769 | Epoch Time: 2.1s | Total Time: 2123.6s
+[2025-05-05 07:10:08] Epoch: 646/1000 | Reward: 25.741 | TD_loss: 8.133 | Entropy: 0.811 | Epoch Time: 1.9s | Total Time: 2125.5s
+[2025-05-05 07:10:10] Epoch: 647/1000 | Reward: 36.716 | TD_loss: 2.829 | Entropy: 0.807 | Epoch Time: 1.9s | Total Time: 2127.4s
+[2025-05-05 07:10:12] Epoch: 648/1000 | Reward: -59.210 | TD_loss: 0.286 | Entropy: 0.790 | Epoch Time: 1.8s | Total Time: 2129.2s
+[2025-05-05 07:10:14] Epoch: 649/1000 | Reward: 41.569 | TD_loss: 5.440 | Entropy: 0.852 | Epoch Time: 1.9s | Total Time: 2131.1s
+[2025-05-05 07:10:16] Epoch: 650/1000 | Reward: 7.075 | TD_loss: -3.470 | Entropy: 0.936 | Epoch Time: 1.9s | Total Time: 2133.0s
+[2025-05-05 07:10:18] Epoch: 651/1000 | Reward: -54.282 | TD_loss: -18.079 | Entropy: 0.829 | Epoch Time: 1.9s | Total Time: 2134.9s
+[2025-05-05 07:10:19] Epoch: 652/1000 | Reward: 27.977 | TD_loss: 4.009 | Entropy: 1.006 | Epoch Time: 1.9s | Total Time: 2136.8s
+[2025-05-05 07:10:21] Epoch: 653/1000 | Reward: 25.888 | TD_loss: 3.571 | Entropy: 1.045 | Epoch Time: 2.0s | Total Time: 2138.8s
+[2025-05-05 07:10:23] Epoch: 654/1000 | Reward: 13.173 | TD_loss: -2.187 | Entropy: 1.033 | Epoch Time: 1.8s | Total Time: 2140.6s
+[2025-05-05 07:10:25] Epoch: 655/1000 | Reward: -43.749 | TD_loss: -0.741 | Entropy: 0.878 | Epoch Time: 1.8s | Total Time: 2142.5s
+[2025-05-05 07:10:27] Epoch: 656/1000 | Reward: 42.168 | TD_loss: 7.738 | Entropy: 0.991 | Epoch Time: 1.9s | Total Time: 2144.3s
+[2025-05-05 07:10:29] Epoch: 657/1000 | Reward: 34.260 | TD_loss: -6.734 | Entropy: 0.925 | Epoch Time: 1.9s | Total Time: 2146.3s
+[2025-05-05 07:10:31] Epoch: 658/1000 | Reward: 18.206 | TD_loss: 10.050 | Entropy: 0.832 | Epoch Time: 1.9s | Total Time: 2148.2s
+[2025-05-05 07:10:33] Epoch: 659/1000 | Reward: 49.287 | TD_loss: -1.098 | Entropy: 0.849 | Epoch Time: 1.9s | Total Time: 2150.1s
+[2025-05-05 07:10:35] Epoch: 660/1000 | Reward: -4.677 | TD_loss: -11.788 | Entropy: 0.892 | Epoch Time: 1.9s | Total Time: 2151.9s
+[2025-05-05 07:10:36] Epoch: 661/1000 | Reward: -12.268 | TD_loss: -3.127 | Entropy: 0.786 | Epoch Time: 1.9s | Total Time: 2153.8s
+[2025-05-05 07:10:38] Epoch: 662/1000 | Reward: 42.779 | TD_loss: 3.248 | Entropy: 0.903 | Epoch Time: 1.9s | Total Time: 2155.7s
+[2025-05-05 07:10:40] Epoch: 663/1000 | Reward: -5.274 | TD_loss: -6.827 | Entropy: 0.846 | Epoch Time: 1.8s | Total Time: 2157.5s
+[2025-05-05 07:10:42] Epoch: 664/1000 | Reward: 31.613 | TD_loss: 2.905 | Entropy: 1.038 | Epoch Time: 1.8s | Total Time: 2159.4s
+[2025-05-05 07:10:44] Epoch: 665/1000 | Reward: 3.393 | TD_loss: -5.020 | Entropy: 0.750 | Epoch Time: 1.8s | Total Time: 2161.2s
+[2025-05-05 07:10:46] Epoch: 666/1000 | Reward: 40.482 | TD_loss: 5.814 | Entropy: 0.925 | Epoch Time: 1.9s | Total Time: 2163.1s
+[2025-05-05 07:10:48] Epoch: 667/1000 | Reward: 37.441 | TD_loss: -2.857 | Entropy: 0.926 | Epoch Time: 1.8s | Total Time: 2165.0s
+[2025-05-05 07:10:50] Epoch: 668/1000 | Reward: 34.845 | TD_loss: 2.357 | Entropy: 1.016 | Epoch Time: 1.9s | Total Time: 2166.9s
+[2025-05-05 07:10:51] Epoch: 669/1000 | Reward: -40.298 | TD_loss: -21.435 | Entropy: 0.941 | Epoch Time: 1.9s | Total Time: 2168.7s
+[2025-05-05 07:10:53] Epoch: 670/1000 | Reward: 30.416 | TD_loss: 5.600 | Entropy: 1.049 | Epoch Time: 1.9s | Total Time: 2170.7s
+[2025-05-05 07:10:55] Epoch: 671/1000 | Reward: 7.476 | TD_loss: 0.593 | Entropy: 0.796 | Epoch Time: 1.9s | Total Time: 2172.5s
+[2025-05-05 07:10:57] Epoch: 672/1000 | Reward: 26.945 | TD_loss: 1.714 | Entropy: 0.954 | Epoch Time: 1.8s | Total Time: 2174.3s
+[2025-05-05 07:10:59] Epoch: 673/1000 | Reward: -5.922 | TD_loss: -15.123 | Entropy: 0.826 | Epoch Time: 1.9s | Total Time: 2176.2s
+[2025-05-05 07:11:01] Epoch: 674/1000 | Reward: -41.616 | TD_loss: -7.816 | Entropy: 0.706 | Epoch Time: 1.9s | Total Time: 2178.2s
+[2025-05-05 07:11:03] Epoch: 675/1000 | Reward: -7.296 | TD_loss: 15.663 | Entropy: 0.651 | Epoch Time: 1.9s | Total Time: 2180.1s
+[2025-05-05 07:11:05] Epoch: 676/1000 | Reward: 27.762 | TD_loss: 1.583 | Entropy: 0.792 | Epoch Time: 1.8s | Total Time: 2181.9s
+[2025-05-05 07:11:06] Epoch: 677/1000 | Reward: 37.305 | TD_loss: -4.048 | Entropy: 0.940 | Epoch Time: 1.9s | Total Time: 2183.8s
+[2025-05-05 07:11:08] Epoch: 678/1000 | Reward: 22.725 | TD_loss: 2.577 | Entropy: 0.845 | Epoch Time: 1.8s | Total Time: 2185.6s
+[2025-05-05 07:11:10] Epoch: 679/1000 | Reward: -2.640 | TD_loss: -2.906 | Entropy: 0.828 | Epoch Time: 1.9s | Total Time: 2187.6s
+[2025-05-05 07:11:12] Epoch: 680/1000 | Reward: -151.369 | TD_loss: -19.039 | Entropy: 0.594 | Epoch Time: 1.9s | Total Time: 2189.5s
+[2025-05-05 07:11:14] Epoch: 681/1000 | Reward: 33.947 | TD_loss: 17.729 | Entropy: 0.932 | Epoch Time: 1.9s | Total Time: 2191.3s
+[2025-05-05 07:11:16] Epoch: 682/1000 | Reward: 36.039 | TD_loss: 0.313 | Entropy: 0.960 | Epoch Time: 1.9s | Total Time: 2193.2s
+[2025-05-05 07:11:18] Epoch: 683/1000 | Reward: -46.178 | TD_loss: 4.447 | Entropy: 0.836 | Epoch Time: 1.9s | Total Time: 2195.1s
+[2025-05-05 07:11:20] Epoch: 684/1000 | Reward: 14.886 | TD_loss: -8.913 | Entropy: 0.702 | Epoch Time: 1.9s | Total Time: 2197.0s
+[2025-05-05 07:11:22] Epoch: 685/1000 | Reward: 24.275 | TD_loss: 8.044 | Entropy: 0.896 | Epoch Time: 1.9s | Total Time: 2199.0s
+[2025-05-05 07:11:23] Epoch: 686/1000 | Reward: -78.309 | TD_loss: -23.497 | Entropy: 0.612 | Epoch Time: 1.9s | Total Time: 2200.8s
+[2025-05-05 07:11:25] Epoch: 687/1000 | Reward: 28.849 | TD_loss: 5.500 | Entropy: 0.979 | Epoch Time: 1.9s | Total Time: 2202.8s
+[2025-05-05 07:11:27] Epoch: 688/1000 | Reward: 26.438 | TD_loss: 0.973 | Entropy: 0.879 | Epoch Time: 2.0s | Total Time: 2204.8s
+[2025-05-05 07:11:30] Epoch: 689/1000 | Reward: 32.143 | TD_loss: -0.045 | Entropy: 1.034 | Epoch Time: 2.1s | Total Time: 2206.9s
+[2025-05-05 07:11:32] Epoch: 690/1000 | Reward: 27.797 | TD_loss: -0.178 | Entropy: 0.931 | Epoch Time: 2.0s | Total Time: 2208.9s
+[2025-05-05 07:11:34] Epoch: 691/1000 | Reward: 4.091 | TD_loss: 2.842 | Entropy: 0.965 | Epoch Time: 2.0s | Total Time: 2210.9s
+[2025-05-05 07:11:36] Epoch: 692/1000 | Reward: 38.488 | TD_loss: -1.025 | Entropy: 1.011 | Epoch Time: 2.2s | Total Time: 2213.1s
+[2025-05-05 07:11:38] Epoch: 693/1000 | Reward: 4.247 | TD_loss: -13.162 | Entropy: 0.904 | Epoch Time: 1.9s | Total Time: 2215.0s
+[2025-05-05 07:11:40] Epoch: 694/1000 | Reward: -185.458 | TD_loss: -12.862 | Entropy: 0.633 | Epoch Time: 2.0s | Total Time: 2217.0s
+[2025-05-05 07:11:42] Epoch: 695/1000 | Reward: -31.181 | TD_loss: 10.165 | Entropy: 0.877 | Epoch Time: 1.9s | Total Time: 2218.9s
+[2025-05-05 07:11:43] Epoch: 696/1000 | Reward: 32.416 | TD_loss: 10.315 | Entropy: 0.855 | Epoch Time: 1.9s | Total Time: 2220.8s
+[2025-05-05 07:11:45] Epoch: 697/1000 | Reward: 42.356 | TD_loss: -1.291 | Entropy: 0.794 | Epoch Time: 2.0s | Total Time: 2222.8s
+[2025-05-05 07:11:47] Epoch: 698/1000 | Reward: -85.103 | TD_loss: -16.867 | Entropy: 0.552 | Epoch Time: 1.9s | Total Time: 2224.7s
+[2025-05-05 07:11:49] Epoch: 699/1000 | Reward: 26.311 | TD_loss: 19.373 | Entropy: 0.911 | Epoch Time: 1.9s | Total Time: 2226.6s
+[2025-05-05 07:11:51] Epoch: 700/1000 | Reward: 8.762 | TD_loss: 12.566 | Entropy: 0.649 | Epoch Time: 1.9s | Total Time: 2228.5s
+[2025-05-05 07:11:52] Starting testing for epoch 700...
+[2025-05-05 07:11:52] Running test simulation...
+[2025-05-05 07:11:52] Testing completed for epoch 700
+[2025-05-05 07:11:53] Model saved to: ./buffer_aware_results/nn_model_ep_700.ckpt
+[2025-05-05 07:11:55] Epoch: 701/1000 | Reward: -6.802 | TD_loss: -3.784 | Entropy: 0.581 | Epoch Time: 2.0s | Total Time: 2232.5s
+[2025-05-05 07:11:57] Epoch: 702/1000 | Reward: 35.283 | TD_loss: -3.331 | Entropy: 0.680 | Epoch Time: 1.9s | Total Time: 2234.5s
+[2025-05-05 07:11:59] Epoch: 703/1000 | Reward: -31.963 | TD_loss: -16.329 | Entropy: 0.583 | Epoch Time: 1.9s | Total Time: 2236.4s
+[2025-05-05 07:12:01] Epoch: 704/1000 | Reward: 23.332 | TD_loss: 7.410 | Entropy: 0.721 | Epoch Time: 2.0s | Total Time: 2238.3s
+[2025-05-05 07:12:03] Epoch: 705/1000 | Reward: 3.911 | TD_loss: -5.753 | Entropy: 0.750 | Epoch Time: 1.9s | Total Time: 2240.2s
+[2025-05-05 07:12:05] Epoch: 706/1000 | Reward: 41.760 | TD_loss: 3.481 | Entropy: 0.806 | Epoch Time: 1.9s | Total Time: 2242.2s
+[2025-05-05 07:12:07] Epoch: 707/1000 | Reward: -31.644 | TD_loss: -14.878 | Entropy: 0.793 | Epoch Time: 1.9s | Total Time: 2244.1s
+[2025-05-05 07:12:09] Epoch: 708/1000 | Reward: 20.914 | TD_loss: 0.525 | Entropy: 0.984 | Epoch Time: 1.9s | Total Time: 2246.0s
+[2025-05-05 07:12:10] Epoch: 709/1000 | Reward: 32.539 | TD_loss: 1.929 | Entropy: 1.048 | Epoch Time: 1.9s | Total Time: 2247.8s
+[2025-05-05 07:12:13] Epoch: 710/1000 | Reward: -31.425 | TD_loss: -9.177 | Entropy: 0.724 | Epoch Time: 2.1s | Total Time: 2250.0s
+[2025-05-05 07:12:15] Epoch: 711/1000 | Reward: 1.361 | TD_loss: -1.888 | Entropy: 0.863 | Epoch Time: 2.1s | Total Time: 2252.1s
+[2025-05-05 07:12:17] Epoch: 712/1000 | Reward: 29.051 | TD_loss: 8.249 | Entropy: 0.937 | Epoch Time: 2.1s | Total Time: 2254.2s
+[2025-05-05 07:12:19] Epoch: 713/1000 | Reward: 44.731 | TD_loss: -1.924 | Entropy: 0.954 | Epoch Time: 2.6s | Total Time: 2256.8s
+[2025-05-05 07:12:22] Epoch: 714/1000 | Reward: 37.077 | TD_loss: -3.076 | Entropy: 0.902 | Epoch Time: 2.7s | Total Time: 2259.5s
+[2025-05-05 07:12:25] Epoch: 715/1000 | Reward: -67.092 | TD_loss: -8.154 | Entropy: 0.858 | Epoch Time: 2.7s | Total Time: 2262.2s
+[2025-05-05 07:12:28] Epoch: 716/1000 | Reward: -105.155 | TD_loss: -17.724 | Entropy: 0.906 | Epoch Time: 2.7s | Total Time: 2264.9s
+[2025-05-05 07:12:31] Epoch: 717/1000 | Reward: -53.468 | TD_loss: -8.978 | Entropy: 0.994 | Epoch Time: 3.7s | Total Time: 2268.6s
+[2025-05-05 07:12:34] Epoch: 718/1000 | Reward: -74.278 | TD_loss: -7.761 | Entropy: 0.788 | Epoch Time: 3.1s | Total Time: 2271.7s
+[2025-05-05 07:12:38] Epoch: 719/1000 | Reward: -7.713 | TD_loss: 26.457 | Entropy: 0.836 | Epoch Time: 3.3s | Total Time: 2275.0s
+[2025-05-05 07:12:41] Epoch: 720/1000 | Reward: -28.646 | TD_loss: 1.330 | Entropy: 0.771 | Epoch Time: 3.3s | Total Time: 2278.4s
+[2025-05-05 07:12:44] Epoch: 721/1000 | Reward: 40.310 | TD_loss: 0.542 | Entropy: 0.967 | Epoch Time: 3.0s | Total Time: 2281.4s
+[2025-05-05 07:12:47] Epoch: 722/1000 | Reward: 3.531 | TD_loss: -9.400 | Entropy: 0.928 | Epoch Time: 2.5s | Total Time: 2283.9s
+[2025-05-05 07:12:49] Epoch: 723/1000 | Reward: -23.875 | TD_loss: 4.193 | Entropy: 0.732 | Epoch Time: 2.3s | Total Time: 2286.2s
+[2025-05-05 07:12:51] Epoch: 724/1000 | Reward: 16.571 | TD_loss: 4.662 | Entropy: 0.941 | Epoch Time: 2.4s | Total Time: 2288.7s
+[2025-05-05 07:12:54] Epoch: 725/1000 | Reward: -47.496 | TD_loss: -15.670 | Entropy: 0.692 | Epoch Time: 2.3s | Total Time: 2291.0s
+[2025-05-05 07:12:56] Epoch: 726/1000 | Reward: 29.014 | TD_loss: 13.852 | Entropy: 0.793 | Epoch Time: 2.3s | Total Time: 2293.3s
+[2025-05-05 07:12:59] Epoch: 727/1000 | Reward: 37.845 | TD_loss: 5.311 | Entropy: 0.690 | Epoch Time: 2.7s | Total Time: 2296.0s
+[2025-05-05 07:13:01] Epoch: 728/1000 | Reward: -40.954 | TD_loss: -7.789 | Entropy: 0.782 | Epoch Time: 2.6s | Total Time: 2298.6s
+[2025-05-05 07:13:04] Epoch: 729/1000 | Reward: 54.120 | TD_loss: 6.626 | Entropy: 0.660 | Epoch Time: 2.4s | Total Time: 2301.0s
+[2025-05-05 07:13:06] Epoch: 730/1000 | Reward: -70.019 | TD_loss: 2.872 | Entropy: 0.656 | Epoch Time: 2.7s | Total Time: 2303.7s
+[2025-05-05 07:13:09] Epoch: 731/1000 | Reward: 20.562 | TD_loss: -3.192 | Entropy: 0.870 | Epoch Time: 2.4s | Total Time: 2306.2s
+[2025-05-05 07:13:11] Epoch: 732/1000 | Reward: 7.888 | TD_loss: -16.160 | Entropy: 0.957 | Epoch Time: 1.9s | Total Time: 2308.1s
+[2025-05-05 07:13:13] Epoch: 733/1000 | Reward: -37.817 | TD_loss: -9.343 | Entropy: 0.826 | Epoch Time: 1.9s | Total Time: 2310.1s
+[2025-05-05 07:13:15] Epoch: 734/1000 | Reward: -41.915 | TD_loss: 10.827 | Entropy: 0.649 | Epoch Time: 2.0s | Total Time: 2312.1s
+[2025-05-05 07:13:17] Epoch: 735/1000 | Reward: 40.542 | TD_loss: 7.783 | Entropy: 0.791 | Epoch Time: 1.9s | Total Time: 2314.0s
+[2025-05-05 07:13:19] Epoch: 736/1000 | Reward: -49.449 | TD_loss: 3.463 | Entropy: 0.662 | Epoch Time: 2.0s | Total Time: 2316.1s
+[2025-05-05 07:13:23] Epoch: 737/1000 | Reward: -3.195 | TD_loss: -1.918 | Entropy: 0.758 | Epoch Time: 4.2s | Total Time: 2320.3s
+[2025-05-05 07:13:27] Epoch: 738/1000 | Reward: -46.474 | TD_loss: -15.948 | Entropy: 0.656 | Epoch Time: 3.7s | Total Time: 2324.0s
+[2025-05-05 07:13:29] Epoch: 739/1000 | Reward: -30.475 | TD_loss: -2.228 | Entropy: 0.687 | Epoch Time: 2.6s | Total Time: 2326.6s
+[2025-05-05 07:13:32] Epoch: 740/1000 | Reward: -93.461 | TD_loss: 3.426 | Entropy: 0.787 | Epoch Time: 2.8s | Total Time: 2329.4s
+[2025-05-05 07:13:34] Epoch: 741/1000 | Reward: 7.331 | TD_loss: -1.754 | Entropy: 0.892 | Epoch Time: 2.3s | Total Time: 2331.7s
+[2025-05-05 07:13:36] Epoch: 742/1000 | Reward: 34.117 | TD_loss: 3.129 | Entropy: 0.812 | Epoch Time: 2.0s | Total Time: 2333.7s
+[2025-05-05 07:13:38] Epoch: 743/1000 | Reward: 33.124 | TD_loss: -4.530 | Entropy: 0.908 | Epoch Time: 2.0s | Total Time: 2335.7s
+[2025-05-05 07:13:42] Epoch: 744/1000 | Reward: -65.935 | TD_loss: 1.386 | Entropy: 0.733 | Epoch Time: 3.5s | Total Time: 2339.1s
+[2025-05-05 07:13:44] Epoch: 745/1000 | Reward: 16.315 | TD_loss: -1.075 | Entropy: 0.957 | Epoch Time: 2.1s | Total Time: 2341.2s
+[2025-05-05 07:13:47] Epoch: 746/1000 | Reward: -9.369 | TD_loss: -15.450 | Entropy: 0.854 | Epoch Time: 2.8s | Total Time: 2344.1s
+[2025-05-05 07:13:49] Epoch: 747/1000 | Reward: 8.379 | TD_loss: -2.407 | Entropy: 0.904 | Epoch Time: 2.1s | Total Time: 2346.2s
+[2025-05-05 07:13:51] Epoch: 748/1000 | Reward: 20.561 | TD_loss: 6.344 | Entropy: 0.952 | Epoch Time: 2.6s | Total Time: 2348.8s
+[2025-05-05 07:13:54] Epoch: 749/1000 | Reward: 38.485 | TD_loss: 3.654 | Entropy: 0.855 | Epoch Time: 2.2s | Total Time: 2351.0s
+[2025-05-05 07:13:56] Epoch: 750/1000 | Reward: -11.958 | TD_loss: -12.838 | Entropy: 0.724 | Epoch Time: 2.1s | Total Time: 2353.1s
+[2025-05-05 07:13:58] Epoch: 751/1000 | Reward: 31.277 | TD_loss: 7.261 | Entropy: 0.809 | Epoch Time: 2.0s | Total Time: 2355.1s
+[2025-05-05 07:14:00] Epoch: 752/1000 | Reward: -45.286 | TD_loss: -5.254 | Entropy: 0.803 | Epoch Time: 2.6s | Total Time: 2357.7s
+[2025-05-05 07:14:03] Epoch: 753/1000 | Reward: 20.857 | TD_loss: 12.667 | Entropy: 0.858 | Epoch Time: 2.7s | Total Time: 2360.4s
+[2025-05-05 07:14:05] Epoch: 754/1000 | Reward: 19.808 | TD_loss: -1.363 | Entropy: 0.850 | Epoch Time: 2.2s | Total Time: 2362.6s
+[2025-05-05 07:14:07] Epoch: 755/1000 | Reward: 33.770 | TD_loss: 0.353 | Entropy: 0.848 | Epoch Time: 2.2s | Total Time: 2364.8s
+[2025-05-05 07:14:10] Epoch: 756/1000 | Reward: -78.764 | TD_loss: -8.688 | Entropy: 0.752 | Epoch Time: 2.2s | Total Time: 2367.0s
+[2025-05-05 07:14:12] Epoch: 757/1000 | Reward: 31.729 | TD_loss: 15.775 | Entropy: 0.750 | Epoch Time: 2.1s | Total Time: 2369.1s
+[2025-05-05 07:14:14] Epoch: 758/1000 | Reward: 21.219 | TD_loss: -6.277 | Entropy: 0.945 | Epoch Time: 2.0s | Total Time: 2371.1s
+[2025-05-05 07:14:16] Epoch: 759/1000 | Reward: -4.493 | TD_loss: -5.447 | Entropy: 0.743 | Epoch Time: 1.9s | Total Time: 2373.0s
+[2025-05-05 07:14:18] Epoch: 760/1000 | Reward: 22.111 | TD_loss: 3.496 | Entropy: 0.841 | Epoch Time: 1.9s | Total Time: 2374.9s
+[2025-05-05 07:14:20] Epoch: 761/1000 | Reward: -11.860 | TD_loss: -4.209 | Entropy: 0.708 | Epoch Time: 2.0s | Total Time: 2377.0s
+[2025-05-05 07:14:22] Epoch: 762/1000 | Reward: 26.351 | TD_loss: 0.480 | Entropy: 0.914 | Epoch Time: 2.1s | Total Time: 2379.0s
+[2025-05-05 07:14:24] Epoch: 763/1000 | Reward: -33.171 | TD_loss: -5.419 | Entropy: 0.630 | Epoch Time: 1.9s | Total Time: 2381.0s
+[2025-05-05 07:14:26] Epoch: 764/1000 | Reward: 41.263 | TD_loss: 0.315 | Entropy: 0.847 | Epoch Time: 2.0s | Total Time: 2382.9s
+[2025-05-05 07:14:27] Epoch: 765/1000 | Reward: 30.645 | TD_loss: 3.366 | Entropy: 0.732 | Epoch Time: 1.9s | Total Time: 2384.8s
+[2025-05-05 07:14:29] Epoch: 766/1000 | Reward: 50.717 | TD_loss: 2.692 | Entropy: 0.698 | Epoch Time: 2.0s | Total Time: 2386.8s
+[2025-05-05 07:14:31] Epoch: 767/1000 | Reward: 19.914 | TD_loss: -2.659 | Entropy: 0.613 | Epoch Time: 2.0s | Total Time: 2388.8s
+[2025-05-05 07:14:33] Epoch: 768/1000 | Reward: 30.924 | TD_loss: -2.355 | Entropy: 0.898 | Epoch Time: 2.0s | Total Time: 2390.8s
+[2025-05-05 07:14:36] Epoch: 769/1000 | Reward: -71.914 | TD_loss: -24.445 | Entropy: 0.713 | Epoch Time: 2.1s | Total Time: 2392.9s
+[2025-05-05 07:14:38] Epoch: 770/1000 | Reward: -138.763 | TD_loss: 22.380 | Entropy: 0.784 | Epoch Time: 2.6s | Total Time: 2395.6s
+[2025-05-05 07:14:40] Epoch: 771/1000 | Reward: -44.299 | TD_loss: -28.250 | Entropy: 0.927 | Epoch Time: 2.1s | Total Time: 2397.7s
+[2025-05-05 07:14:42] Epoch: 772/1000 | Reward: 39.845 | TD_loss: 12.914 | Entropy: 1.030 | Epoch Time: 2.1s | Total Time: 2399.8s
+[2025-05-05 07:14:44] Epoch: 773/1000 | Reward: -17.592 | TD_loss: -8.894 | Entropy: 0.866 | Epoch Time: 2.0s | Total Time: 2401.8s
+[2025-05-05 07:14:47] Epoch: 774/1000 | Reward: -8.202 | TD_loss: -10.645 | Entropy: 0.691 | Epoch Time: 2.4s | Total Time: 2404.2s
+[2025-05-05 07:14:49] Epoch: 775/1000 | Reward: -25.896 | TD_loss: -8.669 | Entropy: 0.856 | Epoch Time: 2.4s | Total Time: 2406.6s
+[2025-05-05 07:14:52] Epoch: 776/1000 | Reward: 44.895 | TD_loss: 14.806 | Entropy: 0.709 | Epoch Time: 2.2s | Total Time: 2408.9s
+[2025-05-05 07:14:54] Epoch: 777/1000 | Reward: 18.500 | TD_loss: 0.488 | Entropy: 0.899 | Epoch Time: 2.2s | Total Time: 2411.0s
+[2025-05-05 07:14:56] Epoch: 778/1000 | Reward: 11.794 | TD_loss: -3.719 | Entropy: 0.978 | Epoch Time: 2.5s | Total Time: 2413.6s
+[2025-05-05 07:14:58] Epoch: 779/1000 | Reward: -22.185 | TD_loss: 0.757 | Entropy: 0.716 | Epoch Time: 2.2s | Total Time: 2415.8s
+[2025-05-05 07:15:01] Epoch: 780/1000 | Reward: 13.052 | TD_loss: 2.624 | Entropy: 0.917 | Epoch Time: 2.2s | Total Time: 2418.1s
+[2025-05-05 07:15:03] Epoch: 781/1000 | Reward: 38.711 | TD_loss: 4.121 | Entropy: 0.980 | Epoch Time: 2.1s | Total Time: 2420.2s
+[2025-05-05 07:15:05] Epoch: 782/1000 | Reward: -99.933 | TD_loss: -36.403 | Entropy: 0.716 | Epoch Time: 2.0s | Total Time: 2422.2s
+[2025-05-05 07:15:08] Epoch: 783/1000 | Reward: 33.546 | TD_loss: 8.951 | Entropy: 0.846 | Epoch Time: 2.8s | Total Time: 2425.0s
+[2025-05-05 07:15:10] Epoch: 784/1000 | Reward: 56.637 | TD_loss: 5.685 | Entropy: 0.558 | Epoch Time: 2.5s | Total Time: 2427.5s
+[2025-05-05 07:15:13] Epoch: 785/1000 | Reward: 7.082 | TD_loss: -6.632 | Entropy: 0.694 | Epoch Time: 3.1s | Total Time: 2430.6s
+[2025-05-05 07:15:16] Epoch: 786/1000 | Reward: 36.371 | TD_loss: 6.417 | Entropy: 0.996 | Epoch Time: 2.5s | Total Time: 2433.1s
+[2025-05-05 07:15:18] Epoch: 787/1000 | Reward: -115.888 | TD_loss: -22.333 | Entropy: 0.670 | Epoch Time: 2.5s | Total Time: 2435.6s
+[2025-05-05 07:15:21] Epoch: 788/1000 | Reward: -46.043 | TD_loss: 12.754 | Entropy: 0.772 | Epoch Time: 2.6s | Total Time: 2438.2s
+[2025-05-05 07:15:23] Epoch: 789/1000 | Reward: -6.194 | TD_loss: -1.227 | Entropy: 0.736 | Epoch Time: 2.5s | Total Time: 2440.8s
+[2025-05-05 07:15:26] Epoch: 790/1000 | Reward: -62.778 | TD_loss: -6.992 | Entropy: 0.669 | Epoch Time: 2.5s | Total Time: 2443.3s
+[2025-05-05 07:15:28] Epoch: 791/1000 | Reward: 33.024 | TD_loss: 4.228 | Entropy: 0.952 | Epoch Time: 2.4s | Total Time: 2445.7s
+[2025-05-05 07:15:31] Epoch: 792/1000 | Reward: 37.401 | TD_loss: 4.219 | Entropy: 0.785 | Epoch Time: 2.7s | Total Time: 2448.4s
+[2025-05-05 07:15:34] Epoch: 793/1000 | Reward: -27.757 | TD_loss: -5.379 | Entropy: 0.675 | Epoch Time: 2.5s | Total Time: 2451.0s
+[2025-05-05 07:15:36] Epoch: 794/1000 | Reward: 47.129 | TD_loss: 4.310 | Entropy: 0.690 | Epoch Time: 2.6s | Total Time: 2453.6s
+[2025-05-05 07:15:39] Epoch: 795/1000 | Reward: -28.465 | TD_loss: -2.117 | Entropy: 0.748 | Epoch Time: 2.6s | Total Time: 2456.2s
+[2025-05-05 07:15:42] Epoch: 796/1000 | Reward: -47.898 | TD_loss: -0.664 | Entropy: 0.783 | Epoch Time: 2.7s | Total Time: 2458.9s
+[2025-05-05 07:15:44] Epoch: 797/1000 | Reward: 32.730 | TD_loss: 3.956 | Entropy: 0.735 | Epoch Time: 2.7s | Total Time: 2461.6s
+[2025-05-05 07:15:47] Epoch: 798/1000 | Reward: 51.230 | TD_loss: -1.040 | Entropy: 0.722 | Epoch Time: 2.4s | Total Time: 2464.0s
+[2025-05-05 07:15:49] Epoch: 799/1000 | Reward: 43.740 | TD_loss: 2.247 | Entropy: 0.762 | Epoch Time: 2.3s | Total Time: 2466.3s
+[2025-05-05 07:15:52] Epoch: 800/1000 | Reward: -4.172 | TD_loss: -2.637 | Entropy: 0.815 | Epoch Time: 2.7s | Total Time: 2469.0s
+[2025-05-05 07:15:53] Starting testing for epoch 800...
+[2025-05-05 07:15:53] Running test simulation...
+[2025-05-05 07:15:53] Testing completed for epoch 800
+[2025-05-05 07:15:55] Model saved to: ./buffer_aware_results/nn_model_ep_800.ckpt
+[2025-05-05 07:15:57] Epoch: 801/1000 | Reward: 5.994 | TD_loss: -4.930 | Entropy: 0.700 | Epoch Time: 2.7s | Total Time: 2474.8s
+[2025-05-05 07:16:00] Epoch: 802/1000 | Reward: 18.770 | TD_loss: 5.855 | Entropy: 0.685 | Epoch Time: 2.9s | Total Time: 2477.7s
+[2025-05-05 07:16:03] Epoch: 803/1000 | Reward: 34.779 | TD_loss: -4.428 | Entropy: 0.771 | Epoch Time: 2.6s | Total Time: 2480.3s
+[2025-05-05 07:16:06] Epoch: 804/1000 | Reward: 10.141 | TD_loss: 4.280 | Entropy: 0.730 | Epoch Time: 2.6s | Total Time: 2483.0s
+[2025-05-05 07:16:08] Epoch: 805/1000 | Reward: 25.901 | TD_loss: -6.277 | Entropy: 0.741 | Epoch Time: 2.5s | Total Time: 2485.5s
+[2025-05-05 07:16:10] Epoch: 806/1000 | Reward: 48.762 | TD_loss: 7.916 | Entropy: 0.717 | Epoch Time: 2.1s | Total Time: 2487.6s
+[2025-05-05 07:16:12] Epoch: 807/1000 | Reward: -7.258 | TD_loss: -10.653 | Entropy: 0.791 | Epoch Time: 1.9s | Total Time: 2489.5s
+[2025-05-05 07:16:14] Epoch: 808/1000 | Reward: 18.396 | TD_loss: 2.506 | Entropy: 0.878 | Epoch Time: 1.9s | Total Time: 2491.3s
+[2025-05-05 07:16:16] Epoch: 809/1000 | Reward: 39.163 | TD_loss: 3.643 | Entropy: 0.798 | Epoch Time: 1.9s | Total Time: 2493.3s
+[2025-05-05 07:16:18] Epoch: 810/1000 | Reward: -54.060 | TD_loss: -28.925 | Entropy: 0.765 | Epoch Time: 1.9s | Total Time: 2495.2s
+[2025-05-05 07:16:20] Epoch: 811/1000 | Reward: 5.614 | TD_loss: 0.480 | Entropy: 0.771 | Epoch Time: 1.9s | Total Time: 2497.1s
+[2025-05-05 07:16:22] Epoch: 812/1000 | Reward: 8.018 | TD_loss: -1.108 | Entropy: 0.903 | Epoch Time: 2.0s | Total Time: 2499.1s
+[2025-05-05 07:16:24] Epoch: 813/1000 | Reward: 2.895 | TD_loss: 2.498 | Entropy: 0.813 | Epoch Time: 1.9s | Total Time: 2501.0s
+[2025-05-05 07:16:26] Epoch: 814/1000 | Reward: -27.195 | TD_loss: -0.518 | Entropy: 0.724 | Epoch Time: 1.9s | Total Time: 2502.9s
+[2025-05-05 07:16:28] Epoch: 815/1000 | Reward: 20.246 | TD_loss: 14.020 | Entropy: 0.650 | Epoch Time: 2.1s | Total Time: 2505.0s
+[2025-05-05 07:16:30] Epoch: 816/1000 | Reward: 63.540 | TD_loss: -4.449 | Entropy: 0.591 | Epoch Time: 2.2s | Total Time: 2507.2s
+[2025-05-05 07:16:32] Epoch: 817/1000 | Reward: 21.794 | TD_loss: 0.537 | Entropy: 0.811 | Epoch Time: 2.0s | Total Time: 2509.2s
+[2025-05-05 07:16:34] Epoch: 818/1000 | Reward: 10.739 | TD_loss: -14.845 | Entropy: 0.746 | Epoch Time: 2.0s | Total Time: 2511.3s
+[2025-05-05 07:16:36] Epoch: 819/1000 | Reward: -95.714 | TD_loss: -31.724 | Entropy: 0.625 | Epoch Time: 2.2s | Total Time: 2513.5s
+[2025-05-05 07:16:38] Epoch: 820/1000 | Reward: 14.679 | TD_loss: 27.174 | Entropy: 0.546 | Epoch Time: 2.3s | Total Time: 2515.7s
+[2025-05-05 07:16:41] Epoch: 821/1000 | Reward: 33.236 | TD_loss: 4.203 | Entropy: 0.777 | Epoch Time: 2.3s | Total Time: 2518.1s
+[2025-05-05 07:16:43] Epoch: 822/1000 | Reward: 58.821 | TD_loss: 3.973 | Entropy: 0.816 | Epoch Time: 2.5s | Total Time: 2520.6s
+[2025-05-05 07:16:46] Epoch: 823/1000 | Reward: -61.380 | TD_loss: -13.002 | Entropy: 0.532 | Epoch Time: 2.3s | Total Time: 2522.9s
+[2025-05-05 07:16:48] Epoch: 824/1000 | Reward: 6.765 | TD_loss: 0.942 | Entropy: 0.822 | Epoch Time: 2.2s | Total Time: 2525.1s
+[2025-05-05 07:16:50] Epoch: 825/1000 | Reward: 43.431 | TD_loss: 8.422 | Entropy: 0.711 | Epoch Time: 2.3s | Total Time: 2527.4s
+[2025-05-05 07:16:52] Epoch: 826/1000 | Reward: -45.772 | TD_loss: -13.042 | Entropy: 0.627 | Epoch Time: 2.3s | Total Time: 2529.7s
+[2025-05-05 07:16:55] Epoch: 827/1000 | Reward: 7.555 | TD_loss: 18.415 | Entropy: 0.652 | Epoch Time: 2.3s | Total Time: 2532.0s
+[2025-05-05 07:16:57] Epoch: 828/1000 | Reward: 33.782 | TD_loss: 0.332 | Entropy: 0.795 | Epoch Time: 2.1s | Total Time: 2534.0s
+[2025-05-05 07:16:59] Epoch: 829/1000 | Reward: 37.491 | TD_loss: -0.641 | Entropy: 0.916 | Epoch Time: 1.9s | Total Time: 2536.0s
+[2025-05-05 07:17:01] Epoch: 830/1000 | Reward: 14.452 | TD_loss: -3.677 | Entropy: 0.695 | Epoch Time: 2.0s | Total Time: 2538.0s
+[2025-05-05 07:17:03] Epoch: 831/1000 | Reward: 42.321 | TD_loss: 3.782 | Entropy: 0.802 | Epoch Time: 1.9s | Total Time: 2539.9s
+[2025-05-05 07:17:05] Epoch: 832/1000 | Reward: -86.610 | TD_loss: -13.917 | Entropy: 0.569 | Epoch Time: 2.0s | Total Time: 2541.9s
+[2025-05-05 07:17:06] Epoch: 833/1000 | Reward: -11.778 | TD_loss: 1.860 | Entropy: 0.886 | Epoch Time: 1.9s | Total Time: 2543.8s
+[2025-05-05 07:17:08] Epoch: 834/1000 | Reward: 19.007 | TD_loss: 7.825 | Entropy: 0.672 | Epoch Time: 1.9s | Total Time: 2545.7s
+[2025-05-05 07:17:10] Epoch: 835/1000 | Reward: 29.412 | TD_loss: -3.832 | Entropy: 0.937 | Epoch Time: 2.0s | Total Time: 2547.7s
+[2025-05-05 07:17:12] Epoch: 836/1000 | Reward: -116.893 | TD_loss: -35.540 | Entropy: 0.572 | Epoch Time: 1.9s | Total Time: 2549.6s
+[2025-05-05 07:17:14] Epoch: 837/1000 | Reward: -49.703 | TD_loss: 21.244 | Entropy: 0.693 | Epoch Time: 1.9s | Total Time: 2551.5s
+[2025-05-05 07:17:16] Epoch: 838/1000 | Reward: -50.232 | TD_loss: -0.274 | Entropy: 0.774 | Epoch Time: 1.9s | Total Time: 2553.4s
+[2025-05-05 07:17:18] Epoch: 839/1000 | Reward: 27.501 | TD_loss: 4.010 | Entropy: 0.953 | Epoch Time: 1.9s | Total Time: 2555.4s
+[2025-05-05 07:17:20] Epoch: 840/1000 | Reward: 7.391 | TD_loss: 7.849 | Entropy: 0.801 | Epoch Time: 1.9s | Total Time: 2557.2s
+[2025-05-05 07:17:22] Epoch: 841/1000 | Reward: -39.705 | TD_loss: -11.923 | Entropy: 0.712 | Epoch Time: 2.0s | Total Time: 2559.3s
+[2025-05-05 07:17:24] Epoch: 842/1000 | Reward: 26.348 | TD_loss: 4.969 | Entropy: 0.914 | Epoch Time: 2.0s | Total Time: 2561.3s
+[2025-05-05 07:17:26] Epoch: 843/1000 | Reward: -18.744 | TD_loss: 10.041 | Entropy: 0.758 | Epoch Time: 1.9s | Total Time: 2563.2s
+[2025-05-05 07:17:28] Epoch: 844/1000 | Reward: 54.910 | TD_loss: -1.500 | Entropy: 0.675 | Epoch Time: 2.0s | Total Time: 2565.2s
+[2025-05-05 07:17:30] Epoch: 845/1000 | Reward: -43.719 | TD_loss: -16.315 | Entropy: 0.739 | Epoch Time: 2.0s | Total Time: 2567.2s
+[2025-05-05 07:17:32] Epoch: 846/1000 | Reward: 42.633 | TD_loss: 2.416 | Entropy: 0.876 | Epoch Time: 2.3s | Total Time: 2569.5s
+[2025-05-05 07:17:34] Epoch: 847/1000 | Reward: 19.062 | TD_loss: 0.173 | Entropy: 0.793 | Epoch Time: 2.2s | Total Time: 2571.7s
+[2025-05-05 07:17:36] Epoch: 848/1000 | Reward: -10.110 | TD_loss: -15.186 | Entropy: 0.839 | Epoch Time: 2.1s | Total Time: 2573.8s
+[2025-05-05 07:17:39] Epoch: 849/1000 | Reward: 18.773 | TD_loss: 1.612 | Entropy: 0.998 | Epoch Time: 2.3s | Total Time: 2576.1s
+[2025-05-05 07:17:41] Epoch: 850/1000 | Reward: -51.980 | TD_loss: -11.125 | Entropy: 0.851 | Epoch Time: 2.3s | Total Time: 2578.4s
+[2025-05-05 07:17:43] Epoch: 851/1000 | Reward: 18.286 | TD_loss: 7.505 | Entropy: 0.936 | Epoch Time: 2.2s | Total Time: 2580.6s
+[2025-05-05 07:17:46] Epoch: 852/1000 | Reward: 10.275 | TD_loss: 5.100 | Entropy: 0.777 | Epoch Time: 2.4s | Total Time: 2583.0s
+[2025-05-05 07:17:48] Epoch: 853/1000 | Reward: 26.615 | TD_loss: 2.643 | Entropy: 0.933 | Epoch Time: 2.1s | Total Time: 2585.1s
+[2025-05-05 07:17:50] Epoch: 854/1000 | Reward: 12.851 | TD_loss: -4.387 | Entropy: 0.900 | Epoch Time: 2.3s | Total Time: 2587.4s
+[2025-05-05 07:17:53] Epoch: 855/1000 | Reward: -76.799 | TD_loss: -9.445 | Entropy: 0.704 | Epoch Time: 2.9s | Total Time: 2590.3s
+[2025-05-05 07:17:56] Epoch: 856/1000 | Reward: 17.591 | TD_loss: 4.261 | Entropy: 0.851 | Epoch Time: 2.9s | Total Time: 2593.2s
+[2025-05-05 07:17:59] Epoch: 857/1000 | Reward: 40.695 | TD_loss: 3.194 | Entropy: 1.005 | Epoch Time: 3.3s | Total Time: 2596.6s
+[2025-05-05 07:18:03] Epoch: 858/1000 | Reward: 37.038 | TD_loss: 0.623 | Entropy: 0.899 | Epoch Time: 3.8s | Total Time: 2600.4s
+[2025-05-05 07:18:06] Epoch: 859/1000 | Reward: 19.212 | TD_loss: 2.201 | Entropy: 0.823 | Epoch Time: 3.2s | Total Time: 2603.7s
+[2025-05-05 07:18:10] Epoch: 860/1000 | Reward: 20.786 | TD_loss: -1.037 | Entropy: 0.811 | Epoch Time: 3.3s | Total Time: 2607.0s
+[2025-05-05 07:18:12] Epoch: 861/1000 | Reward: 47.951 | TD_loss: 2.387 | Entropy: 0.798 | Epoch Time: 2.5s | Total Time: 2609.6s
+[2025-05-05 07:18:15] Epoch: 862/1000 | Reward: 30.150 | TD_loss: -4.747 | Entropy: 0.947 | Epoch Time: 2.6s | Total Time: 2612.2s
+[2025-05-05 07:18:17] Epoch: 863/1000 | Reward: 45.049 | TD_loss: 10.246 | Entropy: 0.664 | Epoch Time: 2.3s | Total Time: 2614.5s
+[2025-05-05 07:18:20] Epoch: 864/1000 | Reward: 12.671 | TD_loss: -14.026 | Entropy: 0.720 | Epoch Time: 2.5s | Total Time: 2617.0s
+[2025-05-05 07:18:22] Epoch: 865/1000 | Reward: 25.155 | TD_loss: 7.067 | Entropy: 0.875 | Epoch Time: 2.3s | Total Time: 2619.3s
+[2025-05-05 07:18:24] Epoch: 866/1000 | Reward: 2.824 | TD_loss: -22.361 | Entropy: 0.877 | Epoch Time: 2.1s | Total Time: 2621.4s
+[2025-05-05 07:18:26] Epoch: 867/1000 | Reward: 31.109 | TD_loss: 3.516 | Entropy: 0.685 | Epoch Time: 1.9s | Total Time: 2623.3s
+[2025-05-05 07:18:28] Epoch: 868/1000 | Reward: -22.756 | TD_loss: -6.283 | Entropy: 0.643 | Epoch Time: 2.0s | Total Time: 2625.3s
+[2025-05-05 07:18:30] Epoch: 869/1000 | Reward: 14.632 | TD_loss: -1.836 | Entropy: 0.718 | Epoch Time: 2.2s | Total Time: 2627.5s
+[2025-05-05 07:18:32] Epoch: 870/1000 | Reward: 50.440 | TD_loss: 6.662 | Entropy: 0.885 | Epoch Time: 2.2s | Total Time: 2629.7s
+[2025-05-05 07:18:35] Epoch: 871/1000 | Reward: 41.941 | TD_loss: 1.104 | Entropy: 0.783 | Epoch Time: 2.3s | Total Time: 2632.0s
+[2025-05-05 07:18:37] Epoch: 872/1000 | Reward: 9.471 | TD_loss: -6.674 | Entropy: 0.777 | Epoch Time: 2.1s | Total Time: 2634.1s
+[2025-05-05 07:18:40] Epoch: 873/1000 | Reward: 42.122 | TD_loss: 6.042 | Entropy: 0.803 | Epoch Time: 3.2s | Total Time: 2637.3s
+[2025-05-05 07:18:42] Epoch: 874/1000 | Reward: 39.724 | TD_loss: -3.771 | Entropy: 0.764 | Epoch Time: 2.3s | Total Time: 2639.6s
+[2025-05-05 07:18:44] Epoch: 875/1000 | Reward: -74.670 | TD_loss: -7.130 | Entropy: 0.668 | Epoch Time: 2.0s | Total Time: 2641.6s
+[2025-05-05 07:18:47] Epoch: 876/1000 | Reward: -42.615 | TD_loss: -3.860 | Entropy: 0.779 | Epoch Time: 2.7s | Total Time: 2644.3s
+[2025-05-05 07:18:49] Epoch: 877/1000 | Reward: 18.492 | TD_loss: 1.303 | Entropy: 0.783 | Epoch Time: 2.0s | Total Time: 2646.3s
+[2025-05-05 07:18:51] Epoch: 878/1000 | Reward: 35.074 | TD_loss: 9.165 | Entropy: 0.658 | Epoch Time: 2.4s | Total Time: 2648.7s
+[2025-05-05 07:18:54] Epoch: 879/1000 | Reward: 36.307 | TD_loss: -2.712 | Entropy: 0.912 | Epoch Time: 2.4s | Total Time: 2651.1s
+[2025-05-05 07:18:56] Epoch: 880/1000 | Reward: -31.597 | TD_loss: -5.551 | Entropy: 0.595 | Epoch Time: 2.5s | Total Time: 2653.6s
+[2025-05-05 07:18:59] Epoch: 881/1000 | Reward: 35.494 | TD_loss: 14.090 | Entropy: 0.696 | Epoch Time: 2.4s | Total Time: 2656.0s
+[2025-05-05 07:19:01] Epoch: 882/1000 | Reward: 31.386 | TD_loss: -3.454 | Entropy: 0.712 | Epoch Time: 2.7s | Total Time: 2658.7s
+[2025-05-05 07:19:04] Epoch: 883/1000 | Reward: 49.226 | TD_loss: 1.503 | Entropy: 0.634 | Epoch Time: 2.7s | Total Time: 2661.4s
+[2025-05-05 07:19:06] Epoch: 884/1000 | Reward: -64.484 | TD_loss: -10.356 | Entropy: 0.689 | Epoch Time: 2.3s | Total Time: 2663.8s
+[2025-05-05 07:19:09] Epoch: 885/1000 | Reward: 18.323 | TD_loss: 7.586 | Entropy: 0.728 | Epoch Time: 2.2s | Total Time: 2666.0s
+[2025-05-05 07:19:11] Epoch: 886/1000 | Reward: -36.982 | TD_loss: -4.048 | Entropy: 0.705 | Epoch Time: 2.1s | Total Time: 2668.1s
+[2025-05-05 07:19:13] Epoch: 887/1000 | Reward: 13.451 | TD_loss: -7.111 | Entropy: 0.718 | Epoch Time: 2.5s | Total Time: 2670.7s
+[2025-05-05 07:19:16] Epoch: 888/1000 | Reward: -55.050 | TD_loss: -2.240 | Entropy: 0.723 | Epoch Time: 2.5s | Total Time: 2673.2s
+[2025-05-05 07:19:18] Epoch: 889/1000 | Reward: 20.008 | TD_loss: 18.345 | Entropy: 0.720 | Epoch Time: 2.3s | Total Time: 2675.5s
+[2025-05-05 07:19:21] Epoch: 890/1000 | Reward: 9.666 | TD_loss: -2.819 | Entropy: 0.874 | Epoch Time: 2.4s | Total Time: 2677.9s
+[2025-05-05 07:19:23] Epoch: 891/1000 | Reward: -47.490 | TD_loss: -6.179 | Entropy: 0.738 | Epoch Time: 2.1s | Total Time: 2680.0s
+[2025-05-05 07:19:25] Epoch: 892/1000 | Reward: -39.193 | TD_loss: 13.289 | Entropy: 0.571 | Epoch Time: 2.0s | Total Time: 2682.1s
+[2025-05-05 07:19:27] Epoch: 893/1000 | Reward: -45.411 | TD_loss: -19.713 | Entropy: 0.768 | Epoch Time: 2.0s | Total Time: 2684.1s
+[2025-05-05 07:19:29] Epoch: 894/1000 | Reward: 31.775 | TD_loss: 4.571 | Entropy: 0.839 | Epoch Time: 2.0s | Total Time: 2686.1s
+[2025-05-05 07:19:31] Epoch: 895/1000 | Reward: -70.768 | TD_loss: -1.098 | Entropy: 0.531 | Epoch Time: 2.5s | Total Time: 2688.7s
+[2025-05-05 07:19:34] Epoch: 896/1000 | Reward: -11.705 | TD_loss: 0.258 | Entropy: 0.821 | Epoch Time: 2.7s | Total Time: 2691.4s
+[2025-05-05 07:19:36] Epoch: 897/1000 | Reward: -10.342 | TD_loss: 2.238 | Entropy: 0.548 | Epoch Time: 2.4s | Total Time: 2693.8s
+[2025-05-05 07:19:39] Epoch: 898/1000 | Reward: 42.876 | TD_loss: -2.104 | Entropy: 0.749 | Epoch Time: 2.1s | Total Time: 2695.9s
+[2025-05-05 07:19:41] Epoch: 899/1000 | Reward: 32.848 | TD_loss: 1.101 | Entropy: 0.850 | Epoch Time: 1.9s | Total Time: 2697.9s
+[2025-05-05 07:19:43] Epoch: 900/1000 | Reward: 23.812 | TD_loss: -6.317 | Entropy: 0.904 | Epoch Time: 2.3s | Total Time: 2700.1s
+[2025-05-05 07:19:44] Starting testing for epoch 900...
+[2025-05-05 07:19:44] Running test simulation...
+[2025-05-05 07:19:44] Testing completed for epoch 900
+[2025-05-05 07:19:45] Model saved to: ./buffer_aware_results/nn_model_ep_900.ckpt
+[2025-05-05 07:19:48] Epoch: 901/1000 | Reward: -16.087 | TD_loss: -6.292 | Entropy: 0.813 | Epoch Time: 2.1s | Total Time: 2704.9s
+[2025-05-05 07:19:49] Epoch: 902/1000 | Reward: -25.550 | TD_loss: 6.110 | Entropy: 0.733 | Epoch Time: 1.7s | Total Time: 2706.6s
+[2025-05-05 07:19:51] Epoch: 903/1000 | Reward: -17.482 | TD_loss: -6.558 | Entropy: 0.799 | Epoch Time: 2.2s | Total Time: 2708.8s
+[2025-05-05 07:19:54] Epoch: 904/1000 | Reward: 47.616 | TD_loss: 0.706 | Entropy: 0.774 | Epoch Time: 2.5s | Total Time: 2711.3s
+[2025-05-05 07:19:56] Epoch: 905/1000 | Reward: 32.635 | TD_loss: 2.856 | Entropy: 0.852 | Epoch Time: 2.0s | Total Time: 2713.3s
+[2025-05-05 07:19:58] Epoch: 906/1000 | Reward: -75.944 | TD_loss: -6.985 | Entropy: 0.460 | Epoch Time: 1.9s | Total Time: 2715.3s
+[2025-05-05 07:20:00] Epoch: 907/1000 | Reward: 42.792 | TD_loss: 5.151 | Entropy: 0.817 | Epoch Time: 2.2s | Total Time: 2717.5s
+[2025-05-05 07:20:02] Epoch: 908/1000 | Reward: 2.624 | TD_loss: -1.172 | Entropy: 0.620 | Epoch Time: 2.1s | Total Time: 2719.6s
+[2025-05-05 07:20:05] Epoch: 909/1000 | Reward: -60.451 | TD_loss: 1.926 | Entropy: 0.620 | Epoch Time: 2.5s | Total Time: 2722.0s
+[2025-05-05 07:20:07] Epoch: 910/1000 | Reward: 9.968 | TD_loss: -9.184 | Entropy: 0.720 | Epoch Time: 2.2s | Total Time: 2724.3s
+[2025-05-05 07:20:09] Epoch: 911/1000 | Reward: -45.583 | TD_loss: 11.465 | Entropy: 0.677 | Epoch Time: 2.3s | Total Time: 2726.7s
+[2025-05-05 07:20:11] Epoch: 912/1000 | Reward: -28.238 | TD_loss: -7.462 | Entropy: 0.536 | Epoch Time: 2.1s | Total Time: 2728.8s
+[2025-05-05 07:20:13] Epoch: 913/1000 | Reward: -17.212 | TD_loss: 0.375 | Entropy: 0.685 | Epoch Time: 2.0s | Total Time: 2730.8s
+[2025-05-05 07:20:15] Epoch: 914/1000 | Reward: 17.800 | TD_loss: -0.331 | Entropy: 0.774 | Epoch Time: 2.0s | Total Time: 2732.8s
+[2025-05-05 07:20:17] Epoch: 915/1000 | Reward: 28.221 | TD_loss: -1.108 | Entropy: 0.967 | Epoch Time: 1.9s | Total Time: 2734.7s
+[2025-05-05 07:20:19] Epoch: 916/1000 | Reward: -50.539 | TD_loss: 2.454 | Entropy: 0.711 | Epoch Time: 2.1s | Total Time: 2736.7s
+[2025-05-05 07:20:22] Epoch: 917/1000 | Reward: -6.110 | TD_loss: -8.309 | Entropy: 0.863 | Epoch Time: 2.1s | Total Time: 2738.9s
+[2025-05-05 07:20:24] Epoch: 918/1000 | Reward: 9.402 | TD_loss: -6.769 | Entropy: 0.825 | Epoch Time: 2.0s | Total Time: 2740.9s
+[2025-05-05 07:20:25] Epoch: 919/1000 | Reward: -50.808 | TD_loss: -16.521 | Entropy: 0.759 | Epoch Time: 1.9s | Total Time: 2742.8s
+[2025-05-05 07:20:28] Epoch: 920/1000 | Reward: 28.895 | TD_loss: 16.974 | Entropy: 0.736 | Epoch Time: 2.3s | Total Time: 2745.1s
+[2025-05-05 07:20:30] Epoch: 921/1000 | Reward: 38.022 | TD_loss: 3.638 | Entropy: 0.868 | Epoch Time: 2.1s | Total Time: 2747.2s
+[2025-05-05 07:20:32] Epoch: 922/1000 | Reward: 43.306 | TD_loss: 2.570 | Entropy: 0.822 | Epoch Time: 2.2s | Total Time: 2749.4s
+[2025-05-05 07:20:34] Epoch: 923/1000 | Reward: 53.949 | TD_loss: -3.384 | Entropy: 0.698 | Epoch Time: 2.3s | Total Time: 2751.7s
+[2025-05-05 07:20:36] Epoch: 924/1000 | Reward: 41.174 | TD_loss: 8.032 | Entropy: 0.736 | Epoch Time: 2.0s | Total Time: 2753.7s
+[2025-05-05 07:20:38] Epoch: 925/1000 | Reward: 29.497 | TD_loss: -8.393 | Entropy: 0.697 | Epoch Time: 1.9s | Total Time: 2755.6s
+[2025-05-05 07:20:40] Epoch: 926/1000 | Reward: 48.150 | TD_loss: 3.594 | Entropy: 0.743 | Epoch Time: 2.1s | Total Time: 2757.6s
+[2025-05-05 07:20:42] Epoch: 927/1000 | Reward: 25.335 | TD_loss: -2.641 | Entropy: 0.688 | Epoch Time: 2.0s | Total Time: 2759.7s
+[2025-05-05 07:20:44] Epoch: 928/1000 | Reward: -106.938 | TD_loss: -18.257 | Entropy: 0.514 | Epoch Time: 2.1s | Total Time: 2761.8s
+[2025-05-05 07:20:47] Epoch: 929/1000 | Reward: 50.061 | TD_loss: 24.083 | Entropy: 0.644 | Epoch Time: 2.4s | Total Time: 2764.1s
+[2025-05-05 07:20:49] Epoch: 930/1000 | Reward: 31.270 | TD_loss: 6.621 | Entropy: 0.710 | Epoch Time: 2.0s | Total Time: 2766.2s
+[2025-05-05 07:20:51] Epoch: 931/1000 | Reward: 48.513 | TD_loss: -2.381 | Entropy: 0.773 | Epoch Time: 2.3s | Total Time: 2768.5s
+[2025-05-05 07:20:53] Epoch: 932/1000 | Reward: -1.116 | TD_loss: 7.987 | Entropy: 0.617 | Epoch Time: 2.1s | Total Time: 2770.6s
+[2025-05-05 07:20:55] Epoch: 933/1000 | Reward: 38.200 | TD_loss: -6.637 | Entropy: 0.754 | Epoch Time: 2.0s | Total Time: 2772.6s
+[2025-05-05 07:20:57] Epoch: 934/1000 | Reward: 32.859 | TD_loss: -2.468 | Entropy: 0.827 | Epoch Time: 2.0s | Total Time: 2774.7s
+[2025-05-05 07:20:59] Epoch: 935/1000 | Reward: -129.778 | TD_loss: -18.989 | Entropy: 0.494 | Epoch Time: 1.9s | Total Time: 2776.6s
+[2025-05-05 07:21:01] Epoch: 936/1000 | Reward: 18.618 | TD_loss: 6.911 | Entropy: 0.783 | Epoch Time: 2.1s | Total Time: 2778.7s
+[2025-05-05 07:21:03] Epoch: 937/1000 | Reward: 38.769 | TD_loss: 11.973 | Entropy: 0.889 | Epoch Time: 2.0s | Total Time: 2780.7s
+[2025-05-05 07:21:05] Epoch: 938/1000 | Reward: -27.535 | TD_loss: 13.047 | Entropy: 0.584 | Epoch Time: 2.0s | Total Time: 2782.7s
+[2025-05-05 07:21:07] Epoch: 939/1000 | Reward: 9.231 | TD_loss: -6.750 | Entropy: 0.752 | Epoch Time: 2.0s | Total Time: 2784.7s
+[2025-05-05 07:21:09] Epoch: 940/1000 | Reward: 5.463 | TD_loss: 5.549 | Entropy: 0.587 | Epoch Time: 2.0s | Total Time: 2786.6s
+[2025-05-05 07:21:11] Epoch: 941/1000 | Reward: 30.047 | TD_loss: -3.871 | Entropy: 0.836 | Epoch Time: 2.0s | Total Time: 2788.6s
+[2025-05-05 07:21:13] Epoch: 942/1000 | Reward: -35.384 | TD_loss: -11.610 | Entropy: 0.629 | Epoch Time: 2.1s | Total Time: 2790.7s
+[2025-05-05 07:21:15] Epoch: 943/1000 | Reward: -40.925 | TD_loss: 7.605 | Entropy: 0.768 | Epoch Time: 2.0s | Total Time: 2792.7s
+[2025-05-05 07:21:17] Epoch: 944/1000 | Reward: -34.205 | TD_loss: 5.137 | Entropy: 0.658 | Epoch Time: 2.0s | Total Time: 2794.7s
+[2025-05-05 07:21:19] Epoch: 945/1000 | Reward: -15.717 | TD_loss: -6.096 | Entropy: 0.739 | Epoch Time: 2.0s | Total Time: 2796.7s
+[2025-05-05 07:21:21] Epoch: 946/1000 | Reward: 38.432 | TD_loss: -1.546 | Entropy: 0.721 | Epoch Time: 2.1s | Total Time: 2798.8s
+[2025-05-05 07:21:23] Epoch: 947/1000 | Reward: 27.735 | TD_loss: 4.456 | Entropy: 0.772 | Epoch Time: 1.9s | Total Time: 2800.7s
+[2025-05-05 07:21:25] Epoch: 948/1000 | Reward: 38.077 | TD_loss: 0.471 | Entropy: 0.791 | Epoch Time: 1.9s | Total Time: 2802.7s
+[2025-05-05 07:21:27] Epoch: 949/1000 | Reward: 35.453 | TD_loss: 1.574 | Entropy: 0.793 | Epoch Time: 1.9s | Total Time: 2804.6s
+[2025-05-05 07:21:29] Epoch: 950/1000 | Reward: 30.162 | TD_loss: -7.654 | Entropy: 0.859 | Epoch Time: 1.9s | Total Time: 2806.5s
+[2025-05-05 07:21:31] Epoch: 951/1000 | Reward: -38.793 | TD_loss: -14.581 | Entropy: 0.686 | Epoch Time: 2.0s | Total Time: 2808.4s
+[2025-05-05 07:21:33] Epoch: 952/1000 | Reward: -91.779 | TD_loss: -13.041 | Entropy: 0.696 | Epoch Time: 1.9s | Total Time: 2810.3s
+[2025-05-05 07:21:35] Epoch: 953/1000 | Reward: -29.447 | TD_loss: 4.157 | Entropy: 0.786 | Epoch Time: 2.1s | Total Time: 2812.4s
+[2025-05-05 07:21:37] Epoch: 954/1000 | Reward: 16.858 | TD_loss: 2.109 | Entropy: 0.670 | Epoch Time: 1.9s | Total Time: 2814.3s
+[2025-05-05 07:21:39] Epoch: 955/1000 | Reward: 26.953 | TD_loss: 5.493 | Entropy: 0.949 | Epoch Time: 1.9s | Total Time: 2816.2s
+[2025-05-05 07:21:41] Epoch: 956/1000 | Reward: 37.786 | TD_loss: 2.442 | Entropy: 0.748 | Epoch Time: 1.9s | Total Time: 2818.1s
+[2025-05-05 07:21:43] Epoch: 957/1000 | Reward: -52.299 | TD_loss: -9.576 | Entropy: 0.642 | Epoch Time: 2.4s | Total Time: 2820.5s
+[2025-05-05 07:21:45] Epoch: 958/1000 | Reward: 20.916 | TD_loss: 18.565 | Entropy: 0.658 | Epoch Time: 2.2s | Total Time: 2822.7s
+[2025-05-05 07:21:47] Epoch: 959/1000 | Reward: -56.962 | TD_loss: -16.432 | Entropy: 0.778 | Epoch Time: 2.1s | Total Time: 2824.8s
+[2025-05-05 07:21:49] Epoch: 960/1000 | Reward: 43.964 | TD_loss: 11.186 | Entropy: 0.606 | Epoch Time: 2.0s | Total Time: 2826.8s
+[2025-05-05 07:21:52] Epoch: 961/1000 | Reward: -64.490 | TD_loss: 15.740 | Entropy: 0.491 | Epoch Time: 2.5s | Total Time: 2829.3s
+[2025-05-05 07:21:55] Epoch: 962/1000 | Reward: -43.452 | TD_loss: -21.889 | Entropy: 0.741 | Epoch Time: 2.6s | Total Time: 2831.9s
+[2025-05-05 07:21:57] Epoch: 963/1000 | Reward: 34.157 | TD_loss: 1.785 | Entropy: 0.761 | Epoch Time: 2.4s | Total Time: 2834.3s
+[2025-05-05 07:21:59] Epoch: 964/1000 | Reward: -13.549 | TD_loss: -1.100 | Entropy: 0.575 | Epoch Time: 2.3s | Total Time: 2836.6s
+[2025-05-05 07:22:02] Epoch: 965/1000 | Reward: -36.296 | TD_loss: -10.466 | Entropy: 0.540 | Epoch Time: 2.4s | Total Time: 2839.0s
+[2025-05-05 07:22:04] Epoch: 966/1000 | Reward: 43.993 | TD_loss: 7.845 | Entropy: 0.732 | Epoch Time: 2.4s | Total Time: 2841.4s
+[2025-05-05 07:22:06] Epoch: 967/1000 | Reward: -118.883 | TD_loss: -5.052 | Entropy: 0.725 | Epoch Time: 2.2s | Total Time: 2843.6s
+[2025-05-05 07:22:08] Epoch: 968/1000 | Reward: 30.087 | TD_loss: 12.970 | Entropy: 0.650 | Epoch Time: 2.0s | Total Time: 2845.6s
+[2025-05-05 07:22:10] Epoch: 969/1000 | Reward: 36.076 | TD_loss: -3.567 | Entropy: 0.781 | Epoch Time: 2.0s | Total Time: 2847.6s
+[2025-05-05 07:22:12] Epoch: 970/1000 | Reward: -36.891 | TD_loss: -3.891 | Entropy: 0.707 | Epoch Time: 2.0s | Total Time: 2849.6s
+[2025-05-05 07:22:14] Epoch: 971/1000 | Reward: 17.709 | TD_loss: 9.634 | Entropy: 0.667 | Epoch Time: 2.0s | Total Time: 2851.6s
+[2025-05-05 07:22:16] Epoch: 972/1000 | Reward: 23.276 | TD_loss: -2.548 | Entropy: 0.701 | Epoch Time: 2.0s | Total Time: 2853.6s
+[2025-05-05 07:22:18] Epoch: 973/1000 | Reward: -41.416 | TD_loss: -7.517 | Entropy: 0.673 | Epoch Time: 2.1s | Total Time: 2855.7s
+[2025-05-05 07:22:20] Epoch: 974/1000 | Reward: 21.495 | TD_loss: 10.297 | Entropy: 0.753 | Epoch Time: 2.1s | Total Time: 2857.8s
+[2025-05-05 07:22:23] Epoch: 975/1000 | Reward: -68.888 | TD_loss: -4.133 | Entropy: 0.512 | Epoch Time: 2.4s | Total Time: 2860.2s
+[2025-05-05 07:22:25] Epoch: 976/1000 | Reward: 22.241 | TD_loss: 1.479 | Entropy: 0.614 | Epoch Time: 2.3s | Total Time: 2862.5s
+[2025-05-05 07:22:27] Epoch: 977/1000 | Reward: -158.073 | TD_loss: -1.420 | Entropy: 0.408 | Epoch Time: 2.2s | Total Time: 2864.8s
+[2025-05-05 07:22:29] Epoch: 978/1000 | Reward: 44.969 | TD_loss: -3.579 | Entropy: 0.753 | Epoch Time: 2.0s | Total Time: 2866.8s
+[2025-05-05 07:22:32] Epoch: 979/1000 | Reward: -100.572 | TD_loss: 6.563 | Entropy: 0.458 | Epoch Time: 2.1s | Total Time: 2869.0s
+[2025-05-05 07:22:34] Epoch: 980/1000 | Reward: -3.059 | TD_loss: -9.763 | Entropy: 0.779 | Epoch Time: 2.0s | Total Time: 2871.0s
+[2025-05-05 07:22:36] Epoch: 981/1000 | Reward: -116.643 | TD_loss: -13.566 | Entropy: 0.558 | Epoch Time: 2.1s | Total Time: 2873.1s
+[2025-05-05 07:22:38] Epoch: 982/1000 | Reward: 32.201 | TD_loss: 11.582 | Entropy: 0.802 | Epoch Time: 2.2s | Total Time: 2875.3s
+[2025-05-05 07:22:40] Epoch: 983/1000 | Reward: 35.994 | TD_loss: 4.509 | Entropy: 0.769 | Epoch Time: 1.9s | Total Time: 2877.2s
+[2025-05-05 07:22:42] Epoch: 984/1000 | Reward: -38.529 | TD_loss: 5.525 | Entropy: 0.611 | Epoch Time: 2.0s | Total Time: 2879.2s
+[2025-05-05 07:22:44] Epoch: 985/1000 | Reward: 37.316 | TD_loss: -3.211 | Entropy: 0.759 | Epoch Time: 2.0s | Total Time: 2881.2s
+[2025-05-05 07:22:46] Epoch: 986/1000 | Reward: 31.576 | TD_loss: 0.215 | Entropy: 0.759 | Epoch Time: 2.2s | Total Time: 2883.4s
+[2025-05-05 07:22:48] Epoch: 987/1000 | Reward: 10.674 | TD_loss: -1.612 | Entropy: 0.745 | Epoch Time: 2.0s | Total Time: 2885.3s
+[2025-05-05 07:22:50] Epoch: 988/1000 | Reward: 10.091 | TD_loss: 1.848 | Entropy: 0.758 | Epoch Time: 1.9s | Total Time: 2887.3s
+[2025-05-05 07:22:52] Epoch: 989/1000 | Reward: -28.351 | TD_loss: -15.158 | Entropy: 0.705 | Epoch Time: 2.0s | Total Time: 2889.3s
+[2025-05-05 07:22:54] Epoch: 990/1000 | Reward: 38.070 | TD_loss: 3.336 | Entropy: 0.744 | Epoch Time: 2.0s | Total Time: 2891.3s
+[2025-05-05 07:22:56] Epoch: 991/1000 | Reward: 19.617 | TD_loss: 9.386 | Entropy: 0.714 | Epoch Time: 1.9s | Total Time: 2893.3s
+[2025-05-05 07:22:58] Epoch: 992/1000 | Reward: 12.851 | TD_loss: 6.577 | Entropy: 0.675 | Epoch Time: 2.0s | Total Time: 2895.3s
+[2025-05-05 07:23:00] Epoch: 993/1000 | Reward: 20.066 | TD_loss: -15.467 | Entropy: 0.750 | Epoch Time: 2.0s | Total Time: 2897.3s
+[2025-05-05 07:23:02] Epoch: 994/1000 | Reward: 12.768 | TD_loss: -2.998 | Entropy: 0.739 | Epoch Time: 2.5s | Total Time: 2899.8s
+[2025-05-05 07:23:05] Epoch: 995/1000 | Reward: -24.888 | TD_loss: -11.382 | Entropy: 0.753 | Epoch Time: 2.3s | Total Time: 2902.0s
+[2025-05-05 07:23:07] Epoch: 996/1000 | Reward: 47.881 | TD_loss: 7.423 | Entropy: 0.923 | Epoch Time: 2.1s | Total Time: 2904.1s
+[2025-05-05 07:23:09] Epoch: 997/1000 | Reward: 31.284 | TD_loss: 1.560 | Entropy: 0.873 | Epoch Time: 2.1s | Total Time: 2906.2s
+[2025-05-05 07:23:11] Epoch: 998/1000 | Reward: -69.211 | TD_loss: 9.173 | Entropy: 0.654 | Epoch Time: 1.9s | Total Time: 2908.1s
+[2025-05-05 07:23:13] Epoch: 999/1000 | Reward: 55.269 | TD_loss: -7.474 | Entropy: 0.861 | Epoch Time: 2.0s | Total Time: 2910.1s
+[2025-05-05 07:23:15] Epoch: 1000/1000 | Reward: -197.155 | TD_loss: -52.959 | Entropy: 0.571 | Epoch Time: 1.9s | Total Time: 2912.0s
+[2025-05-05 07:23:15] Starting testing for epoch 1000...
+[2025-05-05 07:23:16] Running test simulation...
+[2025-05-05 07:23:16] Testing completed for epoch 1000
+[2025-05-05 07:23:17] Model saved to: ./buffer_aware_results/nn_model_ep_1000.ckpt
+[2025-05-05 07:23:17] Training completed! Total time: 2914.3s
+[2025-05-05 07:23:17] Training completed!
